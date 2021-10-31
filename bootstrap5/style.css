@@ -1,33 +1,35 @@
-html {
-  font-size: 12px;
-}
-
-h2 {
-  padding: 5px;
-  font-weight: bolder;
-}
-
-section {
+div#body-container.container section {
+  margin: 3px;
+  padding: 3px;
   text-align: center;
-  /* display: flex;
-  flex-wrap: wrap; */
-  margin: 1vw;
+  font-size: 12px;
+  font-family: sans-serif;
+  background-color: var(--main-bg-color);
   border: solid;
   border-width: thin;
-  background-color: var(--main-bg-color);
 }
 
-/* CENTER */
-/* #body-container {
-grid-column: 5px;
-grid-row: 5px;
+div#umn-one.container {
+  max-width: 150px;
+  min-width: 150px;
+  margin: 0;
+  padding: 0;
+}
 
-} */
+div#body-container.container section a {
+  font-size: 13px;
+  font-family: sans-serif;
+  color: black;
+}
 
-/* variable colors */
-:root {
-  --main-bg-color: #ffffdd;
-  --main-header-color: #fecc99;
+div#body-container.container {
+  min-width: 100vw;
+}
+
+#umn-one {
+  margin: 0;
+  padding: 0;
+  font: 12px;
 }
 
 /* header */
@@ -37,27 +39,23 @@ grid-row: 5px;
 }
 
 .t-links {
-  margin-bottom: 4px;
-  padding: 2px;
+  padding: 3px;
   text-align: center;
   background-color: var(--main-bg-color);
   border: solid;
   border-width: thin;
-  font-size: 12px;
-  font-weight: bolder;
-  margin: 2px;
 }
 
 /* COLUMN ONE */
 /* HAPPY BIRTHDAYS */
-#happy-birthdays {
+#happy-birthdays.container {
   background-color: var(--main-bg-color);
   font-size: 12px;
-  display: flex;
-  flex-wrap: wrap;
   border: solid;
   border-width: thin;
   font-family: verdana, arial, helvetica;
+  margin: 0px;
+  padding: 0px;
 }
 
 #hb-header {
@@ -66,4 +64,12 @@ grid-row: 5px;
   white-space: nowrap;
   font-weight: bolder;
   width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* variable colors */
+:root {
+  --main-bg-color: #ffffdd;
+  --main-header-color: #fecc99;
 }

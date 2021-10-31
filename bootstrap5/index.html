@@ -30,7 +30,7 @@
 		</header>
 		<!--beginmenu-->
 		<!-- +++++++++++++++ links above table +++++++++++++++++++++++++++++ -->
-		<div id="header-links" class="column t-links">
+		<div id="header-links" class="column t-links mb-3">
 			<a href="/perl/chessmembers">Members</a> <b>&#183;</b>
 			<a href="/perl/chessprofile.pl">Prefs</a> <b>&#183;</b>
 			<a href="/perl/analyzer.pl">Laboratory</a> <b>&#183;</b>
@@ -66,9 +66,9 @@ We apologize for this inconvenience.</h6>
 		<!-- <tr> -->
 		<!-- ++++++++++++ FIRST COLUMN ++++++++++++++++ -->
 		<div id="body-container" class="container">
-			<div class="row">
-				<div id="umn-one" class="container-liquid col-2">
-					<section id="cg-gotd" class="cg-front-column umn-one">
+			<div class="row gx-2 gy-3">
+				<div id="umn-one" class="container col-2 mt-3 firstLast ">
+					<section id="cg-gotd" class="cg-front-column start-col">
 						<h2>
 							<a href="/perl/gamesoftheday" class="header-link">Game of the Day </a>
 						</h2>
@@ -83,7 +83,7 @@ We apologize for this inconvenience.</h6>
 							<p>
 						</div>
 					</section>
-					<section id="cg-playerotd" class="cg-front-column umn-one">
+					<section id="cg-playerotd" class="cg-front-column start-col">
 						<header>
 							<h2><a href="/directory/" class="header-link" style="color:black;font-weight:bold;">Player of the Day</a></h2>
 						</header>
@@ -92,7 +92,7 @@ We apologize for this inconvenience.</h6>
 							<!--endplayerotd-->
 						</div>
 					</section>
-					<section id="cg-openingotd" class="cg-front-column umn-one">
+					<section id="cg-openingotd" class="cg-front-column start-col">
 						<header>
 							<h2> <a href="/perl/explorer" class="header-link" style="color:black;font-weight:bold;">Opening of the Day</a></h2>
 						</header>
@@ -108,7 +108,7 @@ We apologize for this inconvenience.</h6>
 					<div class="image-div">
 						<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="190" height="135"></a>
 					</div>
-					<section id="cg-new-events" class="cg-front-column umn-one">
+					<section id="cg-new-events" class="cg-front-column start-col">
 						<header>
 							<h2>New Events</h2>
 						</header>
@@ -176,7 +176,7 @@ We apologize for this inconvenience.</h6>
 							<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
 						</div>
 					</section>
-					<div id="happy-birthdays" class="container umn-one">
+					<div id="happy-birthdays" class="container start-col">
 						<h2 id="hb-header">Happy Birthday To:</h2>
 						<!-- <td align=CENTER background="/chessimages/highlight_stripes.gif"> -->
 						<a href="/perl/chessplayer?pid=113159">C P Hofstede de Groot</a>, <a href="/perl/chessplayer?pid=10594">Heinrich Wolf</a>, <a href="/perl/chessplayer?pid=130909">John Morris Gehl</a>, <a href="/perl/chessplayer?pid=150237">Marinus
@@ -188,7 +188,7 @@ We apologize for this inconvenience.</h6>
 					</div>
 					<!--endbirthday-->
 					<!-- <img src="/chessimages/spacer.gif" alt=" " width=4 height=4><br> -->
-					<section id="cg-chess-news" class="cg-front-column umn-one">
+					<section id="cg-chess-news" class="cg-front-column start-col">
 						<header>
 							<h2>Chess News</h2>
 						</header>
@@ -387,16 +387,16 @@ We apologize for this inconvenience.</h6>
 				</div>
 				<!-- end of col-first -->
 				<!-- ++++++++++++ SECOND COLUMN ++++++++++++ -->
-				<div id="umn-two" class="container col-8 d-grid gap-1 gx-1">
+				<div id="umn-two" class="container col-8 middle">
 					<section id="cg-search" class="cg-section">
 						<header>
-							<h1 style="font-weight:bold;"> SEARCH OVER
+							<h1> SEARCH OVER
 								<!--begingamecount-->1,043,000
 								<!--endgamecount--> CHESS GAMES
 							</h1>
 						</header>
 						<div>
-							<form style="margin-bottom:0;" method=GET action="/perl/ezsearch.pl">
+							<form method=GET action="/perl/ezsearch.pl">
 								<input type="text" name="search" size=16>
 								<input type="submit" value="Search">
 							</form>
@@ -818,7 +818,7 @@ We apologize for this inconvenience.</h6>
 				</div>
 				<!-- end of col-two -->
 				<!-- +++++++++++++ LAST COLUMN +++++++++++ -->
-				<div class="container col-2 umn-three d-grid gap-1 gx-1">
+				<div class="container col-2 umn-three firstlast mt-3">
 					<!--beginnonpremium-->
 					<div id="cg-promote-banner" class="image-div">
 						<a id="promote-banner" href="/perl/tour" target="_blank">
