@@ -1,37 +1,55 @@
+div#body-container.container {
+  min-width: 100vw;
+  margin-top: 2.5rem;
+  /* padding: 20px; */
+}
+
 div#body-container.container section {
   margin: 3px;
   padding: 3px;
   text-align: center;
-  font-size: 12px;
-  font-family: sans-serif;
+  /* font-size: 12px; */
+  /* font-family: sans-serif; */
   background-color: var(--main-bg-color);
   border: solid;
   border-width: thin;
 }
 
-div#umn-one.container {
-  max-width: 150px;
-  min-width: 150px;
-  margin: 0;
-  padding: 0;
-}
-
 div#body-container.container section a {
   font-size: 13px;
-  font-family: sans-serif;
+  /* font-family: sans-serif; */
   color: black;
 }
 
-div#body-container.container {
-  min-width: 100vw;
-}
-
-#umn-one {
+div#umn-one.container {
+  max-width: 190px;
+  min-width: 190px;
+  position: absolute;
+  left: 0;
   margin: 0;
   padding: 0;
-  font: 12px;
 }
 
+div.container.col-2.umn-three {
+  max-width: 190px;
+  min-width: 190px;
+  position: absolute;
+  right: 0;
+  margin: 0;
+  padding: 0;
+}
+
+div#umn-two.container {
+  /* width: 100%; */
+  margin: 1rem auto;
+  padding: 0;
+}
+
+div#col-mid.container-liquid {}
+
+/* div.row.gx-2 {
+  min-width: 100vw;
+} */
 /* header */
 #header-links a {
   font-size: 11px;
@@ -39,7 +57,7 @@ div#body-container.container {
 }
 
 .t-links {
-  padding: 3px;
+  padding: 1px;
   text-align: center;
   background-color: var(--main-bg-color);
   border: solid;
@@ -50,23 +68,34 @@ div#body-container.container {
 /* HAPPY BIRTHDAYS */
 #happy-birthdays.container {
   background-color: var(--main-bg-color);
-  font-size: 12px;
+  padding: 0;
+  margin: 0;
+  /* font-size: 12px;
   border: solid;
   border-width: thin;
-  font-family: verdana, arial, helvetica;
-  margin: 0px;
-  padding: 0px;
+  font-family: verdana, arial, helvetica; */
+
 }
 
 #hb-header {
   background-color: var(--main-header-color);
-  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  /* font-size: 14px;
   white-space: nowrap;
   font-weight: bolder;
-  width: 100%;
-  margin: 0px;
-  padding: 0px;
+  width: 100%; */
 }
+
+
+/* ++++++++++ */
+section a {
+  color: blue;
+}
+
+
+
+/* +++++++++++++++++++ */
 
 /* variable colors */
 :root {

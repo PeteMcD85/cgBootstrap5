@@ -12,7 +12,7 @@
 	</head>
 
 	<body>
-		<header>
+		<header class="container header-logo">
 			<div id="header-top" style="background-image:url('./chessimages/header_stripes.gif');">
 				<a href="/index.html" id="header-logo">
 					<img src="./chessimages/chessgameslogo.png" alt="Chessgames.com Logo" />
@@ -64,9 +64,9 @@ We apologize for this inconvenience.</h6>
 		<!-- Beginning Table -->
 		<!-- <table border="0" cellspacing="0" cellpadding="0" width="100%"> -->
 		<!-- <tr> -->
-		<!-- ++++++++++++ FIRST COLUMN ++++++++++++++++ -->
 		<div id="body-container" class="container">
-			<div class="row gx-2 gy-3">
+			<div class="row g-5 gy-4">
+				<!-- ++++++++++++ FIRST COLUMN ++++++++++++++++ -->
 				<div id="umn-one" class="container col-2 mt-3 firstLast ">
 					<section id="cg-gotd" class="cg-front-column start-col">
 						<h2>
@@ -84,9 +84,7 @@ We apologize for this inconvenience.</h6>
 						</div>
 					</section>
 					<section id="cg-playerotd" class="cg-front-column start-col">
-						<header>
-							<h2><a href="/directory/" class="header-link" style="color:black;font-weight:bold;">Player of the Day</a></h2>
-						</header>
+						<h2><a href="/directory/" class="header-link">Player of the Day</a></h2>
 						<div>
 							<!--beginplayerotd--><b><a href="/perl/chessplayer?pid=117989">Yuliya Shvayger</a></b><br><small>(1994-)</small>
 							<!--endplayerotd-->
@@ -106,7 +104,7 @@ We apologize for this inconvenience.</h6>
 					<!--begintopbanner-->
 					<!--endtopbanner-->
 					<div class="image-div">
-						<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="190" height="135"></a>
+						<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="150" height="135"></a>
 					</div>
 					<section id="cg-new-events" class="cg-front-column start-col">
 						<header>
@@ -387,434 +385,436 @@ We apologize for this inconvenience.</h6>
 				</div>
 				<!-- end of col-first -->
 				<!-- ++++++++++++ SECOND COLUMN ++++++++++++ -->
-				<div id="umn-two" class="container col-8 middle">
-					<section id="cg-search" class="cg-section">
-						<header>
-							<h1> SEARCH OVER
-								<!--begingamecount-->1,043,000
-								<!--endgamecount--> CHESS GAMES
-							</h1>
-						</header>
-						<div>
-							<form method=GET action="/perl/ezsearch.pl">
-								<input type="text" name="search" size=16>
-								<input type="submit" value="Search">
+				<div id="umn-two" class="container col-8 middle ">
+					<div id="col-mid" class="container-liquid">
+						<section id="cg-search" class="cg-section">
+							<header>
+								<h1> SEARCH OVER
+									<!--begingamecount-->1,043,000
+									<!--endgamecount--> CHESS GAMES
+								</h1>
+							</header>
+							<div>
+								<form method=GET action="/perl/ezsearch.pl">
+									<input type="text" name="search" size=16>
+									<input type="submit" value="Search">
+								</form>
+								<p> @TIP<br>
+									<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into the search bar.  --> (<a href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>) </p>
+							</div>
+						</section>
+						<!--newusers-->
+						<!--kibcount-->
+						<section id="cg-advanced-search" class="cg-section">
+							<header>
+								<h2>ADVANCED SEARCH</h2>
+							</header>
+							<form method=GET action="/perl/chess.pl" class="mobile-hide">
+								<div role="group" id="as-year">
+									<span><strong>Year</strong> is</span>
+									<span>
+										<select name="yearcomp">
+											<option value="exactly"></option>
+											<option value="exactly">= exactly</option>
+											<option value="le">&lt;= no later than</option>
+											<option value="ge">&gt;= at least</option>
+										</select>
+									</span>
+									<span>
+										<input type="text" name="year" size="6">
+										<span class="example">e.g.1905</span>
+									</span>
+								</div>
+								<div role="group" id="as-player">
+									<span>
+										<strong>Player</strong>
+										<select name="playercomp">
+											<option value="either"></option>
+											<option value="white">White</option>
+											<option value="black">Black</option>
+										</select> is </span>
+									<span class="stacked-inputs">
+										<span>
+											<select name="pid" class="pulldown">@PLAYERPULL</select>
+											<label>
+												<input type="checkbox" class="long-list"> longer list </label>
+										</span>
+										<span> or <input type="text" name="player" size="20">
+										</span>
+									</span>
+									<span>
+										<a href="/directory/" class="example">(Directory)</a>
+									</span>
+								</div>
+								<div role="group" id="as-opposing-player">
+									<span>
+										<strong>Opposing player</strong> is </span>
+									<span class="stacked-inputs">
+										<span>
+											<select name="pid2" class="pulldown">@PLAYERPULL</select>
+											<label>
+												<input type="checkbox" class="long-list"> longer list </label>
+										</span>
+										<!-- <select name="pid2">@PLAYERPULL</select> -->
+										<span> or <input type="text" name="player2" size="20">
+										</span>
+									</span>
+								</div>
+								<div role="group" id="as-nom">
+									<span><strong>Number of moves</strong> is </span>
+									<span>
+										<select name="movescomp">
+											<option value="exactly"></option>
+											<option value="exactly">= exactly</option>
+											<option value="le">&lt;= no more than</option>
+											<option value="ge">&gt;= at least</option>
+										</select>
+									</span>
+									<span>
+										<input type="text" name="moves" size="6">
+									</span>
+								</div>
+								<div role="group" id="as-opening">
+									<span><strong>Opening</strong> is</span>
+									<span>
+										<select name="opening">
+											<option value=""></option>
+											<option value="">------- 1 e4</option>
+											<option value=""></option>
+											<option value="C20 C40 C44">King's Pawn Game</option>
+											<option value="C23-C24">Bishop's Opening</option>
+											<option value="C41">Philidor</option>
+											<option value="C25-C29">Vienna</option>
+											<option value="C45">Scotch</option>
+											<option value="C55-C59">Two Knights</option>
+											<option value="C46">Three Knights</option>
+											<option value="C47-C49">Four Knights</option>
+											<option value="B01">Scandinavian</option>
+											<option value="C21-C22">Center Game</option>
+											<option value="C50-C54">Giuoco Piano</option>
+											<option value="C51-C52">- Evans Gambit</option>
+											<option value="A07-A08">King's Indian Attack</option>
+											<option value="B02-B05">Alekhine</option>
+											<option value="B06">Robatsch</option>
+											<option value="B07-B09">Pirc</option>
+											<option value="A42">Modern</option>
+											<option value="C42-C43">Petrov</option>
+											<option value="C30-C39">King's Gambit</option>
+											<option value="C30-C32">- Declined</option>
+											<option value="C33-C39">- Accepted</option>
+											<option value="B10-B19">Caro-Kann</option>
+											<option value="C00-C19">French</option>
+											<option value="C14">- Classical</option>
+											<option value="C02">- Advance</option>
+											<option value="C01">- Exchange</option>
+											<option value="C03-C09">- Tarrasch</option>
+											<option value="C15-C19">- Winawer</option>
+											<option value="C60-C99">Ruy Lopez</option>
+											<option value="C84-C99">- Closed</option>
+											<option value="C80-C83">- Open</option>
+											<option value="C68-C69 C85">- Exchange</option>
+											<option value="B20-B99">Sicilian</option>
+											<option value="B34-B39 B70-B79">- Dragon</option>
+											<option value="B41-B43">- Kan</option>
+											<option value="B45-B49">- Taimanov</option>
+											<option value="B60-B69">- Richter-Rauser</option>
+											<option value="B80-B85">- Scheveningen</option>
+											<option value="B90-B99">- Najdorf</option>
+											<option value="B23-B26">- Closed</option>
+											<option value="B22">- Alapin</option>
+											<option value=""></option>
+											<option value="">------- 1 d4</option>
+											<option value=""></option>
+											<option value="D00 D01 D02 D04-05 A40 A41 A45-46 A50 E00 E10">Queen's Pawn Game</option>
+											<option value="D03">Torre Attack</option>
+											<option value="E01-E09">Catalan</option>
+											<option value="A80-A99">Dutch Defense</option>
+											<option value="A82-A83">- Staunton Gambit</option>
+											<option value="E11">Bogo Indian</option>
+											<option value="A51-A52">Budapest Gambit</option>
+											<option value="A43-A44">Old Benoni</option>
+											<option value="A56-A79">Modern Benoni</option>
+											<option value="A57-A59">- Benko Gambit</option>
+											<option value="D70-D99">Grunfeld</option>
+											<option value="E12-E19">Queen's Indian</option>
+											<option value="E20-E59">Nimzo Indian</option>
+											<option value="E60-E99">King's Indian</option>
+											<option value="E80-E89">- Saemisch Attack</option>
+											<option value="A53-A55">- Old Indian</option>
+											<option value="D20-D29">Queen's Gambit Accepted</option>
+											<option value="D06-D69">Queen's Gambit Declined</option>
+											<option value="D08-D09">- Albin Counter</option>
+											<option value="D07">- Chigorin</option>
+											<option value="D32-D34">- Tarrasch</option>
+											<option value="D40-D42">- Semi-Tarrasch</option>
+											<option value="D10-D19">- Slav</option>
+											<option value="D43-D49">- Semi-Slav</option>
+											<option value="D50-D69">- Orthodox</option>
+											<option value=""></option>
+											<option value="">------- 1 c4 and others</option>
+											<option value=""></option>
+											<option value="A00 B00">Uncommon Opening</option>
+											<option value="A01">Nimzo-Larsen Attack</option>
+											<option value="A02-A03">Bird's Opening</option>
+											<option value="A04-A06">Reti System</option>
+											<option value="A10-A39">English Opening</option>
+											<option value="A20-A29">- 1 c4 e5</option>
+											<option value="A30-A39">- 1 c4 c5</option>
+											<option value="A10-A19">- other</option>
+										</select>
+									</span>
+								</div>
+								<div role="group" id="as-eco">
+									<span>
+										<strong>ECO code</strong> is </span>
+									<span>
+										<a href="javascript:OpenWin('/chessecohelp.html')">(ECO help)</a>
+									</span>
+									<span>
+										<input type="text" size="9" name="eco">
+									</span>
+								</div>
+								<div role="group" id="as-result">
+									<span><strong>Result</strong> is</span>
+									<span>
+										<select name="result">
+											<option value=""></option>
+											<option value="1-0">White wins</option>
+											<option value="0-1">Black wins</option>
+											<option value="1st">1st player wins</option>
+											<option value="2nd">1st player loses</option>
+											<option value="1/2-1/2">draw</option>
+											<option value="notdraw">not a draw</option>
+										</select>
+									</span>
+								</div>
+								<table>
+									<tbody>
+										<!--tidpulldown-->
+									</tbody>
+								</table>
+								<div role="group" id="as-checkboxes">
+									<label>
+										<input type=CHECKBOX name="kibitzing" value=1> with <a href="/chesshelp.html#kibitzing">kibitzing</a>
+									</label>
+									<label>
+										<input type=CHECKBOX name="annotated" value=1> with <a href="/chesshelp.html#annotation">annotation</a>
+									</label>
+								</div>
+								<div role="group" id="as-buttons">
+									<input type=RESET value=" Clear Form ">
+									<input type="submit" value=" Find Chess Games! ">
+								</div>
 							</form>
-							<p> @TIP<br>
-								<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into the search bar.  --> (<a href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>) </p>
-						</div>
-					</section>
-					<!--newusers-->
-					<!--kibcount-->
-					<section id="cg-advanced-search" class="cg-section">
-						<header>
-							<h2>ADVANCED SEARCH</h2>
-						</header>
-						<form method=GET action="/perl/chess.pl" class="mobile-hide">
-							<div role="group" id="as-year">
-								<span><strong>Year</strong> is</span>
-								<span>
-									<select name="yearcomp">
-										<option value="exactly"></option>
-										<option value="exactly">= exactly</option>
-										<option value="le">&lt;= no later than</option>
-										<option value="ge">&gt;= at least</option>
-									</select>
-								</span>
-								<span>
-									<input type="text" name="year" size="6">
-									<span class="example">e.g.1905</span>
-								</span>
-							</div>
-							<div role="group" id="as-player">
-								<span>
-									<strong>Player</strong>
-									<select name="playercomp">
-										<option value="either"></option>
-										<option value="white">White</option>
-										<option value="black">Black</option>
-									</select> is </span>
-								<span class="stacked-inputs">
-									<span>
-										<select name="pid" class="pulldown">@PLAYERPULL</select>
-										<label>
-											<input type="checkbox" class="long-list"> longer list </label>
-									</span>
-									<span> or <input type="text" name="player" size="20">
-									</span>
-								</span>
-								<span>
-									<a href="/directory/" class="example">(Directory)</a>
-								</span>
-							</div>
-							<div role="group" id="as-opposing-player">
-								<span>
-									<strong>Opposing player</strong> is </span>
-								<span class="stacked-inputs">
-									<span>
-										<select name="pid2" class="pulldown">@PLAYERPULL</select>
-										<label>
-											<input type="checkbox" class="long-list"> longer list </label>
-									</span>
-									<!-- <select name="pid2">@PLAYERPULL</select> -->
-									<span> or <input type="text" name="player2" size="20">
-									</span>
-								</span>
-							</div>
-							<div role="group" id="as-nom">
-								<span><strong>Number of moves</strong> is </span>
-								<span>
-									<select name="movescomp">
-										<option value="exactly"></option>
-										<option value="exactly">= exactly</option>
-										<option value="le">&lt;= no more than</option>
-										<option value="ge">&gt;= at least</option>
-									</select>
-								</span>
-								<span>
-									<input type="text" name="moves" size="6">
-								</span>
-							</div>
-							<div role="group" id="as-opening">
-								<span><strong>Opening</strong> is</span>
-								<span>
-									<select name="opening">
-										<option value=""></option>
-										<option value="">------- 1 e4</option>
-										<option value=""></option>
-										<option value="C20 C40 C44">King's Pawn Game</option>
-										<option value="C23-C24">Bishop's Opening</option>
-										<option value="C41">Philidor</option>
-										<option value="C25-C29">Vienna</option>
-										<option value="C45">Scotch</option>
-										<option value="C55-C59">Two Knights</option>
-										<option value="C46">Three Knights</option>
-										<option value="C47-C49">Four Knights</option>
-										<option value="B01">Scandinavian</option>
-										<option value="C21-C22">Center Game</option>
-										<option value="C50-C54">Giuoco Piano</option>
-										<option value="C51-C52">- Evans Gambit</option>
-										<option value="A07-A08">King's Indian Attack</option>
-										<option value="B02-B05">Alekhine</option>
-										<option value="B06">Robatsch</option>
-										<option value="B07-B09">Pirc</option>
-										<option value="A42">Modern</option>
-										<option value="C42-C43">Petrov</option>
-										<option value="C30-C39">King's Gambit</option>
-										<option value="C30-C32">- Declined</option>
-										<option value="C33-C39">- Accepted</option>
-										<option value="B10-B19">Caro-Kann</option>
-										<option value="C00-C19">French</option>
-										<option value="C14">- Classical</option>
-										<option value="C02">- Advance</option>
-										<option value="C01">- Exchange</option>
-										<option value="C03-C09">- Tarrasch</option>
-										<option value="C15-C19">- Winawer</option>
-										<option value="C60-C99">Ruy Lopez</option>
-										<option value="C84-C99">- Closed</option>
-										<option value="C80-C83">- Open</option>
-										<option value="C68-C69 C85">- Exchange</option>
-										<option value="B20-B99">Sicilian</option>
-										<option value="B34-B39 B70-B79">- Dragon</option>
-										<option value="B41-B43">- Kan</option>
-										<option value="B45-B49">- Taimanov</option>
-										<option value="B60-B69">- Richter-Rauser</option>
-										<option value="B80-B85">- Scheveningen</option>
-										<option value="B90-B99">- Najdorf</option>
-										<option value="B23-B26">- Closed</option>
-										<option value="B22">- Alapin</option>
-										<option value=""></option>
-										<option value="">------- 1 d4</option>
-										<option value=""></option>
-										<option value="D00 D01 D02 D04-05 A40 A41 A45-46 A50 E00 E10">Queen's Pawn Game</option>
-										<option value="D03">Torre Attack</option>
-										<option value="E01-E09">Catalan</option>
-										<option value="A80-A99">Dutch Defense</option>
-										<option value="A82-A83">- Staunton Gambit</option>
-										<option value="E11">Bogo Indian</option>
-										<option value="A51-A52">Budapest Gambit</option>
-										<option value="A43-A44">Old Benoni</option>
-										<option value="A56-A79">Modern Benoni</option>
-										<option value="A57-A59">- Benko Gambit</option>
-										<option value="D70-D99">Grunfeld</option>
-										<option value="E12-E19">Queen's Indian</option>
-										<option value="E20-E59">Nimzo Indian</option>
-										<option value="E60-E99">King's Indian</option>
-										<option value="E80-E89">- Saemisch Attack</option>
-										<option value="A53-A55">- Old Indian</option>
-										<option value="D20-D29">Queen's Gambit Accepted</option>
-										<option value="D06-D69">Queen's Gambit Declined</option>
-										<option value="D08-D09">- Albin Counter</option>
-										<option value="D07">- Chigorin</option>
-										<option value="D32-D34">- Tarrasch</option>
-										<option value="D40-D42">- Semi-Tarrasch</option>
-										<option value="D10-D19">- Slav</option>
-										<option value="D43-D49">- Semi-Slav</option>
-										<option value="D50-D69">- Orthodox</option>
-										<option value=""></option>
-										<option value="">------- 1 c4 and others</option>
-										<option value=""></option>
-										<option value="A00 B00">Uncommon Opening</option>
-										<option value="A01">Nimzo-Larsen Attack</option>
-										<option value="A02-A03">Bird's Opening</option>
-										<option value="A04-A06">Reti System</option>
-										<option value="A10-A39">English Opening</option>
-										<option value="A20-A29">- 1 c4 e5</option>
-										<option value="A30-A39">- 1 c4 c5</option>
-										<option value="A10-A19">- other</option>
-									</select>
-								</span>
-							</div>
-							<div role="group" id="as-eco">
-								<span>
-									<strong>ECO code</strong> is </span>
-								<span>
-									<a href="javascript:OpenWin('/chessecohelp.html')">(ECO help)</a>
-								</span>
-								<span>
-									<input type="text" size="9" name="eco">
-								</span>
-							</div>
-							<div role="group" id="as-result">
-								<span><strong>Result</strong> is</span>
-								<span>
-									<select name="result">
-										<option value=""></option>
-										<option value="1-0">White wins</option>
-										<option value="0-1">Black wins</option>
-										<option value="1st">1st player wins</option>
-										<option value="2nd">1st player loses</option>
-										<option value="1/2-1/2">draw</option>
-										<option value="notdraw">not a draw</option>
-									</select>
-								</span>
-							</div>
-							<table>
-								<tbody>
-									<!--tidpulldown-->
-								</tbody>
+						</section>
+						<section id="potd" class="cg-section">
+							<!--beginpuzzle-->
+							<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
+								<tr>
+									<td>
+										<table border="0" cellpadding="4" cellspacing="0" width="100%" style="background-color: #FFFFDD;" bgcolor="#FFFFDD">
+											<tr style="background-color: #FFCC99;" bgcolor="#FFCC99">
+												<td align="center" background="/chessimages/highlight_stripes.gif">
+													<font face="verdana,arial" size="-1"><b>White to play</b></font>
+												</td>
+											</tr>
+											<tr>
+												<td>
+													<center>
+														<font face="verdana,arial,helvetica" size="-1"><a href="/perl/chessgame?gid=1401603&m=22">Adianto vs R E Espinosa Flores</a><br>
+															<a href="/perl/chessgame?gid=1401603&m=22"><img src="/puzzles/1401603.gif" border="0" width="284" height="284"></a><br><b>22.&nbsp;?</b><br>
+															<font size="-2">See game for solution.</font><br>
+														</font><img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale">
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
 							</table>
-							<div role="group" id="as-checkboxes">
-								<label>
-									<input type=CHECKBOX name="kibitzing" value=1> with <a href="/chesshelp.html#kibitzing">kibitzing</a>
-								</label>
-								<label>
-									<input type=CHECKBOX name="annotated" value=1> with <a href="/chesshelp.html#annotation">annotation</a>
-								</label>
-							</div>
-							<div role="group" id="as-buttons">
-								<input type=RESET value=" Clear Form ">
-								<input type="submit" value=" Find Chess Games! ">
-							</div>
-						</form>
-					</section>
-					<section id="potd" class="cg-section">
-						<!--beginpuzzle-->
-						<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000">
-							<tr>
-								<td>
-									<table border="0" cellpadding="4" cellspacing="0" width="100%" style="background-color: #FFFFDD;" bgcolor="#FFFFDD">
-										<tr style="background-color: #FFCC99;" bgcolor="#FFCC99">
-											<td align="center" background="/chessimages/highlight_stripes.gif">
-												<font face="verdana,arial" size="-1"><b>White to play</b></font>
-											</td>
-										</tr>
-										<tr>
-											<td>
-												<center>
-													<font face="verdana,arial,helvetica" size="-1"><a href="/perl/chessgame?gid=1401603&m=22">Adianto vs R E Espinosa Flores</a><br>
-														<a href="/perl/chessgame?gid=1401603&m=22"><img src="/puzzles/1401603.gif" border="0" width="284" height="284"></a><br><b>22.&nbsp;?</b><br>
-														<font size="-2">See game for solution.</font><br>
-													</font><img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale">
-											</td>
-										</tr>
-									</table>
-								</td>
-							</tr>
-						</table>
-						<!--endpuzzle-->
-						<a href="/aboutpuzzles.html" class="eleven">About our puzzles</a>
-					</section>
-					<!-- <table border="0" cellpadding="0" cellspacing="0" width="100%">
-		<tr>
-		<td valign="top" align="left"> -->
-					<!--beginbottombanner-->
-					<div class="adsbyir 728x90"></div>
-					<script>
-						ir_ads_push();
+							<!--endpuzzle-->
+							<a href="/aboutpuzzles.html" class="eleven">About our puzzles</a>
+						</section>
+						<!-- <table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<tr>
+			<td valign="top" align="left"> -->
+						<!--beginbottombanner-->
+						<div class="adsbyir 728x90"></div>
+						<script>
+							ir_ads_push();
 
-					</script>
-					<!--endbottombanner-->
-					<main>
-						<!-- ++++++++++ LEFT COLUMN UNDER Puzzle of the Day SSM ++++++++++++++++++-->
-						<div id="cg-middle-left">
-							<section>
-								<h2>NEW USERS: Getting Started</h2>
-								<div class="mobile-hide">
-									<p> Founded on an extensive database of historical chess games combined with discussion forums, Chessgames.com is the internet's first and foremost chess community, where players of every skill level are encouraged to participate.
-										From novices to grandmasters, all members can learn from those who are stronger players, while guiding those who are less experienced. </p>
-									<p>
-										<a href="/perl/chessprofile.pl">Register now</a>. It's quick, free, and anonymous. This will allow you to "kibitz" in our discussion forums, make game collections, and use other powerful features.
-									</p>
-									<p> To search our chess database, fill out one or more fields on the form above, and click <em>Find Chess Games!</em>
-									</p>
-									<p> Please take a few minutes to read the <a href="/chesshelp.html">Help Page</a>. </p>
-									<p>
-								</div>
-							</section>
-							<section id="cg-whats-new">
-								<h2>What's New</h2>
-								<ul class="mobile-hide">
-									<li><b>&#183; </b>On December 10th, 2020, Chessgames turned 19 years old!</li>
-									<li><b>&#183; </b>The 2nd Chessgames <a href="/perl/challenge?gid=1890602">Thematic Challenge</a> let members play each other by voting on moves. The game had turned into some sort of Traxler-Defense / Evans Gambit hybrid. </li>
-									<li><b>&#183; </b> Our new <a href="/perl/analyzer.pl">Analysis Laboratory</a> is a playground of computer engine tools. Evaluate any position, variation, or entire game with our super-strong Stockfish&trade; dedicated server. (<a
-											href="/perl/tour">Premium members</a> only.) </li>
-									<li><b>&#183; </b>We have a new chess viewer! Just select "Olga Viewer" from the pulldown menu under any game, and leave your feedback <a href="/~Olga+Viewer">here</a>.</li>
-									<li><b>&#183; </b>Our <a href="/perl/explorer">Opening Explorer</a> now has a button to reveal analysis by the Stockfish&trade; chess engine for all major positions.</li>
-									<li><b>&#183; </b>Wondering when Kasparov last played, or need to find today's game by your favorite GM? Our new "Recent Games" column now found on player pages is a shortcut to the games they played last.</li>
-									<li><b>&#183; </b>The new <a href="/perl/goat.pl">Notable Games of All Time</a> feature shows our members' picks for the best chess games across years, decades, and centuries!</li>
-									<li><b>&#183; </b><a href="/~ChessBookForum">The Chess Book Forum</a> is a member-moderated area for the discussion, research, and reviews of chess books.</li>
-									<li><b>&#183; </b>Our <em>Similar Games</em> link found on any game page is now greatly improved.</li>
-									<li><b>&#183; </b> Our revolutionary chess training tool, <a href="/perl/guessthemove">Guess-the-Move</a>, now has over 14,000 games to choose from! If you haven't tried it, check out our <a href="/perl/quiz?gid=1139713">free sample
-											game Tal-Lutikov</a>; it's almost like playing a grandmaster! </li>
-									<li><b>&#183; </b> After 6 months and 36 moves, The World Team defeated GM Arkadij Naiditsch at the Chessgames Challenge! See the game <a href="/perl/chessgame?gid=1756777">here</a>. </li>
-									<li><b>&#183; </b>
-										<a href="/perl/chessmembers">Premium Members</a> can now search on <i>Event</i> (the most recent 100 major chess events) or on <i>Endgame Type</i> (pawn ending, rook ending, etc.) from the Advanced Search above.
-									</li>
-									<li><b>&#183; </b> Our <a href="/perl/tournaments">Tournament Index</a> now includes a handy text search, so you can look up tournaments involving <a href="/perl/tournaments?query=Lasker">Lasker</a>, events from <a
-											href="/perl/tournaments?query=2004">2004</a>, <a href="/perl/tournaments?query=Tal+Memorial">Tal Memorial</a>, tournaments in <a href="/perl/tournaments?query=Berlin">Berlin</a>, etc. Give it a try! </li>
-									<li><b>&#183; </b> The Chessgames Challenge <a href="/perl/chessgame?gid=1730046">Simon Williams vs The World</a> is now over after GM Williams resigned after the winning shot 33...Be3!! Congratulations to all who participated in
-										this game and many thanks to GM Williams for being such a lively and creative adversary. </li>
-									<li><b>&#183; </b> We now have over 21,000 <a href="/perl/collections">Game Collections</a> compiled by our members. </li>
-									<li><b>&#183; </b> Chessgames member "Once" has published a collection of his stories related to our Puzzles of the Day, titled <i>Once Upon a Chess Game</i> and now <a
-											href="http://www.amazon.com/Once-Upon-Chess-Game-Will-ebook/dp/B00G13XCVY/ref=sr_1_1?ie=UTF8&qid=1382253273&sr=8-1&keywords=once+upon+a+chess+game">available on Amazon</a> in Kindle format. </li>
-									<li><b>&#183; </b> You can now pay for Chessgames premium membership with our new <a href="/perl/chessgames_membership_paypal.pl">PayPal&reg; Checkout Page</a>. </li>
-									<li><b>&#183; </b> GM Simon Williams has accepted the <a href="/perl/challenge?gid=1730046">Chessgames Challenge</a>! Sign up for the game today and join the massive World Team and attempt to take down a grandmaster! </li>
-									<li><b>&#183; </b>
-										<a href="/perl/chessgame?gid=1672567">The World vs GM Akobian</a> is over; Akobian resigned on move 35. Congratulations to the 1400+ people on the Chessgames World Team for defeating one of the USA's strongest grandmasters!
-									</li>
-									<li><b>&#183; </b> Our <a href="/perl/chessgift">Chess Gift Page</a> allows you to give the gift of chess, by purchasing an account for another Chessgames member. </li>
-									<li><b>&#183; </b> Our <a href="/perl/newtournaments">New Tournaments Page</a> now displays the latest chess events added by our staff, plus historical tournaments being organized by members. This allows us to have kibiziting on
-										famous historical events such as <a href="/perl/chess.pl?tid=79221">Hastings (1895)</a> and <a href="/perl/chess.pl?tid=79229">AVRO (1938)</a>. </li>
-									<li><b>&#183; </b> By popular vote of Chessgames members, the <i>Thematic Challenge</i> was the Albin Countergambit (1.d4 d5 2.c4 e5). After 40 moves, the game was drawn. You can see the game here: <a
-											href="/perl/chessgame?gid=1665074">Team White vs Team Black (2012)</a>. </li>
-									<li><b>&#183; </b> Thanks to everybody for joining us during the Anand-Gelfand World Chess Championship, and special thanks to our very special guests, <a href="/perl/chessplayer?pid=54808">WGM Natalia Pogonina</a> and <a
-											href="/perl/chessplayer?pid=61575">WGM Jennifer Shahade</a>. </li>
-									<li><b>&#183; </b> Our <a href="/perl/chesslive">Live Broadcast Page</a> now has special enhancements for mobile devices such as Androids and iPhones. </li>
-									<li><b>&#183; </b> Be sure to check out the new <a href="http://store.chessgames.com/">Chessgames Store</a>, a veritable chess supermarket complete with sets, boards, clocks, books, DVDs--anything your chess-loving heart can
-										imagine! </li>
-									<li><b>&#183; </b>
-										<i>Chessgames Challenge VII is over!</i> <a href="http://store.chessgames.com/SSSSSMMMMMM">The Chessgames Challenge</a> pits world-class grandmasters against teams of thousands of chess fans. The gauntlet was laid down, and GM
-										Varuzhan Akobian was brave enough to accept the challenge. After 32 moves the Chessgames team managed to draw this world-class grandmaster. Congratulations!
-									</li>
-									<li><b>&#183; </b> USCF members, be sure to check out the article about Chessgames and the Chessgames Challenge, <a href="/chess_life_aug_2011.pdf">Brave New World: Human Intuition and Computer-assisted Chess</a>, in the August 2011
-										issue of <i>Chess Life.</i>
-									</li>
-									<li><b>&#183; </b> Have a question about chess history? Spot an error on a player biography? Want to exchange stories with other chess history buffs? Check out the new <a href="/perl/bistro.pl">Biographer Bistro</a>. </li>
-									<li><b>&#183; </b> The <a href="/perl/challenge?gid=1589895">World vs Natalia Pogonina</a> game is over; after 62 moves it was drawn. Congratulations to both GM Pogonina and the World Team for their fine performances. </li>
-									<li><b>&#183; </b> Our new <i>Hot Games</i> feature shows you what games people have been interested in lately. The list appears to the right, below "Example Searches." </li>
-									<li><b>&#183; </b> Our <a href="/perl/submitpun">Pun Submission Page</a> is back online, along with our <a href="/perl/punjudge">Pun Voting Booth</a>. Note that this is now a permanent site feature and no longer a contest. </li>
-									<li><b>&#183; </b> The new "<a href="/perl/myfavorites">My Favorites</a>" feature allows you to track your favorite Chessgames members. </li>
-									<li><b>&#183; </b> We now have completed our <a href="/wcc.html">History of the World Chess Championship</a>, a historical overview of the most coveted title in chess. </li>
-									<li><b>&#183; </b> We now have new powerful hardware to better serve our members. Thanks to all of the <a href="/perl/chessmembers">premium members</a> who made this upgrade possible. </li>
-									<li><b>&#183; </b> Our new <a href="/perl/collections">Game Collections Page</a> allows you to search for game collections by keyword. </li>
-									<li><b>&#183; </b> Each day, you can sample the powerful Repertoire Explorer for free! Just click on the Player of the Day, and follow the links by the magnifying glass to fully explore his or her openings. For more information on
-										premium membership, please see our <a href="/perl/chessmembers">Premium Membership Page</a>. </li>
-									<li><b>&#183;</b> Follow us on Facebook and Twitter by clicking the links below!</li>
-									<li><iframe
-											src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FChessgamescom%2F255848461282053&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=788344631197929"
-											scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe></li>
-									<li><iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=chessgamescom" style="width:240px; height:20px;"></iframe></li>
-								</ul>
-							</section>
-						</div>
-						<div id="cg-middle-right">
-							<section>
-								<h2>Register Today!</h2>
-								<p class="mobile-hide twelve">Go to our <a href="/perl/chessprofile.pl">registration page</a> and get a free account today: you'll be able to make posts ("kibitzing"), start game collections, participate in our regular contests, and
-									so much more!</p>
-								<!-- beginprediction
-				<font face="Georgia,Palatino,Times,Times New Roman">
-				=endprediction -->
-							</section>
-							<section>
-								<h2>Hot Games</h2>
-								<!--beginhotgames-->
-								<ol style="margin: 1.5em; padding: 0px; margin-bottom:0; margin-top:0;">
-									<li><a href="/perl/chessgame?gid=1401603">Adianto vs R E Espinosa Flores,&nbsp;2000 1-0</a>
-									<li><a href="/perl/chessgame?gid=1095991">Kosten vs Chandler,&nbsp;1991 0-1</a>
-									<li><a href="/perl/chessgame?gid=2090471">So vs Sevian,&nbsp;2021 1-0</a>
-									<li><a href="/perl/chessgame?gid=2090469">Caruana vs So,&nbsp;2021 0-1</a>
-									<li><a href="/perl/chessgame?gid=2090470">Sevian vs Caruana,&nbsp;2021 0-1</a>
-									<li><a href="/perl/chessgame?gid=1115076">V Eingorn vs Psakhis,&nbsp;1986 1/2-1/2</a>
-									<li><a href="/perl/chessgame?gid=2090074">Burke vs Xiong,&nbsp;2021 1-0</a>
-									<li><a href="/perl/chessgame?gid=2090801">J E Crewe vs T I Ryan,&nbsp;1895 1-0</a>
-									<li><a href="/perl/chessgame?gid=1025981">Barbero vs Larsen,&nbsp;1991 1-0</a>
-									<li><a href="/perl/chessgame?gid=1067169">Kasparov vs Karpov,&nbsp;1985 1/2-1/2</a>
-								</ol>
-								<!--endhotgames-->
-							</section>
-							<!--begintallbanner1-->
-							<div class="adsbyir 120x600"></div>
-							<script>
-								ir_ads_push();
+						</script>
+						<!--endbottombanner-->
+						<main>
+							<!-- ++++++++++ LEFT COLUMN UNDER Puzzle of the Day SSM ++++++++++++++++++-->
+							<div id="cg-middle-left">
+								<section>
+									<h2>NEW USERS: Getting Started</h2>
+									<div class="mobile-hide">
+										<p> Founded on an extensive database of historical chess games combined with discussion forums, Chessgames.com is the internet's first and foremost chess community, where players of every skill level are encouraged to participate.
+											From novices to grandmasters, all members can learn from those who are stronger players, while guiding those who are less experienced. </p>
+										<p>
+											<a href="/perl/chessprofile.pl">Register now</a>. It's quick, free, and anonymous. This will allow you to "kibitz" in our discussion forums, make game collections, and use other powerful features.
+										</p>
+										<p> To search our chess database, fill out one or more fields on the form above, and click <em>Find Chess Games!</em>
+										</p>
+										<p> Please take a few minutes to read the <a href="/chesshelp.html">Help Page</a>. </p>
+										<p>
+									</div>
+								</section>
+								<section id="cg-whats-new">
+									<h2>What's New</h2>
+									<ul class="mobile-hide">
+										<li><b>&#183; </b>On December 10th, 2020, Chessgames turned 19 years old!</li>
+										<li><b>&#183; </b>The 2nd Chessgames <a href="/perl/challenge?gid=1890602">Thematic Challenge</a> let members play each other by voting on moves. The game had turned into some sort of Traxler-Defense / Evans Gambit hybrid. </li>
+										<li><b>&#183; </b> Our new <a href="/perl/analyzer.pl">Analysis Laboratory</a> is a playground of computer engine tools. Evaluate any position, variation, or entire game with our super-strong Stockfish&trade; dedicated server. (<a
+												href="/perl/tour">Premium members</a> only.) </li>
+										<li><b>&#183; </b>We have a new chess viewer! Just select "Olga Viewer" from the pulldown menu under any game, and leave your feedback <a href="/~Olga+Viewer">here</a>.</li>
+										<li><b>&#183; </b>Our <a href="/perl/explorer">Opening Explorer</a> now has a button to reveal analysis by the Stockfish&trade; chess engine for all major positions.</li>
+										<li><b>&#183; </b>Wondering when Kasparov last played, or need to find today's game by your favorite GM? Our new "Recent Games" column now found on player pages is a shortcut to the games they played last.</li>
+										<li><b>&#183; </b>The new <a href="/perl/goat.pl">Notable Games of All Time</a> feature shows our members' picks for the best chess games across years, decades, and centuries!</li>
+										<li><b>&#183; </b><a href="/~ChessBookForum">The Chess Book Forum</a> is a member-moderated area for the discussion, research, and reviews of chess books.</li>
+										<li><b>&#183; </b>Our <em>Similar Games</em> link found on any game page is now greatly improved.</li>
+										<li><b>&#183; </b> Our revolutionary chess training tool, <a href="/perl/guessthemove">Guess-the-Move</a>, now has over 14,000 games to choose from! If you haven't tried it, check out our <a href="/perl/quiz?gid=1139713">free
+												sample game Tal-Lutikov</a>; it's almost like playing a grandmaster! </li>
+										<li><b>&#183; </b> After 6 months and 36 moves, The World Team defeated GM Arkadij Naiditsch at the Chessgames Challenge! See the game <a href="/perl/chessgame?gid=1756777">here</a>. </li>
+										<li><b>&#183; </b>
+											<a href="/perl/chessmembers">Premium Members</a> can now search on <i>Event</i> (the most recent 100 major chess events) or on <i>Endgame Type</i> (pawn ending, rook ending, etc.) from the Advanced Search above.
+										</li>
+										<li><b>&#183; </b> Our <a href="/perl/tournaments">Tournament Index</a> now includes a handy text search, so you can look up tournaments involving <a href="/perl/tournaments?query=Lasker">Lasker</a>, events from <a
+												href="/perl/tournaments?query=2004">2004</a>, <a href="/perl/tournaments?query=Tal+Memorial">Tal Memorial</a>, tournaments in <a href="/perl/tournaments?query=Berlin">Berlin</a>, etc. Give it a try! </li>
+										<li><b>&#183; </b> The Chessgames Challenge <a href="/perl/chessgame?gid=1730046">Simon Williams vs The World</a> is now over after GM Williams resigned after the winning shot 33...Be3!! Congratulations to all who participated in
+											this game and many thanks to GM Williams for being such a lively and creative adversary. </li>
+										<li><b>&#183; </b> We now have over 21,000 <a href="/perl/collections">Game Collections</a> compiled by our members. </li>
+										<li><b>&#183; </b> Chessgames member "Once" has published a collection of his stories related to our Puzzles of the Day, titled <i>Once Upon a Chess Game</i> and now <a
+												href="http://www.amazon.com/Once-Upon-Chess-Game-Will-ebook/dp/B00G13XCVY/ref=sr_1_1?ie=UTF8&qid=1382253273&sr=8-1&keywords=once+upon+a+chess+game">available on Amazon</a> in Kindle format. </li>
+										<li><b>&#183; </b> You can now pay for Chessgames premium membership with our new <a href="/perl/chessgames_membership_paypal.pl">PayPal&reg; Checkout Page</a>. </li>
+										<li><b>&#183; </b> GM Simon Williams has accepted the <a href="/perl/challenge?gid=1730046">Chessgames Challenge</a>! Sign up for the game today and join the massive World Team and attempt to take down a grandmaster! </li>
+										<li><b>&#183; </b>
+											<a href="/perl/chessgame?gid=1672567">The World vs GM Akobian</a> is over; Akobian resigned on move 35. Congratulations to the 1400+ people on the Chessgames World Team for defeating one of the USA's strongest grandmasters!
+										</li>
+										<li><b>&#183; </b> Our <a href="/perl/chessgift">Chess Gift Page</a> allows you to give the gift of chess, by purchasing an account for another Chessgames member. </li>
+										<li><b>&#183; </b> Our <a href="/perl/newtournaments">New Tournaments Page</a> now displays the latest chess events added by our staff, plus historical tournaments being organized by members. This allows us to have kibiziting on
+											famous historical events such as <a href="/perl/chess.pl?tid=79221">Hastings (1895)</a> and <a href="/perl/chess.pl?tid=79229">AVRO (1938)</a>. </li>
+										<li><b>&#183; </b> By popular vote of Chessgames members, the <i>Thematic Challenge</i> was the Albin Countergambit (1.d4 d5 2.c4 e5). After 40 moves, the game was drawn. You can see the game here: <a
+												href="/perl/chessgame?gid=1665074">Team White vs Team Black (2012)</a>. </li>
+										<li><b>&#183; </b> Thanks to everybody for joining us during the Anand-Gelfand World Chess Championship, and special thanks to our very special guests, <a href="/perl/chessplayer?pid=54808">WGM Natalia Pogonina</a> and <a
+												href="/perl/chessplayer?pid=61575">WGM Jennifer Shahade</a>. </li>
+										<li><b>&#183; </b> Our <a href="/perl/chesslive">Live Broadcast Page</a> now has special enhancements for mobile devices such as Androids and iPhones. </li>
+										<li><b>&#183; </b> Be sure to check out the new <a href="http://store.chessgames.com/">Chessgames Store</a>, a veritable chess supermarket complete with sets, boards, clocks, books, DVDs--anything your chess-loving heart can
+											imagine! </li>
+										<li><b>&#183; </b>
+											<i>Chessgames Challenge VII is over!</i> <a href="http://store.chessgames.com/SSSSSMMMMMM">The Chessgames Challenge</a> pits world-class grandmasters against teams of thousands of chess fans. The gauntlet was laid down, and GM
+											Varuzhan Akobian was brave enough to accept the challenge. After 32 moves the Chessgames team managed to draw this world-class grandmaster. Congratulations!
+										</li>
+										<li><b>&#183; </b> USCF members, be sure to check out the article about Chessgames and the Chessgames Challenge, <a href="/chess_life_aug_2011.pdf">Brave New World: Human Intuition and Computer-assisted Chess</a>, in the August
+											2011 issue of <i>Chess Life.</i>
+										</li>
+										<li><b>&#183; </b> Have a question about chess history? Spot an error on a player biography? Want to exchange stories with other chess history buffs? Check out the new <a href="/perl/bistro.pl">Biographer Bistro</a>. </li>
+										<li><b>&#183; </b> The <a href="/perl/challenge?gid=1589895">World vs Natalia Pogonina</a> game is over; after 62 moves it was drawn. Congratulations to both GM Pogonina and the World Team for their fine performances. </li>
+										<li><b>&#183; </b> Our new <i>Hot Games</i> feature shows you what games people have been interested in lately. The list appears to the right, below "Example Searches." </li>
+										<li><b>&#183; </b> Our <a href="/perl/submitpun">Pun Submission Page</a> is back online, along with our <a href="/perl/punjudge">Pun Voting Booth</a>. Note that this is now a permanent site feature and no longer a contest. </li>
+										<li><b>&#183; </b> The new "<a href="/perl/myfavorites">My Favorites</a>" feature allows you to track your favorite Chessgames members. </li>
+										<li><b>&#183; </b> We now have completed our <a href="/wcc.html">History of the World Chess Championship</a>, a historical overview of the most coveted title in chess. </li>
+										<li><b>&#183; </b> We now have new powerful hardware to better serve our members. Thanks to all of the <a href="/perl/chessmembers">premium members</a> who made this upgrade possible. </li>
+										<li><b>&#183; </b> Our new <a href="/perl/collections">Game Collections Page</a> allows you to search for game collections by keyword. </li>
+										<li><b>&#183; </b> Each day, you can sample the powerful Repertoire Explorer for free! Just click on the Player of the Day, and follow the links by the magnifying glass to fully explore his or her openings. For more information on
+											premium membership, please see our <a href="/perl/chessmembers">Premium Membership Page</a>. </li>
+										<li><b>&#183;</b> Follow us on Facebook and Twitter by clicking the links below!</li>
+										<li><iframe
+												src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FChessgamescom%2F255848461282053&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=788344631197929"
+												scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe></li>
+										<li><iframe allowtransparency="true" frameborder="0" scrolling="no" src="//platform.twitter.com/widgets/follow_button.html?screen_name=chessgamescom" style="width:240px; height:20px;"></iframe></li>
+									</ul>
+								</section>
+							</div>
+							<div id="cg-middle-right">
+								<section>
+									<h2>Register Today!</h2>
+									<p class="mobile-hide twelve">Go to our <a href="/perl/chessprofile.pl">registration page</a> and get a free account today: you'll be able to make posts ("kibitzing"), start game collections, participate in our regular contests, and
+										so much more!</p>
+									<!-- beginprediction
+					<font face="Georgia,Palatino,Times,Times New Roman">
+					=endprediction -->
+								</section>
+								<section>
+									<h2>Hot Games</h2>
+									<!--beginhotgames-->
+									<ol style="margin: 1.5em; padding: 0px; margin-bottom:0; margin-top:0;">
+										<li><a href="/perl/chessgame?gid=1401603">Adianto vs R E Espinosa Flores,&nbsp;2000 1-0</a>
+										<li><a href="/perl/chessgame?gid=1095991">Kosten vs Chandler,&nbsp;1991 0-1</a>
+										<li><a href="/perl/chessgame?gid=2090471">So vs Sevian,&nbsp;2021 1-0</a>
+										<li><a href="/perl/chessgame?gid=2090469">Caruana vs So,&nbsp;2021 0-1</a>
+										<li><a href="/perl/chessgame?gid=2090470">Sevian vs Caruana,&nbsp;2021 0-1</a>
+										<li><a href="/perl/chessgame?gid=1115076">V Eingorn vs Psakhis,&nbsp;1986 1/2-1/2</a>
+										<li><a href="/perl/chessgame?gid=2090074">Burke vs Xiong,&nbsp;2021 1-0</a>
+										<li><a href="/perl/chessgame?gid=2090801">J E Crewe vs T I Ryan,&nbsp;1895 1-0</a>
+										<li><a href="/perl/chessgame?gid=1025981">Barbero vs Larsen,&nbsp;1991 1-0</a>
+										<li><a href="/perl/chessgame?gid=1067169">Kasparov vs Karpov,&nbsp;1985 1/2-1/2</a>
+									</ol>
+									<!--endhotgames-->
+								</section>
+								<!--begintallbanner1-->
+								<div class="adsbyir 120x600"></div>
+								<script>
+									ir_ads_push();
 
-							</script>
-							<!--endtallbanner1-->
-							<section id="cg-example-searches">
-								<h2>Example Searches</h2>
-								<div>
-									<!--beginsearches--><a href="/perl/chess.pl?opening=E01-E09&kibitzing=1">Chewing the fat about the Catalan</a>
-									<P>
-										<a href="/perl/chess.pl?pid=95915&kibitzing=1">So, What's Up?</a>
-									<P>
-										<a href="/perl/chess.pl?annotatedby=10240">Alekhine's Articles</a>
-									<P>
-										<a href="/perl/chess.pl?annotatedby=16002">Morphy's Manuscripts</a>
-									<P>
-										<a href="/perl/chessplayer?pid=80740">A Few Games by the London Chess Club</a>
-									<P>
-										<a href="/player/mir_sultan_khan.html">The games of Mir Sultan Khan</a>
-									<P>
-										<a href="/perl/chess.pl?pid=10342&pid2=16002">Morphy vs Anderssen</a>
-									<P>
-										<a href="/perl/chess.pl?pid=31667&pid2=16002">Morphy vs Maurian</a>
-									<P>
-										<a href="/perl/chess.pl?pid=19233&playercomp=black&eco=B90-B93">Fischer employs the Najdorf Sicilian</a>
-									<P>
-										<a href="/perl/chess.pl?pid=14915&opening=A01">Bagirov playing Nimzovich-Larsen Attack (1.&nbsp;b3)</a>
-									<P>
-										<a href="/perl/ezsearch.pl?search=Kasparov+vs+Karpov">Great Match-Ups: Kasparov vs Karpov</a>
-									<P>
-										<a href="/perl/ezsearch.pl?search=Fischer+vs+Spassky">Great Match-Ups: Fischer vs Spassky</a>
-									<P>
-										<a href="/perl/chess.pl?pid=15438&playercomp=black&opening=B07-B09&title=Raymond+Keene+playing+the+Pirc+as+Black">Keene wields a mean Pirc</a>
-									<P>
-										<a href="/perl/chess.pl?playercomp=black&pid=12112&eco=E11&title=Ulf+Andersson+playing+the+Bogo-Indian+Defense+as+Black">Ulf Andersson demonstrates the Bogo-Indian</a>
-									<P>
-										<a href="/perl/chess.pl?movescomp=ge&moves=80&result=1/2-1/2">Hard fought draws</a>
-									<P>
-										<a href="/perl/chess.pl?eco=A00&movescomp=le&moves=12&result=notdraw">Unusual openings gone awry</a>
-									<P>
-										<a href="/perl/chesscollection?cid=1002205">Game Collection: Sicilian Defense Opening Traps</a>
-									<P>
-										<a href="/perl/chesscollection?cid=1003985">Game Collection: Trap, Ambush, and Swindle</a>
-									<P>
-										<a href="/perl/chesscollection?cid=1001502">&quot;My Best Games with White&quot; by Viktor Korchnoi</a>
-									<P>
-										<a href="/perl/chesscollection?cid=1000825">&quot;The Life and Games of Mikhail Tal&quot; by Tal</a>
-									<P>
-										<a href="/perl/chesscollection?cid=1003578">&quot;GM RAM&quot; by Rashid Ziatdinov</a>
-									<P>
-										<a href="/perl/chesscollection?cid=1006631">&quot;The Times: Winning Moves&quot; compiled by Ray Keene</a>
-									<P>
-										<a href="/~ChessBookForum">The Chess Book Forum</a>
-									<P>
-										<!--endsearches-->
-								</div>
-							</section>
-						</div>
-					</main>
+								</script>
+								<!--endtallbanner1-->
+								<section id="cg-example-searches">
+									<h2>Example Searches</h2>
+									<div>
+										<!--beginsearches--><a href="/perl/chess.pl?opening=E01-E09&kibitzing=1">Chewing the fat about the Catalan</a>
+										<P>
+											<a href="/perl/chess.pl?pid=95915&kibitzing=1">So, What's Up?</a>
+										<P>
+											<a href="/perl/chess.pl?annotatedby=10240">Alekhine's Articles</a>
+										<P>
+											<a href="/perl/chess.pl?annotatedby=16002">Morphy's Manuscripts</a>
+										<P>
+											<a href="/perl/chessplayer?pid=80740">A Few Games by the London Chess Club</a>
+										<P>
+											<a href="/player/mir_sultan_khan.html">The games of Mir Sultan Khan</a>
+										<P>
+											<a href="/perl/chess.pl?pid=10342&pid2=16002">Morphy vs Anderssen</a>
+										<P>
+											<a href="/perl/chess.pl?pid=31667&pid2=16002">Morphy vs Maurian</a>
+										<P>
+											<a href="/perl/chess.pl?pid=19233&playercomp=black&eco=B90-B93">Fischer employs the Najdorf Sicilian</a>
+										<P>
+											<a href="/perl/chess.pl?pid=14915&opening=A01">Bagirov playing Nimzovich-Larsen Attack (1.&nbsp;b3)</a>
+										<P>
+											<a href="/perl/ezsearch.pl?search=Kasparov+vs+Karpov">Great Match-Ups: Kasparov vs Karpov</a>
+										<P>
+											<a href="/perl/ezsearch.pl?search=Fischer+vs+Spassky">Great Match-Ups: Fischer vs Spassky</a>
+										<P>
+											<a href="/perl/chess.pl?pid=15438&playercomp=black&opening=B07-B09&title=Raymond+Keene+playing+the+Pirc+as+Black">Keene wields a mean Pirc</a>
+										<P>
+											<a href="/perl/chess.pl?playercomp=black&pid=12112&eco=E11&title=Ulf+Andersson+playing+the+Bogo-Indian+Defense+as+Black">Ulf Andersson demonstrates the Bogo-Indian</a>
+										<P>
+											<a href="/perl/chess.pl?movescomp=ge&moves=80&result=1/2-1/2">Hard fought draws</a>
+										<P>
+											<a href="/perl/chess.pl?eco=A00&movescomp=le&moves=12&result=notdraw">Unusual openings gone awry</a>
+										<P>
+											<a href="/perl/chesscollection?cid=1002205">Game Collection: Sicilian Defense Opening Traps</a>
+										<P>
+											<a href="/perl/chesscollection?cid=1003985">Game Collection: Trap, Ambush, and Swindle</a>
+										<P>
+											<a href="/perl/chesscollection?cid=1001502">&quot;My Best Games with White&quot; by Viktor Korchnoi</a>
+										<P>
+											<a href="/perl/chesscollection?cid=1000825">&quot;The Life and Games of Mikhail Tal&quot; by Tal</a>
+										<P>
+											<a href="/perl/chesscollection?cid=1003578">&quot;GM RAM&quot; by Rashid Ziatdinov</a>
+										<P>
+											<a href="/perl/chesscollection?cid=1006631">&quot;The Times: Winning Moves&quot; compiled by Ray Keene</a>
+										<P>
+											<a href="/~ChessBookForum">The Chess Book Forum</a>
+										<P>
+											<!--endsearches-->
+									</div>
+								</section>
+							</div>
+						</main>
+					</div>
 				</div>
 				<!-- end of col-two -->
 				<!-- +++++++++++++ LAST COLUMN +++++++++++ -->
@@ -822,16 +822,16 @@ We apologize for this inconvenience.</h6>
 					<!--beginnonpremium-->
 					<div id="cg-promote-banner" class="image-div">
 						<a id="promote-banner" href="/perl/tour" target="_blank">
-							<img src="./chessimages/treated_like_a_king.gif" width="190" height="135" alt="Upgrade Your Account for Full Access!" border="0">
+							<img src="./chessimages/treated_like_a_king.gif" width="150" height="135" alt="Upgrade Your Account for Full Access!" border="0">
 						</a>
 						<br>
 					</div>
 					<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 					<!--endnonpremium-->
-					<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000" width="190">
+					<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000" width="150">
 						<tr>
 							<td>
-								<table border="0" cellpadding="4" cellspacing="0" bgcolor="#FFFFDD" width="188">
+								<table border="0" cellpadding="4" cellspacing="0" bgcolor="#FFFFDD" width="150">
 									<tr bgcolor="#FFCC99">
 										<td align="center" background="./chessimages/highlight_stripes.gif">
 											<font face="verdana,arial" size="-1"><b>@WELCOME</b></font>
@@ -850,15 +850,15 @@ We apologize for this inconvenience.</h6>
 					<!--beginrightbanner-->
 					<!--endrightbanner-->
 					<div class="image-div">
-						<a href="/perl/analyzer.pl"><img src="./chessimages/analysislabbanner.png" width="190" height="115" alt="The most powerful chess engine in the world, on demand!" border="0"></a><br>
+						<a href="/perl/analyzer.pl"><img src="./chessimages/analysislabbanner.png" width="150" height="115" alt="The most powerful chess engine in the world, on demand!" border="0"></a><br>
 						<!-- <img src="/spacer.gif" alt=" " width="4" height="4"><br> -->
 					</div>
 					<div class="image-div">
-						<a href="/perl/tournaments"><img src="./chessimages/tournamentindexbanner.gif" width="190" height="135" alt="Chess Tournament Index" border="0"></a><br>
+						<a href="/perl/tournaments"><img src="./chessimages/tournamentindexbanner.gif" width="150" height="135" alt="Chess Tournament Index" border="0"></a><br>
 						<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 					</div>
 					<div class="image-div">
-						<a href="/perl/goat.pl"><img src="./chessimages/goatbanner.gif" width="190" height="124" border="0" alt="The Most Notable Chess Games in History"></a><br>
+						<a href="/perl/goat.pl"><img src="./chessimages/goatbanner.gif" width="150" height="124" border="0" alt="The Most Notable Chess Games in History"></a><br>
 						<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 					</div>
 					<section id="cg-recent-kibitzing" class="cg-section">
@@ -1217,7 +1217,7 @@ We apologize for this inconvenience.</h6>
 					<!--beginchallenge-->
 					<!--endchallenge-->
 					<div class="image-div">
-						<a href="/bookie.html"><img src="./chessimages/bookiead2.gif" width=190 height=135 border="0" alt="The ChessBookie Game!"></a><br>
+						<a href="/bookie.html"><img src="./chessimages/bookiead2.gif" width=150 height=135 border="0" alt="The ChessBookie Game!"></a><br>
 						<!-- <img src="/spacer.gif" width="4" height="4"><br> -->
 					</div>
 					<div class="image-div">
