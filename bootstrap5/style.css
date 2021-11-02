@@ -1,3 +1,4 @@
+/* h
 /* header */
 #header-top {
   display: flex;
@@ -68,7 +69,6 @@ a.events {
 }
 
 /* CONTAINER ONE */
-
 div#umn-one.container {
   max-width: 190px;
   min-width: 190px;
@@ -92,7 +92,7 @@ div#umn-one.container {
 }
 
 a.ne-header.events {
-font-weight: 500;
+  font-weight: 500;
 }
 
 p.xsm {
@@ -108,11 +108,11 @@ p.xsm {
   width: 100%;
 }
 
-#happy-birthdays a{
+#happy-birthdays a {
   font-size: 13px;
   font-weight: normal;
   font-family: verdana;
- color: var(--blue-link-color)
+  color: var(--blue-link-color)
 }
 
 #happy-birthdays {
@@ -120,17 +120,65 @@ p.xsm {
   text-align: revert;
 }
 
+p.chess-news{
+  text-align: left;
+  font-size: 10px;
+  line-height: revert;
+}
+
+.chess-news a{
+  font-size: 10px;
+  font-weight: normal;
+  color: #0000FF;
+}
 
 /* CONTAINER TWO */
-
 div#umn-two.container {
   margin: 1rem auto;
   padding: 0;
 }
 
+/* first section middle column */
+h2#search-games {
+  text-align: initial;
+}
+
+div#search-input-etc {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+
+p#tip-more-info {
+  font-size: 10px;
+  line-height: initial;
+}
+
+p#tip-more-info a {
+  font-size: 10px;
+  color: #0000FF;
+}
+
+form#search-bar-button {
+  display: flex;
+  max-height: 22px;
+}
+
+section#cg-search {
+  padding: 3px;
+}
+
+input#search-bar {
+  width: 20rem;
+  margin-right: 5px;
+}
+
+input#submit-button {
+  font-size: 12px;
+  font-weight: 500;
+}
 
 /* CONTAINER THREE */
-
 div.container.umn-three {
   max-width: 190px;
   min-width: 190px;
@@ -139,19 +187,12 @@ div.container.umn-three {
   margin: 2px;
   padding: 4px;
 }
-
-
-
-/* ++++++++  TEST  +++++++++++ */
-
-/* ++++++++++++++  TEST ++++++++++++ */
-
 .g-5, .gy-5 {
-    --bs-gutter-y: 1rem;
+  --bs-gutter-y: 1rem;
 }
 
 .g-5, .gx-5 {
-    --bs-gutter-x: 16rem;
+  --bs-gutter-x: 16rem;
 }
 
 footer {
@@ -163,10 +204,17 @@ p {
   margin: 0;
 }
 
-h4{
+h4 {
   line-height: .6;
   margin: 0;
 }
+
+
+
+/* ++++++++  TEST  +++++++++++ */
+
+
+/* ++++++++++++++  TEST ++++++++++++ */
 
 /* variable colors */
 :root {
