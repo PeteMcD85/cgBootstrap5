@@ -5,9 +5,9 @@
 		<!-- Required meta tags -->
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<link rel="stylesheet" href="./style.css">
 		<!-- Bootstrap CSS -->
 		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+		<link rel="stylesheet" href="./style.css">
 		<title>Hello, world!</title>
 	</head>
 
@@ -30,10 +30,10 @@
 		</header>
 		<!--beginmenu-->
 		<!-- +++++++++++++++ links above table +++++++++++++++++++++++++++++ -->
-		<div id="header-links" class="column t-links mb-3">
+		<div id="header-links" class="mb-3">
 			<a href="/perl/chessmembers">Members</a> <b>&#183;</b>
-			<a href="/perl/chessprofile.pl">Prefs</a> <b>&#183;</b>
-			<a href="/perl/analyzer.pl">Laboratory</a> <b>&#183;</b>
+			<a href="/perl/chessprofile.pl">Prefs</a> <b>&#8226;</b>
+			<a href="/perl/analyzer.pl">Laboratory</a> <b>&#8226;</b>
 			<a href="/perl/collections">Collections</a> <b>&#183;</b>
 			<a href="/perl/explorer">Openings</a> <b>&#183;</b>
 			<a href="/perl/chessending">Endgames</a><b>&#183;</b>
@@ -68,103 +68,118 @@ We apologize for this inconvenience.</h6>
 			<div class="row g-5 gy-4">
 				<!-- ++++++++++++ FIRST COLUMN ++++++++++++++++ -->
 				<div id="umn-one" class="container col-2 mt-3 firstLast ">
-					<section id="cg-gotd" class="cg-front-column start-col">
-						<h2>
-							<a href="/perl/gamesoftheday" class="header-link">Game of the Day </a>
-						</h2>
+					<section id="cg-gotd" class="cg-section start-col">
+						<header>
+							<h2>
+								<a href="/perl/gamesoftheday" class="header-link">Game of the Day </a>
+							</h2>
+						</header>
 						<h3>
 							<!--begintoday-->Wednesday, October 20
 							<!--endtoday-->
 						</h3>
 						<div>
 							<p>
-								<!--begingameotd--><a href="/perl/chessgame?gid=1095991">Kosten<br> vs<br> Chandler </a> <br> Farewell, My Lovely<br>(by sleepyirv)
-								<!--endgameotd-->
+								<!--begingameotd-->
+								<a href="/perl/chessgame?gid=1095991" class="names">Kosten<br> vs<br> Chandler </a>
+								<!-- <br> -->
+							<footer> Farewell, My Lovely<br> (by sleepyirv) </footer>
+							<!--endgameotd-->
 							<p>
 						</div>
 					</section>
-					<section id="cg-playerotd" class="cg-front-column start-col">
-						<h2><a href="/directory/" class="header-link">Player of the Day</a></h2>
+					<section id="cg-playerotd" class="cg-section start-col">
+						<header>
+							<h2>
+								<a href="/directory/" class="header-link">Player of the Day</a>
+							</h2>
+						</header>
 						<div>
-							<!--beginplayerotd--><b><a href="/perl/chessplayer?pid=117989">Yuliya Shvayger</a></b><br><small>(1994-)</small>
+							<!--beginplayerotd-->
+							<a href="/perl/chessplayer?pid=117989" class="names">Yuliya Shvayger </a>
+							<!-- <br> -->
+							<footer>(1994-)</footer>
 							<!--endplayerotd-->
 						</div>
 					</section>
-					<section id="cg-openingotd" class="cg-front-column start-col">
+					<section id="cg-openingotd" class="cg-section start-col">
 						<header>
-							<h2> <a href="/perl/explorer" class="header-link" style="color:black;font-weight:bold;">Opening of the Day</a></h2>
+							<h2> <a href="/perl/explorer" class="header-link">Opening of the Day</a></h2>
 						</header>
 						<div>
-							<!--beginopeningotd--><B><a href="https://www.chessgames.com/perl/moves.pl?moves=Nf3.f5.e4">Lisitsin Gambit</a>
-							</B><br>
-							<font size=-2>1.&nbsp;&#9816;f3&nbsp;f5 2.&nbsp;e4</font>
+							<!--beginopeningotd-->
+							<a href="https://www.chessgames.com/perl/moves.pl?moves=Nf3.f5.e4" class="names">Lisitsin Gambit</a><br>
+							<!-- <font size=-2> -->
+							<footer>1.&nbsp;&#9816;f3&nbsp;f5 2.&nbsp;e4</footer>
+							<!-- </font> -->
 							<!--endopeningotd-->
 						</div>
 					</section>
 					<!--begintopbanner-->
 					<!--endtopbanner-->
 					<div class="image-div">
-						<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="150" height="135"></a>
+						<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="190" height="135"></a>
 					</div>
-					<section id="cg-new-events" class="cg-front-column start-col">
+					<section id="cg-new-events" class="cg-section start-col">
 						<header>
 							<h2>New Events</h2>
 						</header>
 						<div class="more-events-div">
-							<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
+							<a href="/perl/newtournaments" class="more-events-link events"> more events... </a>
 						</div>
 						<!--beginchesslive-->
 						<!--endchesslive-->
 						<p id="cron-new-events">
-							<!--beginnewgames--><a class="ne-header" href="/perl/chess.pl?tid=105124">US Championship</a><br>
+							<!--beginnewgames-->
+							<a class="ne-header events" href="/perl/chess.pl?tid=105124">US Championship</a><br>
 							<span class='ne-header'>Saint Louis, MO USA</span><br>
 							<span class='ne-header'>Oct 5 - 19 2021</span><br>
 							<span class="xsm">The U.S. Championship features 12 players competing for $194,000 in prize money and qualification into the World Championship cycle.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=105126">US Championship (Women)</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=105126">US Championship (Women)</a><br>
 							<span class='ne-header'>Saint Louis, MO USA</span><br>
 							<span class='ne-header'>Oct 5 - 19 2021</span><br>
 							<span class="xsm"> The U.S. Women Championship features 12 players competing for $100,000 in prize money and qualification into the Women's World Championship cycle.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=105014">Meltwater Tour Final</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=105014">Meltwater Tour Final</a><br>
 							<span class='ne-header'>chess24.com INT</span><br>
 							<span class='ne-header'>Sept 25 - Oct 4 2021</span><br>
 							<span class="xsm">The Meltwater Champions Chess Tour Final is the 10th and last event of the $1.5 million Meltwater Champions Chess Tour 2020-2021. A 10-player round-robin tournament over 10 days, the games are played online from 25
 								September to 4 October on the chess24 Playzone.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104974">European Club Cup (Women)</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104974">European Club Cup (Women)</a><br>
 							<span class='ne-header'>Struga, North Macedonia</span><br>
 							<span class='ne-header'>Sept 19-24 2021</span><br>
 							<span class='ne-header'></span><br>
 							<span class="xsm">The 25th European Club Cup for Women was held from 18-24 September 2019 at Hotel Drim in Struga, North Macedonia. The tournament was a 7-round Swiss team event played with the standard time control of 90 minutes for
 								the first 40 moves followed by 30 more minutes till the end of the game, with 30 seconds added per move from move 1.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104973">36th ECC Open</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104973">36th ECC Open</a><br>
 							<span class='ne-header'>Struga, North Macedonia</span><br>
 							<span class='ne-header'>Sept 19-24 2021</span><br>
 							<span class="xsm">The 36th European Club Cup was held from 18-24 September 2019 at Hotel Izgrev in Struga, North Macedonia. It was a 7-round Swiss team event, with the time control of 90 minutes for the first 40 moves followed by 30
 								more minutes till the end of the game, with 30 seconds added per move from move 1.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104921">Tolstoy Memorial</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104921">Tolstoy Memorial</a><br>
 							<span class='ne-header'>Yasnaya Polyana RUS</span><br>
 							<span class='ne-header'>Sep 11-12 2021</span><br>
 							<span class="xsm">The Tolstoy Memorial consists of 9 rounds with a time control of 15 minutes and 10 second increments starting from move 1.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104876">Norway Chess</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104876">Norway Chess</a><br>
 							<span class='ne-header'>Stavanger NOR</span><br>
 							<span class='ne-header'>Sep 07-17 2021</span><br>
 							<span class="xsm">The Norway Chess Tournament is a double round-robin that consists of 10 rounds. Time control is 120 minutes with 10 second increments after move 40.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104826">Aimchess US Rapid</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104826">Aimchess US Rapid</a><br>
 							<span class='ne-header'>chess24.com INT</span><br>
 							<span class='ne-header'>Aug 26- Sep 05 2021</span><br>
 							<span class="xsm">Aimchess US Rapid starts with a 16-player round robin, with the top 8 advancing to the finals. The time control is 15 minutes plus a 10-second increment.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104811">European Championship</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104811">European Championship</a><br>
 							<span class='ne-header'>Reykjavik, ISL</span><br>
 							<span class='ne-header'>Aug 26- Sep 05 2021</span><br>
 							<span class="xsm">The European Individual Chess Championship 2021 is an 11-round swiss tournament with a prize fund of 100,000EUR.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104726">Sinquefield Cup</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104726">Sinquefield Cup</a><br>
 							<span class='ne-header'>St. Louis, MO USA</span><br>
 							<span class='ne-header'>Aug 16-28 2021</span><br>
 							<span class="xsm">The Sinquefield Cup is a 10-player round robin taking place at Saint Louis, Missouri, USA. It is the final event of the 2021 Grand Chess Tour with a prize fund of $325,000.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104467">FIDE World Cup</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104467">FIDE World Cup</a><br>
 							<span class='ne-header'>Sochi, RUS</span><br>
 							<span class='ne-header'>Jul 10 - Aug 08 2021</span><br>
 							<span class="xsm">The FIDE World Cup is a 206-player elimination event, taking place at Sochi, Russia.</span><br> &nbsp;<br>
-							<a class="ne-header" href="/perl/chess.pl?tid=104472">FIDE World Cup (Women)</a><br>
+							<a class="ne-header events" href="/perl/chess.pl?tid=104472">FIDE World Cup (Women)</a><br>
 							<span class='ne-header'>Sochi, RUS</span><br>
 							<span class='ne-header'>Jul 10 - Aug 04 2021</span><br>
 							<span class="xsm">The FIDE World Cup (women) is a 103-player elimination event, taking place at Sochi, Russia.</span><br> &nbsp;<br>
@@ -174,7 +189,7 @@ We apologize for this inconvenience.</h6>
 							<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
 						</div>
 					</section>
-					<div id="happy-birthdays" class="container start-col">
+					<div id="happy-birthdays" class="container cg-section start-col">
 						<h2 id="hb-header">Happy Birthday To:</h2>
 						<!-- <td align=CENTER background="/chessimages/highlight_stripes.gif"> -->
 						<a href="/perl/chessplayer?pid=113159">C P Hofstede de Groot</a>, <a href="/perl/chessplayer?pid=10594">Heinrich Wolf</a>, <a href="/perl/chessplayer?pid=130909">John Morris Gehl</a>, <a href="/perl/chessplayer?pid=150237">Marinus
@@ -186,7 +201,7 @@ We apologize for this inconvenience.</h6>
 					</div>
 					<!--endbirthday-->
 					<!-- <img src="/chessimages/spacer.gif" alt=" " width=4 height=4><br> -->
-					<section id="cg-chess-news" class="cg-front-column start-col">
+					<section id="cg-chess-news" class="cg-section start-col">
 						<header>
 							<h2>Chess News</h2>
 						</header>
@@ -822,16 +837,16 @@ We apologize for this inconvenience.</h6>
 					<!--beginnonpremium-->
 					<div id="cg-promote-banner" class="image-div">
 						<a id="promote-banner" href="/perl/tour" target="_blank">
-							<img src="./chessimages/treated_like_a_king.gif" width="150" height="135" alt="Upgrade Your Account for Full Access!" border="0">
+							<img src="./chessimages/treated_like_a_king.gif" width="190" height="135" alt="Upgrade Your Account for Full Access!" border="0">
 						</a>
 						<br>
 					</div>
 					<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 					<!--endnonpremium-->
-					<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000" width="150">
+					<table border="0" cellpadding="1" cellspacing="0" bgcolor="#000000" width="190">
 						<tr>
 							<td>
-								<table border="0" cellpadding="4" cellspacing="0" bgcolor="#FFFFDD" width="150">
+								<table border="0" cellpadding="4" cellspacing="0" bgcolor="#FFFFDD" width="190">
 									<tr bgcolor="#FFCC99">
 										<td align="center" background="./chessimages/highlight_stripes.gif">
 											<font face="verdana,arial" size="-1"><b>@WELCOME</b></font>
@@ -850,21 +865,21 @@ We apologize for this inconvenience.</h6>
 					<!--beginrightbanner-->
 					<!--endrightbanner-->
 					<div class="image-div">
-						<a href="/perl/analyzer.pl"><img src="./chessimages/analysislabbanner.png" width="150" height="115" alt="The most powerful chess engine in the world, on demand!" border="0"></a><br>
+						<a href="/perl/analyzer.pl"><img src="./chessimages/analysislabbanner.png" width="190" height="115" alt="The most powerful chess engine in the world, on demand!" border="0"></a><br>
 						<!-- <img src="/spacer.gif" alt=" " width="4" height="4"><br> -->
 					</div>
 					<div class="image-div">
-						<a href="/perl/tournaments"><img src="./chessimages/tournamentindexbanner.gif" width="150" height="135" alt="Chess Tournament Index" border="0"></a><br>
+						<a href="/perl/tournaments"><img src="./chessimages/tournamentindexbanner.gif" width="190" height="135" alt="Chess Tournament Index" border="0"></a><br>
 						<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 					</div>
 					<div class="image-div">
-						<a href="/perl/goat.pl"><img src="./chessimages/goatbanner.gif" width="150" height="124" border="0" alt="The Most Notable Chess Games in History"></a><br>
+						<a href="/perl/goat.pl"><img src="./chessimages/goatbanner.gif" width="190" height="124" border="0" alt="The Most Notable Chess Games in History"></a><br>
 						<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 					</div>
 					<section id="cg-recent-kibitzing" class="cg-section">
 						<header>
 							<h2>
-								<a class="header-link" href="/perl/chessnew" style="color:black;"> Recent Kibitzing </a>
+								<a class="header-link" width="190" href=" /perl/chessnew" style="color:black;"> Recent Kibitzing </a>
 							</h2>
 						</header>
 						<table style="padding:4px;">
@@ -1217,7 +1232,7 @@ We apologize for this inconvenience.</h6>
 					<!--beginchallenge-->
 					<!--endchallenge-->
 					<div class="image-div">
-						<a href="/bookie.html"><img src="./chessimages/bookiead2.gif" width=150 height=135 border="0" alt="The ChessBookie Game!"></a><br>
+						<a href="/bookie.html"><img src="./chessimages/bookiead2.gif" width="190" height=135 border="0" alt="The ChessBookie Game!"></a><br>
 						<!-- <img src="/spacer.gif" width="4" height="4"><br> -->
 					</div>
 					<div class="image-div">
