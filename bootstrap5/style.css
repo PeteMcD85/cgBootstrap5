@@ -1,36 +1,32 @@
 /* header */
+#header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
 #header-links a {
-  font-size: 11px;
-  font-weight: 400;
+  font-size: 10px;
+  font-weight: 450;
+  text-decoration: none;
   font-family: verdana, arial, helvetica;
 }
 
 #header-links {
-  padding: 1px;
   text-align: center;
   background-color: var(--main-bg-color);
   border: solid;
   border-width: thin;
 }
 
-/* <CENTER> THE THREE COLUMNS */
+//* ALL 3 CONTAINERS */
 div#body-container.container {
   min-width: 100vw;
   margin-top: 2.5rem;
 }
 
-div#body-container.container section {
-  margin: 3px;
-  padding: 3px;
-  text-align: center;
-  background-color: var(--main-bg-color);
-  border: solid;
-  border-width: thin;
-}
-
 .cg-section {
   margin: 3px;
-  padding: 3px;
+  padding: 0px;
   text-align: center;
   background-color: var(--main-bg-color);
   border: solid;
@@ -42,6 +38,7 @@ div#body-container.container section {
   font-size: 13px;
   font-weight: bolder;
   text-decoration: none;
+  line-height: revert;
   color: black;
   margin: 0;
   padding: 0;
@@ -56,8 +53,6 @@ div#body-container.container section {
 }
 
 a.names {
-  font-size: 13px;
-  font-weight: bolder;
   color: var(--blue-link-color);
 }
 
@@ -72,45 +67,104 @@ a.events {
   color: var(--blue-link-color);
 }
 
+/* CONTAINER ONE */
+
 div#umn-one.container {
   max-width: 190px;
   min-width: 190px;
   position: absolute;
   left: 0;
-  margin: 0;
-  padding: 0;
+  margin: 4px;
+  padding: 2px;
 }
 
-div.container.col-2.umn-three {
-  max-width: 190px;
-  min-width: 190px;
-  position: absolute;
-  right: 0;
-  margin: 0;
-  padding: 0;
+#more-events-link {
+  border: solid;
+  border-width: thin;
+  border-color: brown;
+  margin: 10px;
 }
+
+.section-events {
+  text-align: left;
+  font-size: 13px;
+  line-height: normal;
+}
+
+a.ne-header.events {
+font-weight: 500;
+}
+
+p.xsm {
+  font-size: 10px;
+  line-height: inherit;
+}
+
+#hb-header {
+  text-align: center;
+  background-color: var(--main-header-color);
+  padding: 5px;
+  margin: 0;
+  width: 100%;
+}
+
+#happy-birthdays a{
+  font-size: 13px;
+  font-weight: normal;
+  font-family: verdana;
+ color: var(--blue-link-color)
+}
+
+#happy-birthdays {
+  line-height: normal;
+  text-align: revert;
+}
+
+
+/* CONTAINER TWO */
 
 div#umn-two.container {
   margin: 1rem auto;
   padding: 0;
 }
 
-/* COLUMN ONE */
-/* HAPPY BIRTHDAYS */
-#hb-header {
-  background-color: var(--main-header-color);
-  padding: 0;
-  margin: 0;
+
+/* CONTAINER THREE */
+
+div.container.umn-three {
+  max-width: 190px;
+  min-width: 190px;
+  position: absolute;
+  right: 0;
+  margin: 2px;
+  padding: 4px;
 }
 
-/* +++++  TEST  +++++ */
+
+
+/* ++++++++  TEST  +++++++++++ */
+
+/* ++++++++++++++  TEST ++++++++++++ */
+
+.g-5, .gy-5 {
+    --bs-gutter-y: 1rem;
+}
+
+.g-5, .gx-5 {
+    --bs-gutter-x: 16rem;
+}
+
 footer {
   font-size: 10px;
 }
 
-/* ++++++++  TEST  +++++++++++ */
 p {
   line-height: 18px;
+  margin: 0;
+}
+
+h4{
+  line-height: .6;
   margin: 0;
 }
 
