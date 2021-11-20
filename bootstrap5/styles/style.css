@@ -1,0 +1,36 @@
+footer {
+  font-size: 10px;
+}
+
+p {
+  line-height: 18px;
+  margin: 0;
+}
+
+h4 {
+  line-height: .6;
+  margin: 0;
+}
+
+input {
+  height: 1.5rem;
+  margin: 3px;
+  vertical-align: middle;
+}
+
+select {
+    height: 1.5rem;
+}
+
+label {
+  padding-left: 5px;
+}
+
+/* ++++++++  TEST  +++++++++++ */
+/* ++++++++++++++  TEST ++++++++++++ */
+/* variable colors */
+:root {
+  --main-bg-color: #FFFFDE;
+  --main-header-color: #FDCD99;
+  --blue-link-color: #0000FF;
+}

@@ -1,0 +1,19 @@
+/* header */
+#header-top {
+  display: flex;
+  justify-content: space-between;
+}
+
+#header-links a {
+  font-size: 10px;
+  font-weight: 450;
+  text-decoration: none;
+  font-family: verdana, arial, helvetica;
+}
+
+#header-links {
+  text-align: center;
+  background-color: var(--main-bg-color);
+  border: solid;
+  border-width: thin;
+}

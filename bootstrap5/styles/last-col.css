@@ -1,0 +1,9 @@
+/* CONTAINER THREE */
+div.container.umn-three {
+  max-width: 190px;
+  min-width: 190px;
+  position: absolute;
+  right: 0;
+  margin: 2px;
+  padding: 4px;
+}
