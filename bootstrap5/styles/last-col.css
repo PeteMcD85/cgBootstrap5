@@ -7,3 +7,24 @@ div.container.umn-three {
   margin: 2px;
   padding: 4px;
 }
+
+a.p-kibitzing {
+  font-size: 10px;
+}
+
+.recent-v a {
+  font-size: 10px;
+  font-weight: normal;
+}
+
+p.recent-v  {
+  font-size: 10px;
+}
+
+.fs-ten {
+  font-size: 13px;
+}
+
+.fs-ten a {
+  font-size: 13px;
+}

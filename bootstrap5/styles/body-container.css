@@ -33,7 +33,6 @@ div#body-container.container {
   padding: 0;
 }
 
-/* ++++++++ CURRENTLY ONLY IN 1ST CONTAINER */
 a.names {
   color: var(--blue-link-color);
 }
@@ -48,3 +47,9 @@ a.events {
   font-weight: bolder;
   color: var(--blue-link-color);
 }
+
+.darker-bg {
+  background-color: #FDCD99;
+}
+
+/* ++++++++ CURRENTLY ONLY IN 1ST CONTAINER */
