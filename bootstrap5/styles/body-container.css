@@ -12,7 +12,6 @@ div#body-container.container {
   background-color: var(--main-bg-color);
   border: solid;
   border-width: thin;
-  font-family: verdana, arial, helvetica;
 }
 
 .cg-section a, h2 {
@@ -48,8 +47,6 @@ a.events {
   color: var(--blue-link-color);
 }
 
-.darker-bg {
-  background-color: #FDCD99;
-}
+
 
 /* ++++++++ CURRENTLY ONLY IN 1ST CONTAINER */

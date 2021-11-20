@@ -3,7 +3,7 @@ footer {
 }
 
 p {
-  line-height: 18px;
+  /* line-height: 18px; */
   margin: 0;
 }
 
@@ -26,6 +26,29 @@ label {
   padding-left: 5px;
 }
 
+.darker-bg {
+  background-color: #FDCD99;
+}
+
+.fs-ten {
+  font-size: 10px;
+}
+
+.fs-ten a {
+  font-size: 10px;
+}
+
+.fs-thirteen {
+  font-size: 13px;
+}
+
+.fs-thirteen a {
+  font-size: 13px;
+}
+
+.fs-twelve {
+  font-size: 12px;
+}
 /* ++++++++  TEST  +++++++++++ */
 /* ++++++++++++++  TEST ++++++++++++ */
 /* variable colors */

@@ -12,23 +12,16 @@ div#umn-one.container {
   border: solid;
   border-width: thin;
   border-color: brown;
-  margin: 10px;
 }
 
-.section-events {
-  text-align: left;
-  font-size: 13px;
-  line-height: normal;
-}
-
-a.ne-header.events {
+/* a.ne-header.events {
   font-weight: 500;
-}
+} */
 
-p.xsm {
+/* p.xsm {
   font-size: 10px;
   line-height: inherit;
-}
+} */
 
 h2#hb-header {
   text-align: center;
