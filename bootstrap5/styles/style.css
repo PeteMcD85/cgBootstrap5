@@ -19,7 +19,7 @@ input {
 }
 
 select {
-    height: 1.5rem;
+  height: 1.5rem;
 }
 
 label {
@@ -34,7 +34,7 @@ label {
   font-size: 10px;
 }
 
-.fs-ten a {
+a.fs-ten {
   font-size: 10px;
 }
 
@@ -49,8 +49,7 @@ label {
 .fs-twelve {
   font-size: 12px;
 }
-/* ++++++++  TEST  +++++++++++ */
-/* ++++++++++++++  TEST ++++++++++++ */
+
 /* variable colors */
 :root {
   --main-bg-color: #FFFFDE;

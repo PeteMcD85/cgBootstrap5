@@ -14,43 +14,19 @@ div#umn-one.container {
   border-color: brown;
 }
 
-/* a.ne-header.events {
-  font-weight: 500;
-} */
-
-/* p.xsm {
-  font-size: 10px;
-  line-height: inherit;
-} */
-
 h2#hb-header {
-  text-align: center;
-  background-color: var(--main-header-color);
-  padding: 5px;
-  margin: 0;
-  width: 100%;
+  background-color: #FDCD99;
 }
 
 #happy-birthdays a {
-  font-size: 13px;
-  font-weight: normal;
-  font-family: verdana;
-  color: var(--blue-link-color)
-}
-
-#happy-birthdays {
-  line-height: normal;
-  text-align: revert;
+  color: #0000FF;
 }
 
 p.chess-news {
-  text-align: left;
-  font-size: 10px;
   line-height: revert;
 }
 
 .chess-news a {
   font-size: 10px;
-  font-weight: normal;
   color: #0000FF;
 }
