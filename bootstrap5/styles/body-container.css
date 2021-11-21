@@ -1,6 +1,6 @@
 /* BODY */
 //* ALL 3 CONTAINERS */
-div#body-container.container {
+div#body-container {
   min-width: 100vw;
   margin-top: 2.5rem;
 }
@@ -12,6 +12,7 @@ div#body-container.container {
   background-color: var(--main-bg-color);
   border: solid;
   border-width: thin;
+  line-height: 15px;
 }
 
 .cg-section a, h2 {

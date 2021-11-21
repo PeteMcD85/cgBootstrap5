@@ -50,6 +50,10 @@ a.fs-ten {
   font-size: 12px;
 }
 
+#header-links {
+  background-color: #FFFFDE;
+}
+
 /* variable colors */
 :root {
   --main-bg-color: #FFFFDE;

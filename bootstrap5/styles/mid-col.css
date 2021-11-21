@@ -8,7 +8,7 @@
   --bs-gutter-x: 16rem;
 }
 
-div#umn-two.container {
+div#umn-two {
   margin: 1rem auto;
   padding: 0;
 }
@@ -43,7 +43,7 @@ form#search-bar-button {
   max-height: 22px;
 }
 
-section#cg-search {
+#cg-search {
   padding: 3px;
   padding-bottom: 6px;
 }
@@ -59,11 +59,11 @@ input#submit-button {
 }
 
 /* third section 3 */
-section#potd {
+#potd {
   border: none;
 }
 
-div#cuntainr {
+#cuntainr {
   border: black;
   border-style: solid;
   border-width: thin;
@@ -80,7 +80,7 @@ div#cuntainr {
   padding: 3px;
 }
 
-div#top-cuntainr a {
+#top-cuntainr a {
   color: #0000FF;
   font-weight: 400;
 }
