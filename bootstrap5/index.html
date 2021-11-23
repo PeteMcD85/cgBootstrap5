@@ -18,7 +18,7 @@
 
 <body>
 	<!-- ++++++ HEADER LOGO and Links ++++ -->
-	<header class="container header-logo">
+	<header id="head-logo" class="container header-logo">
 		<div id="header-top" class="d-flex justify-content-between" style="background-image:url('./chessimages/header_stripes.gif');">
 			<a href="/index.html" id="header-logo">
 				<img src="./chessimages/chessgameslogo.png" alt="Chessgames.com Logo" />
@@ -76,11 +76,12 @@
 		ir_ads_push();
 	</script>
 	<!--endtopirbanner-->
-	<!-- ++++++++++ BODY-CONTAINER With the 3 Main Columns -->
-	<div id="body-container" class="container">
-		<div class="row g-5 gy-4">
 
-			<div id="umn-one" class=" col-2 mt-3 ">
+	<div id="body-container" class="">
+		<div class="d-flex">
+
+			<div id="umn-one" class="mt-3 ">
+
 				<section id="cg-gotd" class="cg-section">
 					<header>
 						<h2>
@@ -101,6 +102,7 @@
 						<p>
 					</div>
 				</section>
+
 				<section id="cg-playerotd" class="cg-section">
 					<header>
 						<h2>
@@ -115,6 +117,7 @@
 						<!--endplayerotd-->
 					</div>
 				</section>
+
 				<section id="cg-openingotd" class="cg-section">
 					<header>
 						<h2>
@@ -336,29 +339,33 @@
 			</div><!-- end of col-first -->
 			<!-- ++++++ END OF COLUMN ONE -->
 
-			<div id="umn-two" class=" col-8">
+			<div id="umn-two" class="my-2 mx-auto p-0">
 				<div id="col-mid">
-					<section id="cg-search" class="cg-section">
+
+					<section id="cg-search" class="cg-section p-1 pb-1">
 						<header>
 							<h2 id="search-games"> SEARCH OVER
 								<!--begingamecount-->1,043,000
 								<!--endgamecount--> CHESS GAMES
 							</h2>
 						</header>
-						<div id="search-input-etc">
-							<form id="search-bar-button" method="GET" action="/perl/ezsearch.pl">
-								<input id="search-bar" type="text" name="search" size="16">
-								<input id="submit-button" type="submit" value="Search">
+						<div id="search-input-etc" class="d-flex justify-content-between mt-1">
+							<form id="search-bar-button" class="d-flex mh-2" method="GET" action="/perl/ezsearch.pl">
+								<input id="search-bar" class="v-50 me-1" type="text" name="search" size="16">
+
+								<input id="submit-button" class="fs-twelve fw-500" type="submit" value="Search">
 							</form>
-							<p id="tip-more-info"> @TIP<br>
-								<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into the search bar. --> (<a href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>) </p>
+							<p id="tip-more-info" class="fs-ten"> @TIP<br>
+								<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into
+								the search bar. --> (<a class="fs-ten" href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>)
+							</p>
 						</div>
 					</section>
 					<!-- ++++++ end of #cg-search -->
 					<!--newusers-->
 					<!--kibcount-->
 					<section id="cg-advanced-search" class="cg-section">
-						<h2>ADVANCED SEARCH</h2>
+						<h2 class="text-start p-1">ADVANCED SEARCH</h2>
 						<form method="GET" action="/perl/chess.pl" class="mobile-hide">
 							<div id="as-year" class="bg-color-change as-section">
 								<div class="p-div"><span class="span-bold">Year</span>is</div>
@@ -401,7 +408,7 @@
 									</div>
 									<!-- end of input longer list -->
 								</div>
-								<!-- end of .stacked-inputs p-div -->
+								<!-- end of .stacked-inputs p-div  -->
 								<div class="directory p-div p-div-stacked">
 									<a href="/directory/" class="example">(Directory)</a>
 								</div>
@@ -609,17 +616,19 @@
 						</form>
 					</section>
 					<!-- +++++END OF #cg-advanced-search -->
-					<div id="potd" class="cg-section">
+					<div id="potd" class="cg-section border border-none">
 						<!-- <img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale"> -->
 						<!--beginpuzzle-->
+
 						<section id="cuntainr">
 							<!-- potd-inner -->
 
 							<header id="top-cuntainr">
 								<!-- potd-header -->
-								<h2>White to play</h2>
-								<p>
-									<a href="/perl/chessgame?gid=1401603&m=22">Adianto vs R E Espinosa Flores</a>
+								<h2 class="w-100 m-0 p-2">White to play</h2>
+
+								<p class="p-3">
+									<a class="fw-400" href="/perl/chessgame?gid=1401603&m=22">Adianto vs R E Espinosa Flores</a>
 								</p>
 							</header>
 							<div id="mid-cuntainr">
@@ -630,8 +639,8 @@
 							</div>
 							<footer id="bottom-cuntainr">
 								<!-- potd-footer -->
-								<p>22.&nbsp;?</p>
-								<p> See game for solution.</p>
+								<p class="p-3">22.&nbsp;?</p>
+								<p class="p-3"> See game for solution.</p>
 							</footer>
 							<!--+++++ end of .bottom-cuntainr -->
 						</section>
@@ -644,6 +653,7 @@
 					</div>
 					<!-- +++++++++++ end of #potd -->
 					<!--beginbottombanner-->
+
 					<div class="adsbyir 728x90"></div>
 					<script>
 						ir_ads_push();
@@ -651,9 +661,10 @@
 					<!--endbottombanner-->
 
 					<!-- ++++++++++ LEFT COLUMN UNDER Puzzle of the Day SSM ++++++++++++++++++-->
-					<div id="fourth-section">
+					<div id="cg-bottom-middle" class="d-flex fs-thirteen w-2">
+
 						<div id="cg-middle-left" class="cg-middle  p-2 border border-top-0 border-bottom-0  border-start-0 border-dark">
-							<section>
+							<section id="cg-getting-started" class="flex">
 								<h2 class="mb-3">NEW USERS: Getting Started</h2>
 								<div class="mobile-hide">
 									<p class="mb-3"> Founded on an extensive database of historical chess games combined with discussion forums, Chessgames.com is the internet's first and foremost chess community, where players of every skill level are encouraged to
@@ -810,14 +821,14 @@
 						</div>
 						<!-- end og #cg-middle-left -->
 						<div id="cg-middle-right" class="cg-middle p-2">
-							<section>
+							<section id="cg-register-today">
 								<h2 class="mb-2">Register Today!</h2>
 								<p class="mobile-hide twelve mb-2">Go to our <a href="/perl/chessprofile.pl">registration page</a> and get a free account today: you'll be able to make posts ("kibitzing"), start game collections, participate in our regular
 									contests,
 									and so much more! </p>
 								<!-- beginprediction <font face="Georgia,Palatino,Times,Times New Roman"> =endprediction -->
 							</section>
-							<section>
+							<section id="cg-hot-games">
 								<h2>Hot Games</h2>
 								<!--beginhotgames-->
 								<ol class="p-3">
@@ -958,7 +969,7 @@
 			</div>
 			<!-- ++++++++++++ END OF #umn-two-->
 
-			<div id="umn-three" class=" umn-three col-2  mt-3">
+			<div id="umn-three" class=" umn-three mt-3">
 				<!--beginnonpremium-->
 				<div id="cg-promote-banner" class="image-div">
 					<a id="promote-banner" href="/perl/tour" target="_blank">
@@ -1370,7 +1381,7 @@
 					<a href="https://store.chessgames.com/"><img src="./chessimages/store_banner2.gif" width="190" height="124" border="0" alt="Chess Products at Slashed Prices!"></a><br>
 					<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 				</div>
-				<section id="cg-recent-kibitzing" class="cg-section">
+				<section id="cg-qotd" class="cg-section">
 					<header>
 						<h2> Quote of the Day </h2>
 					</header>
@@ -1386,59 +1397,60 @@
 						<p>&nbsp;&nbsp;&nbsp;---&nbsp;12th Century Spanish Hebrew text</p>
 					</div>
 					<!--endquote-->
-					<section id="cg-special-features">
-						<header>
-							<h2>Special Features</h2>
-						</header>
+				</section>
+				<section id="cg-special-features">
+					<header>
+						<h2>Special Features</h2>
+					</header>
 
-						<p class="fs-thirteen text-start"> The <a href="/perl/chessnew">Recent Kibitzing</a> page shows you who's talking about what. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> The <a href="/perl/explorer">Opening Explorer</a> is the perfect way to study complicated openings, move by move. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> The <a href="/perl/chessforum.pl">Kibitzer's Cafe</a> offers chess discussion and camaraderie. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> The <a href="/perl/bistro.pl">Biographer's Bistro</a> serves up chess history 24 hours a day! <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> The <a href="/perl/tournaments">Tournament Index</a> is a chronological catalog of major chess tournaments from the 1800s to present day. <img width="180" height="18" src="./chessimages/divider4.gif"
-								alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> Our <a href="/wcc.html">History of the World Chess Championship</a> is a guide to the most coveted title in chess. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> The <a href="/bookie.html">ChessBookie</a> game lets you wager play-money on real world chess events, and win cool prizes. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> The <a href="/directory/">Players' Directory</a> indexes thousands of eminent chessplayers. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> The <a href="/perl/tour">Chessgames Tour</a> is a slideshow demonstrating the many features available to Chessgames Premium Members for only pennies a day. <img width="180" height="18"
-								src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start">
-							<a href="/perl/gamesoftheday">Game of the Day Archive</a> stores the last year of featured games. (Have an idea for Game of the Day? See our <a href="/perl/submitpun">Pun Submission Page</a>!) <img width="180" height="18"
-								src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> See a <a href="/perl/chessrandom">Random&nbsp;Game</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> Our <a href="/perl/chessgift">Chess Gift Page</a> allows you to give the gift of chess, by purchasing an account for another Chessgames member. <img width="180" height="18"
-								src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start">
-							<a href="/perl/fischerandom">Fischerandom (Chess960)</a> generator. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> Run your own chess site? See our <a href="/webmasters.html">Webmaster Resources</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> Our page of <a href="/chessstats.html">Database Statistics</a> is filled with many fun facts. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> Browse other users' favorite games on our <a href="/perl/collections">Game Collections Page</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-						</p>
-						<p class="fs-thirteen text-start"> Do you have an important chess game that we are missing? See our <a href="/perl/chessupload">PGN Upload Utility</a>.
+					<p class="fs-thirteen text-start"> The <a href="/perl/chessnew">Recent Kibitzing</a> page shows you who's talking about what. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> The <a href="/perl/explorer">Opening Explorer</a> is the perfect way to study complicated openings, move by move. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> The <a href="/perl/chessforum.pl">Kibitzer's Cafe</a> offers chess discussion and camaraderie. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> The <a href="/perl/bistro.pl">Biographer's Bistro</a> serves up chess history 24 hours a day! <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> The <a href="/perl/tournaments">Tournament Index</a> is a chronological catalog of major chess tournaments from the 1800s to present day. <img width="180" height="18" src="./chessimages/divider4.gif"
+							alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> Our <a href="/wcc.html">History of the World Chess Championship</a> is a guide to the most coveted title in chess. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> The <a href="/bookie.html">ChessBookie</a> game lets you wager play-money on real world chess events, and win cool prizes. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> The <a href="/directory/">Players' Directory</a> indexes thousands of eminent chessplayers. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> The <a href="/perl/tour">Chessgames Tour</a> is a slideshow demonstrating the many features available to Chessgames Premium Members for only pennies a day. <img width="180" height="18"
+							src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start">
+						<a href="/perl/gamesoftheday">Game of the Day Archive</a> stores the last year of featured games. (Have an idea for Game of the Day? See our <a href="/perl/submitpun">Pun Submission Page</a>!) <img width="180" height="18"
+							src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> See a <a href="/perl/chessrandom">Random&nbsp;Game</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> Our <a href="/perl/chessgift">Chess Gift Page</a> allows you to give the gift of chess, by purchasing an account for another Chessgames member. <img width="180" height="18" src="./chessimages/divider4.gif"
+							alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start">
+						<a href="/perl/fischerandom">Fischerandom (Chess960)</a> generator. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> Run your own chess site? See our <a href="/webmasters.html">Webmaster Resources</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> Our page of <a href="/chessstats.html">Database Statistics</a> is filled with many fun facts. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> Browse other users' favorite games on our <a href="/perl/collections">Game Collections Page</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+					</p>
+					<p class="fs-thirteen text-start"> Do you have an important chess game that we are missing? See our <a href="/perl/chessupload">PGN Upload Utility</a>.
 
-							<!-- </section> -->
-							<!-- </div></div> --> -->
+				</section>
+				<!-- </div></div> --> -->
 			</div>
 			<!-- +++++++++++ END OF .umn-three -->
 
 		</div>
 		<!--+++++++ end of .row -->
-		<footer class="row d-flex justify-content-center text-align-center m-5">
+		<footer id="copyright-footer" class="row d-flex justify-content-center text-align-center m-5">
 			<div class="col-12">
 				<p class="text-center cgc-ns1 center tcenter xxsm tbm0">Copyright 2001-2021, Chessgames Services LLC<br> Web design &amp; database development by 20/20 Technologies</p>
 			</div>

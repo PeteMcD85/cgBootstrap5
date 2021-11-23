@@ -1,9 +1,8 @@
 /* CONTAINER ONE */
 div#umn-one {
   max-width: 190px;
-  min-width: 190px;
-  position: absolute;
-  left: 0;
+  /* position: absolute; */
+  /* left: 0; */
   margin: 4px;
   padding: 2px;
 }

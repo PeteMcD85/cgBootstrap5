@@ -8,59 +8,12 @@
   --bs-gutter-x: 16rem;
 }
 
-div#umn-two {
-  margin: 1rem auto;
-  padding: 0;
-}
-
-#cg-advanced-search {
-  text-align: justify;
-}
-
-/* first section 1 _ search  */
-h2#search-games {
-  text-align: initial;
-}
-
-div#search-input-etc {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 10px;
-}
-
 p#tip-more-info {
-  font-size: 10px;
   line-height: initial;
 }
 
 p#tip-more-info a {
-  font-size: 10px;
   color: #0000FF;
-}
-
-form#search-bar-button {
-  display: flex;
-  max-height: 22px;
-}
-
-#cg-search {
-  padding: 3px;
-  padding-bottom: 6px;
-}
-
-input#search-bar {
-  width: 20rem;
-  margin-right: 5px;
-}
-
-input#submit-button {
-  font-size: 12px;
-  font-weight: 500;
-}
-
-/* third section 3 */
-#potd {
-  border: none;
 }
 
 #cuntainr {
@@ -73,17 +26,14 @@ input#submit-button {
 
 #top-cuntainr h2 {
   background-color: #FDCD99;
-  padding: 3px;
-}
-
-#cuntainr p {
-  padding: 3px;
 }
 
 #top-cuntainr a {
   color: #0000FF;
-  font-weight: 400;
 }
+
+
+
 
 /* second section 2 _ Advanced search */
 .bg-color-change {
@@ -141,10 +91,4 @@ div.directory {
 }
 
 /* +++++++++++++ TEST ++++++++ */
-
 /* fourth section */
-
-#fourth-section {
-  display: flex;
-  font-size: 13px;
-}
