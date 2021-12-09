@@ -50,10 +50,10 @@ a.fs-ten {
 .fs-twelve {
   font-size: 12px;
 }
-
-#header-links {
-  background-color: #FFFFDE;
-}
+/*
+ #site-nav{ */
+  /* background-color: #FFFFDE;
+} */
 
 /* variable colors */
 :root {

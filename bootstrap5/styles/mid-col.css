@@ -32,9 +32,6 @@ p#tip-more-info a {
   color: #0000FF;
 }
 
-
-
-
 /* second section 2 _ Advanced search */
 .bg-color-change {
   background-color: var(--main-header-color);
@@ -89,6 +86,3 @@ div.as-section {
 div.directory {
   margin-left: 7rem;
 }
-
-/* +++++++++++++ TEST ++++++++ */
-/* fourth section */

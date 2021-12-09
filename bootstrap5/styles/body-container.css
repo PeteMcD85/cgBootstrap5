@@ -1,13 +1,13 @@
 /* BODY */
 //* ALL 3 CONTAINERS */
-div#body-container {
+div#three-columns {
   /* min-width: 100vw; */
   margin-top: 2.5rem;
 }
 
-.cg-section {
-  margin: 3px;
-  padding: 0px;
+ .cg-section {
+  /* margin: 3px; */
+  
   text-align: center;
   background-color: var(--main-bg-color);
   border: solid;

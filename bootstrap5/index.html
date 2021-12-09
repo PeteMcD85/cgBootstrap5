@@ -18,7 +18,7 @@
 
 <body>
 	<!-- ++++++ HEADER LOGO and Links ++++ -->
-	<header id="head-logo" class="container header-logo">
+	<header id="site-header" class="container header-logo">
 		<div id="header-top" class="d-flex justify-content-between" style="background-image:url('./chessimages/header_stripes.gif');">
 			<a href="/index.html" id="header-logo">
 				<img src="./chessimages/chessgameslogo.png" alt="Chessgames.com Logo" />
@@ -34,38 +34,54 @@
 			<area shape="rect" coords="177,21,230,40" href="/chesshelp.html">
 		</map>
 	</header>
-	<!--beginmenu-->
 
+	<!--beginmenu-->
 	<!-- +++++++ HEADER LINKS.. Under logo -->
-	<div id="header-links" class="container-liquid m-2 text-center border border-dark">
-		<a class="fs-ten text-decoration-none" href="/perl/chessmembers">Members</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/chessprofile.pl">Prefs</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/analyzer.pl">Laboratory</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/collections">Collections</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/explorer">Openings</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/chessending">Endgames</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/sacrifices">Sacrifices</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/history">History</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/searchkibitzes">Search Kibitzing</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/chessnew?chessforums=1">Chessforums</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/perl/tournaments">Tournament Index</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="/directory/">Players</a>
-		<b>&#183;</b>
-		<a class="fs-ten text-decoration-none" href="#kibitzing"><img src="./chessimages/arrow_down.gif" width="7" height="8" border="0">Kibitzing</a>
-	</div>
+
+	<nav id="site-nav" class="navbar navbar-expand-md navbar-light text-center m-2 border ">
+		<div class="container-fluid ">
+			<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myTogglerNav" aria-controls="#myTogglerNav" aria-label="myTogglerNav">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse " id="myTogglerNav">
+				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					<div class="navbar-nav">
+						<a class="nav-link active fs-ten text-decoration-none" href="/perl/chessmembers">Members</a>
+						<b>&#183;</b>
+						<a class="nav-link active fs-ten text-decoration-none" href="/perl/chessprofile.pl">Prefs</a>
+						<b>&#183;</b>
+						<a class="nav-link active fs-ten text-decoration-none" href="/perl/analyzer.pl">Laboratory</a>
+						<b>&#183;</b>
+						<a class="nav-link active fs-ten text-decoration-none" href="/perl/collections">Collections</a>
+						<b>&#183;</b>
+						<!-- <a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/explorer">Openings</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/chessending">Endgames</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/sacrifices">Sacrifices</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/history">History</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/searchkibitzes">Search Kibitzing</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/chessnew?chessforums=1">Chessforums</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/tournaments">Tournament Index</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="/directory/">Players</a>
+						<b>&#183;</b>
+						<a class="nav-item nav-link fs-ten text-decoration-none" href="#kibitzing"><img src="./chessimages/arrow_down.gif" width="7" height="8" border="0">Kibitzing</a> -->
+					</div>
+					<!-- end of navbar-nav -->
+				</ul>
+				<!-- end of <ul> -->
+			</div>
+			<!-- end of #myTogglerNav -->
+		</div>
+		<!-- end of container-fluid -->
+	</nav>
 	<!--endmenu-->
 	<!--enhancedmenu-->
 	<!-- <div> <h6 style="text-align:\;color:red;width:80%;margin:0 auto;">Chessgames.com will be unavailable Friday, June 18th, 2021 from 12PM through 2PM Eastern Time Zone for maintenance.<br> We apologize for this inconvenience.</h6> </div> -->
@@ -76,16 +92,30 @@
 		ir_ads_push();
 	</script>
 	<!--endtopirbanner-->
+	<!--
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				Column
+			</div>
+			<div class="col">
+				Column
+			</div>
+			<div class="col">
+				Column
+			</div>
+		</div>
+	</div> -->
 
-	<div id="body-container" class="">
-		<div class="d-flex">
+	<div id="three-columns" class="">
+		<div class="d-flex flex-column justify-content-center">
 
-			<div id="umn-one" class="mt-3 ">
+			<div id="umn-one" class="mt-3 d-flex flex-column justify-content-center">
 
-				<section id="cg-gotd" class="cg-section">
+				<section id="cg-gotd" class="cg-section m-2 p-2">
 					<header>
 						<h2>
-							<a href="/perl/gamesoftheday" class="header-link">Game of the Day </a>
+							<a href=" /perl/gamesoftheday" class="header-link">Game of the Day </a>
 						</h2>
 						<h3>
 							<!--begintoday-->Wednesday, October 20
@@ -103,7 +133,7 @@
 					</div>
 				</section>
 
-				<section id="cg-playerotd" class="cg-section">
+				<section id="cg-playerotd" class="cg-section m-2 p-2">
 					<header>
 						<h2>
 							<a href="/directory/" class="header-link">Player of the Day</a>
@@ -118,7 +148,7 @@
 					</div>
 				</section>
 
-				<section id="cg-openingotd" class="cg-section">
+				<section id="cg-openingotd" class="cg-section m-2 p-2">
 					<header>
 						<h2>
 							<a href="/perl/explorer" class="header-link">Opening of the Day</a>
@@ -138,7 +168,7 @@
 				<div class="image-div">
 					<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="190" height="135"></a>
 				</div>
-				<section id="cg-new-events" class="cg-section">
+				<section id="cg-new-events" class="cg-section m-2 p-2">
 					<header>
 						<h2>New Events</h2>
 					</header>
@@ -264,7 +294,7 @@
 				<!--endbirthday-->
 				<!-- <img src="/chessimages/spacer.gif" alt=" " width=4 height=4><br> -->
 
-				<section id="cg-chess-news" class="cg-section">
+				<section id="cg-chess-news" class="cg-section m-2 p-2">
 					<header>
 						<h2>Chess News</h2>
 					</header>
@@ -342,7 +372,7 @@
 			<div id="umn-two" class="my-2 mx-auto p-0">
 				<div id="col-mid">
 
-					<section id="cg-search" class="cg-section p-1 pb-1">
+					<section id="cg-search" class="cg-section m-2 p-2 pb-1">
 						<header>
 							<h2 id="search-games"> SEARCH OVER
 								<!--begingamecount-->1,043,000
@@ -350,11 +380,15 @@
 							</h2>
 						</header>
 						<div id="search-input-etc" class="d-flex justify-content-between mt-1">
+							<!-- <form class="d-flex">
+								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+								<button class="btn btn-outline-success" type="submit">Search</button>
+							</form> -->
 							<form id="search-bar-button" class="d-flex mh-2" method="GET" action="/perl/ezsearch.pl">
-								<input id="search-bar" class="v-50 me-1" type="text" name="search" size="16">
-
-								<input id="submit-button" class="fs-twelve fw-500" type="submit" value="Search">
+								<input id="search-bar" class="form-control me-2" type="search" placeholder="search" name="search" aria-label="search">
+								<button id="submit-button" class="btn btn-outline-success" type="submit" value="Search"></button>
 							</form>
+
 							<p id="tip-more-info" class="fs-ten"> @TIP<br>
 								<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into
 								the search bar. --> (<a class="fs-ten" href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>)
@@ -364,7 +398,7 @@
 					<!-- ++++++ end of #cg-search -->
 					<!--newusers-->
 					<!--kibcount-->
-					<section id="cg-advanced-search" class="cg-section">
+					<section id="cg-advanced-search" class="cg-section m-2 p-2">
 						<h2 class="text-start p-1">ADVANCED SEARCH</h2>
 						<form method="GET" action="/perl/chess.pl" class="mobile-hide">
 							<div id="as-year" class="bg-color-change as-section">
@@ -410,7 +444,7 @@
 								</div>
 								<!-- end of .stacked-inputs p-div  -->
 								<div class="directory p-div p-div-stacked">
-									<a href="/directory/" class="example">(Directory)</a>
+									<!-- <a href="/directory/" class="example">(Directory)</a> -->
 								</div>
 							</div>
 							<!-- end of #as-player -->
@@ -616,11 +650,11 @@
 						</form>
 					</section>
 					<!-- +++++END OF #cg-advanced-search -->
-					<div id="potd" class="cg-section border border-none">
+					<div id="potd" class="cg-section m-2 p-2 border border-none">
 						<!-- <img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale"> -->
 						<!--beginpuzzle-->
 
-						<section id="cuntainr">
+						<section id="cuntainr" class="">
 							<!-- potd-inner -->
 
 							<header id="top-cuntainr">
@@ -661,7 +695,7 @@
 					<!--endbottombanner-->
 
 					<!-- ++++++++++ LEFT COLUMN UNDER Puzzle of the Day SSM ++++++++++++++++++-->
-					<div id="cg-bottom-middle" class="d-flex fs-thirteen w-2">
+					<div id="cg-bottom-middle" class="d-flex flex-column  fs-thirteen w-2">
 
 						<div id="cg-middle-left" class="cg-middle  p-2 border border-top-0 border-bottom-0  border-start-0 border-dark">
 							<section id="cg-getting-started" class="flex">
@@ -1021,7 +1055,7 @@
 					<a href="/perl/goat.pl"><img src="./chessimages/goatbanner.gif" width="190" height="124" border="0" alt="The Most Notable Chess Games in History"></a><br>
 					<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 				</div>
-				<section id="cg-recent-kibitzing" class="cg-section">
+				<section id="cg-recent-kibitzing" class="cg-section m-2 p-2">
 					<header>
 						<h2>
 							<a class="header-link" href=" /perl/chessnew"> Recent Kibitzing </a>
@@ -1152,7 +1186,7 @@
 
 
 				</section>
-				<section id="cg-recent-visitors" class="cg-section">
+				<section id="cg-recent-visitors" class="cg-section m-2 p-2">
 					<header>
 						<h2>Recent Visitors:</h2>
 					</header>
@@ -1381,7 +1415,7 @@
 					<a href="https://store.chessgames.com/"><img src="./chessimages/store_banner2.gif" width="190" height="124" border="0" alt="Chess Products at Slashed Prices!"></a><br>
 					<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
 				</div>
-				<section id="cg-qotd" class="cg-section">
+				<section id="cg-qotd" class="cg-section m-2 p-2">
 					<header>
 						<h2> Quote of the Day </h2>
 					</header>
