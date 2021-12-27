@@ -1,10 +1,6 @@
 /* CONTAINER THREE */
-div.umn-three {
-  max-width: 190px;
-  /* position: absolute; */
-  /* right: 0; */
-  margin: 2px;
-  padding: 4px;
+#umn-three{
+  /* max-width: 190px; */
 }
 
 a.p-kibitzing {

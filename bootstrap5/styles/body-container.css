@@ -2,12 +2,12 @@
 //* ALL 3 CONTAINERS */
 div#three-columns {
   /* min-width: 100vw; */
-  margin-top: 2.5rem;
+  /* margin-top: 2.5rem; */
 }
 
  .cg-section {
   /* margin: 3px; */
-  
+
   text-align: center;
   background-color: var(--main-bg-color);
   border: solid;

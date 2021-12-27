@@ -1,12 +1,12 @@
 /* CONTAINER TWO */
 /* whole body width */
-.g-5, .gy-5 {
+/* .g-5, .gy-5 {
   --bs-gutter-y: 1rem;
 }
 
 .g-5, .gx-5 {
   --bs-gutter-x: 16rem;
-}
+} */
 
 p#tip-more-info {
   line-height: initial;
