@@ -1,6 +1,21 @@
 <!DOCTYPE html>
 <html>
 
+<!-- HTML
+<button onclick="myFunction()">Try it</button>
+CSS
+.mystyle {
+  width: 100%;
+  padding: 25px;
+  background-color: coral;
+  color: white;
+  font-size: 25px;
+}
+<div id="myDIV">
+  This is a DIV element.
+</div> -->
+
+
 <head>
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
@@ -94,7 +109,7 @@
 	</script>
 	<!--endtopirbanner-->
 
-	<div id="three-columns" class="mx-2 mx-md-1">
+	<div id="three-columns" class="mx-3 mx-md-1">
 		<div class="d-flex justify-content-center row no-gutters">
 
 			<div id="umn-one" class="flex-column col-md-2 justify-content-center">
@@ -263,7 +278,7 @@
 						<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
 					</div>
 				</section>
-				<div id="happy-birthdays" class="container cg-section lh-normal text-start">
+				<div id="happy-birthdays" class=" cg-section text-start">
 
 					<h2 id="hb-header" class="text-center p-1 m-0 w-100">Happy Birthday To:</h2>
 					<!-- <td align=CENTER background="/chessimages/highlight_stripes.gif"> -->
@@ -385,7 +400,7 @@
 					<!-- ++++++ end of #cg-search -->
 					<!--newusers-->
 					<!--kibcount-->
-					<section id="cg-advanced-search" class="cg-section my-1 d-flex flex-column">
+					<section id="cg-advanced-search" class="d-none d-md-block cg-section my-1 d-flex flex-column">
 						<h2 class="text-start p-1">ADVANCED SEARCH</h2>
 						<form method="GET" action="/perl/chess.pl" class="mobile-hide">
 							<div id="as-year" class="as-section d-flex bg-color-change ">
@@ -407,7 +422,7 @@
 								<!-- end of input .p-div -->
 							</div>
 							<!-- end of #as-year -->
-							<div id="as-player" class="as-section d-flex">
+							<section id="as-player" class="as-section d-flex">
 								<div class="p-div p-div-stacked">
 									<p class="span-bold">Player</p>
 									<select name="playercomp">
@@ -420,20 +435,21 @@
 								<!-- //end of .p-div -->
 								<div class="stacked-inputs">
 									<div class="as-select-input">
-										<select name="pid" class="pulldown">@PLAYERPULL</select>
-										<label>
-											<input type="checkbox" class="long-list"> longer list </label>
+										<select name="pid" class="pulldown w-100">@PLAYERPULL</select>
+										<input type="checkbox" class="long-list">
+										<label>longer list </label>
 									</div>
 									<!-- end of select longer list -->
-									<div> or <input type="text" name="player">
+									<div> or <input type="text" name="player" class="w-">
 									</div>
 									<!-- end of input longer list -->
 								</div>
 								<!-- end of .stacked-inputs p-div  -->
 								<div class="directory p-div p-div-stacked">
-									<!-- <a href="/directory/" class="example">(Directory)</a> -->
+									<a href="/directory/" class="example">(Directory)</a>
 								</div>
-							</div>
+								<!-- end of .directory -->
+							</section>
 							<!-- end of #as-player -->
 							<div id="as-opposing-player" class="as-section bg-color-change d-flex">
 								<div class="p-div p-div-stacked">
