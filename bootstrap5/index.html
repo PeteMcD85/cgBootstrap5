@@ -5,10 +5,6 @@
 	<!-- Required meta tags -->
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<!-- <meta name="viewport" content="width=1060px, maximum-scale=1.0" /> -->
-	<!-- <meta name="viewport" content="width=device-width, maximum-scale=1.0" /> -->
-	<!-- <meta name="viewport" content="width=1060px, initial-scale=1" /> -->
-	<!-- <meta name="viewport" content="user-scalable = yes"> -->
 
 	<!-- jquery -->
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -39,7 +35,9 @@
 		</div>
 		<!-- end of #header-top -->
 		<div id="desktopVersionButton">
-			<button id="mobileVersion" onclick="resize()" class="d-none d-md-block">Mobile Version</button>
+			<button id="mobileVersion" onclick="resizeMobile()" class="d-none d-md-block">Mobile Version</button>
+			<div class="adsbyir 970x250"></div>
+			<button id="githubIssue" onclick="createIssue()" class="d-none d-md-block">Create Issue</button>
 			<div class="adsbyir 970x250"></div>
 		</div>
 		<map name="navbar">
@@ -112,7 +110,7 @@
 	<!--endtopirbanner-->
 
 	<div id="three-columns" class="desktop mx-3 mx-md-1">
-		<div class="desktop-row d-flex justify-content-center row no-gutters">
+		<div class="desktop-row row d-flex justify-content-center no-gutters">
 
 			<div id="umn-one" class="desktop col-md-2 justify-content-center">
 
