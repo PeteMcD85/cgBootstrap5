@@ -7,9 +7,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 
 	<!-- jquery -->
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script defer src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 	<!-- js file -->
-	<script src="app.js"> </script>
+
 
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -35,9 +35,7 @@
 		</div>
 		<!-- end of #header-top -->
 		<div id="desktopVersionButton">
-			<button id="mobileVersion" onclick="resizeMobile()" class="d-none d-md-block">Mobile Version</button>
-			<div class="adsbyir 970x250"></div>
-			<button id="githubIssue" onclick="createIssue()" class="d-none d-md-block">Create Issue</button>
+			<button id="mobileVersion" class="d-none d-sm-block">Mobile Version</button>
 			<div class="adsbyir 970x250"></div>
 		</div>
 		<map name="navbar">
@@ -51,41 +49,41 @@
 	<!--beginmenu-->
 	<!-- +++++++ HEADER LINKS.. Under logo -->
 
-	<nav id="site-nav" class="navbar navbar-expand-md navbar-light m-2 border ">
+	<nav id="site-nav" class="navbar navbar-expand-sm navbar-light m-1 border m-0 p-0">
 		<div class="container-fluid ">
 			<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myTogglerNav" aria-controls="#myTogglerNav" aria-label="myTogglerNav">
 				<span class="navbar-toggler-icon"></span>
 			</button>
-			<div class="collapse navbar-collapse" id="myTogglerNav">
-				<ul class="navbar-nav me-auto mb-2 mb-lg-0">
-					<div class="navbar-nav d-flex flex-wrap justify-content-center">
-						<a class="nav-link active fs-ten text-decoration-none" href="/perl/chessmembers">Members</a>
+			<div class="collapse navbar-collapse m-0 p-0" id="myTogglerNav">
+				<ul class="navbar-nav me-auto mb-0 mb-lg-0 ">
+					<div class=" d-flex flex-wrap justify-content-center">
+						<a class="nav-link active fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/chessmembers">Members</a>
 						<b>&#183;</b>
-						<a class="nav-link active fs-ten text-decoration-none" href="/perl/chessprofile.pl">Prefs</a>
+						<a class="nav-link active fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/chessprofile.pl">Prefs</a>
 						<b>&#183;</b>
-						<a class="nav-link active fs-ten text-decoration-none" href="/perl/analyzer.pl">Laboratory</a>
+						<a class="nav-link active fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/analyzer.pl">Laboratory</a>
 						<b>&#183;</b>
-						<a class="nav-link active fs-ten text-decoration-none" href="/perl/collections">Collections</a>
+						<a class="nav-link active fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/collections">Collections</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/explorer">Openings</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/explorer">Openings</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/chessending">Endgames</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/chessending">Endgames</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/sacrifices">Sacrifices</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/sacrifices">Sacrifices</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/history">History</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/history">History</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/searchkibitzes">Search Kibitzing</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/searchkibitzes">Search Kibitzing</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/chessnew?chessforums=1">Chessforums</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/chessnew?chessforums=1">Chessforums</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/perl/tournaments">Tournament Index</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/tournaments">Tournament Index</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="/directory/">Players</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="/directory/">Players</a>
 						<b>&#183;</b>
-						<a class="nav-item nav-link fs-ten text-decoration-none" href="#kibitzing"><img src="./chessimages/arrow_down.gif" width="7" height="8" border="0">Kibitzing</a>
+						<a class="nav-item nav-link fs-ten text-decoration-none py-0 d-flex align-self-center" href="#kibitzing"><img src="./chessimages/arrow_down.gif" width="7" height="8" border="0">Kibitzing</a>
 					</div>
 					<!-- end of navbar-nav -->
 				</ul>
@@ -93,7 +91,7 @@
 			</div>
 			<!-- end of #myTogglerNav -->
 
-			<button id="desktopVersion" onclick="resize()" class="d-md-none">Desktop Version</button>
+			<button id="desktopVersion" class="d-sm-none">Desktop Version</button>
 			<div class="adsbyir 970x250"></div>
 
 		</div>
@@ -109,10 +107,10 @@
 	</script>
 	<!--endtopirbanner-->
 
-	<div id="three-columns" class="desktop mx-3 mx-md-1">
-		<div class="desktop-row row d-flex justify-content-center no-gutters">
+	<div id="three-columns" class="mx-2">
+		<div class="desktop-row row d-flex justify-content-center g-1">
 
-			<div id="umn-one" class="desktop col-md-2 justify-content-center">
+			<div id="umn-one" class="desktop col-sm-2 justify-content-center">
 
 				<section id="cg-gotd" class="cg-section my-1">
 					<header>
@@ -170,208 +168,246 @@
 				<div class="image-div">
 					<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="190" height="135"></a>
 				</div>
-				<section id="cg-new-events" class="cg-section my-1">
-					<header>
-						<h2>New Events</h2>
-					</header>
-					<div id="more-events-link" class="more-events-div m-3">
-						<a href="/perl/newtournaments" class="more-events-link events"> more events... </a>
-					</div>
-					<!--beginchesslive-->
-					<!--endchesslive-->
-					<div id="cron-new-events">
-						<!--beginnewgames-->
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105124">US Championship</a>
-							</h4>
-							<span class='ne-header'>Saint Louis, MO USA<br> Oct 5 - 19 2021</span>
-							<p class="xsm fs-ten lh-inherit">The U.S. Championship features 12 players competing for $194,000 in prize money and qualification into the World Championship cycle.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105126">US Championship (Women)</a>
-							</h4>
-							<span class='ne-header'>Saint Louis, MO USA<br> Oct 5 - 19 2021</span>
-							<p class="xsm fs-ten lh-inherit"> The U.S. Women Championship features 12 players competing for $100,000 in prize money and qualification into the Women's World Championship cycle.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105014">Meltwater Tour Final</a>
-							</h4>
-							<span class='ne-header'>chess24.com INT<br> Sept 25 - Oct 4 2021</span>
-							<p class="xsm fs-ten lh-inherit">The Meltwater Champions Chess Tour Final is the 10th and last event of the $1.5 million Meltwater Champions Chess Tour 2020-2021. A 10-player round-robin tournament over 10 days, the games are played
-								online from 25
-								September to 4 October on the chess24 Playzone.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104974">European Club Cup (Women)</a>
-							</h4>
-							<span class='ne-header'>Struga, North Macedonia<br> Sept 19-24 2021</span>
-							<p class="xsm fs-ten lh-inherit">The 25th European Club Cup for Women was held from 18-24 September 2019 at Hotel Drim in Struga, North Macedonia. The tournament was a 7-round Swiss team event played with the standard time control of 90
-								minutes for the
-								first 40 moves followed by 30 more minutes till the end of the game, with 30 seconds added per move from move 1.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104973">36th ECC Open</a>
-							</h4>
-							<span class='ne-header'>Struga, North Macedonia<br> Sept 19-24 2021</span>
-							<p class="xsm fs-ten lh-inherit">The 36th European Club Cup was held from 18-24 September 2019 at Hotel Izgrev in Struga, North Macedonia. It was a 7-round Swiss team event, with the time control of 90 minutes for the first 40 moves
-								followed by 30
-								more minutes till the end of the game, with 30 seconds added per move from move 1.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104921">Tolstoy Memorial</a>
-							</h4>
-							<span class='ne-header'>Yasnaya Polyana RUS<br> Sep 11-12 2021</span>
-							<p class="xsm fs-ten lh-inherit">The Tolstoy Memorial consists of 9 rounds with a time control of 15 minutes and 10 second increments starting from move 1.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104876">Norway Chess</a>
-							</h4>
-							<span class='ne-header'>Stavanger NOR<br> Sep 07-17 2021</span>
-							<p class="xsm fs-ten lh-inherit">The Norway Chess Tournament is a double round-robin that consists of 10 rounds. Time control is 120 minutes with 10 second increments after move 40.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104826">Aimchess US Rapid</a>
-							</h4>
-							<span class='ne-header'>chess24.com INT Aug 26- Sep 05 2021</span>
-							<p class="xsm fs-ten lh-inherit">Aimchess US Rapid starts with a 16-player round robin, with the top 8 advancing to the finals. The time control is 15 minutes plus a 10-second increment.<br> &nbsp;</p>
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104811">European Championship</a>
-							</h4>
-							<span class='ne-header'>Reykjavik, ISL Aug 26- Sep 05 2021</span>
-							<p class="xsm fs-ten lh-inherit">The European Individual Chess Championship 2021 is an 11-round swiss tournament with a prize fund of 100,000EUR.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104726">Sinquefield Cup</a>
-							</h4>
-							<span class='ne-header'>St. Louis, MO USA<br> Aug 16-28 2021</span>
-							<p class="xsm fs-ten lh-inherit">The Sinquefield Cup is a 10-player round robin taking place at Saint Louis, Missouri, USA. It is the final event of the 2021 Grand Chess Tour with a prize fund of $325,000.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104467">FIDE World Cup</a>
-							</h4>
-							<span class='ne-header'>Sochi, RUS<br> Jul 10 - Aug 08 2021</span>
-							<p class="xsm fs-ten lh-inherit">The FIDE World Cup is a 206-player elimination event, taking place at Sochi, Russia.</p> &nbsp;
-						</section>
-						<section class="section-events text-start fs-thirteen lh-normal">
-							<h4>
-								<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104472">FIDE World Cup (Women)</a>
-							</h4>
-							<span class='ne-header'>Sochi, RUS<br> Jul 10 - Aug 04 2021</span>
-							<p class="xsm fs-ten lh-inherit">The FIDE World Cup (women) is a 103-player elimination event, taking place at Sochi, Russia.</p> &nbsp;<br>
-						</section>
-						<!--endnewgames-->
-					</div>
-					<!-- end of #cron-new-events -->
-					<div class="more-events-div">
-						<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
-					</div>
-				</section>
-				<div id="happy-birthdays" class=" cg-section text-start">
 
-					<h2 id="hb-header" class="text-center p-1 m-0 w-100">Happy Birthday To:</h2>
-					<!-- <td align=CENTER background="/chessimages/highlight_stripes.gif"> -->
-
-					<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=113159">C P Hofstede de Groot</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=10594">Heinrich Wolf</a>, <a class="fs-thirteen fw-normal"
-						href="/perl/chessplayer?pid=130909">John Morris Gehl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=150237">Marinus
-						Franciscus Lichtendahl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=72237">Mona May Karff</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=40013">Anatoly Mikhailovich Sadomsky</a>, <a
-						class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=168359">William Harold Cozens</a>, <a href="/perl/chessplayer?pid=21214">Borislav Milic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=93798">Francisco
-						Alves</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=141555">Dan Reynolds</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=101896">Gintautas Petraitis</a>,
-					<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=119560">Drago Bulatovic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=122874">Liliana Sielewicz</a>, <a class="fs-thirteen fw-normal"
-						href="/perl/chessplayer?pid=49705">Alexei Gavrilov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=17703">Konstantin N
-						Aseev</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=50317">Dmitry Bocharov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=125780">Alejandro Moreno Trujillo</a>, <a class="fs-thirteen fw-normal"
-						href="/perl/chessplayer?pid=98394">George Xie Wendi</a>, and <a href="/perl/chessplayer?pid=106746">Tobias Hirneise</a>! </font>
+				<div class="accordion" id="accordionPanelsStayOpenExample">
+					<div class="accordion-item">
+						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+								New Events
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+							<div class="accordion-body">
+								<div id="more-events-link" class="more-events-div m-3">
+									<a href="/perl/newtournaments" class="more-events-link events"> more events... </a>
+								</div>
+								<!--beginchesslive-->
+								<!--endchesslive-->
+								<div id="cron-new-events">
+									<!--beginnewgames-->
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105124">US Championship</a>
+										</h4>
+										<span class='ne-header'>Saint Louis, MO USA<br> Oct 5 - 19 2021</span>
+										<p class="xsm fs-ten lh-inherit">The U.S. Championship features 12 players competing for $194,000 in prize money and qualification into the World Championship cycle.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105126">US Championship (Women)</a>
+										</h4>
+										<span class='ne-header'>Saint Louis, MO USA<br> Oct 5 - 19 2021</span>
+										<p class="xsm fs-ten lh-inherit"> The U.S. Women Championship features 12 players competing for $100,000 in prize money and qualification into the Women's World Championship cycle.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105014">Meltwater Tour Final</a>
+										</h4>
+										<span class='ne-header'>chess24.com INT<br> Sept 25 - Oct 4 2021</span>
+										<p class="xsm fs-ten lh-inherit">The Meltwater Champions Chess Tour Final is the 10th and last event of the $1.5 million Meltwater Champions Chess Tour 2020-2021. A 10-player round-robin tournament over 10 days, the games
+											are
+											played
+											online from 25
+											September to 4 October on the chess24 Playzone.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104974">European Club Cup (Women)</a>
+										</h4>
+										<span class='ne-header'>Struga, North Macedonia<br> Sept 19-24 2021</span>
+										<p class="xsm fs-ten lh-inherit">The 25th European Club Cup for Women was held from 18-24 September 2019 at Hotel Drim in Struga, North Macedonia. The tournament was a 7-round Swiss team event played with the standard time
+											control of 90
+											minutes for the
+											first 40 moves followed by 30 more minutes till the end of the game, with 30 seconds added per move from move 1.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104973">36th ECC Open</a>
+										</h4>
+										<span class='ne-header'>Struga, North Macedonia<br> Sept 19-24 2021</span>
+										<p class="xsm fs-ten lh-inherit">The 36th European Club Cup was held from 18-24 September 2019 at Hotel Izgrev in Struga, North Macedonia. It was a 7-round Swiss team event, with the time control of 90 minutes for the first
+											40
+											moves
+											followed by 30
+											more minutes till the end of the game, with 30 seconds added per move from move 1.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104921">Tolstoy Memorial</a>
+										</h4>
+										<span class='ne-header'>Yasnaya Polyana RUS<br> Sep 11-12 2021</span>
+										<p class="xsm fs-ten lh-inherit">The Tolstoy Memorial consists of 9 rounds with a time control of 15 minutes and 10 second increments starting from move 1.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104876">Norway Chess</a>
+										</h4>
+										<span class='ne-header'>Stavanger NOR<br> Sep 07-17 2021</span>
+										<p class="xsm fs-ten lh-inherit">The Norway Chess Tournament is a double round-robin that consists of 10 rounds. Time control is 120 minutes with 10 second increments after move 40.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104826">Aimchess US Rapid</a>
+										</h4>
+										<span class='ne-header'>chess24.com INT Aug 26- Sep 05 2021</span>
+										<p class="xsm fs-ten lh-inherit">Aimchess US Rapid starts with a 16-player round robin, with the top 8 advancing to the finals. The time control is 15 minutes plus a 10-second increment.<br> &nbsp;</p>
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104811">European Championship</a>
+										</h4>
+										<span class='ne-header'>Reykjavik, ISL Aug 26- Sep 05 2021</span>
+										<p class="xsm fs-ten lh-inherit">The European Individual Chess Championship 2021 is an 11-round swiss tournament with a prize fund of 100,000EUR.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104726">Sinquefield Cup</a>
+										</h4>
+										<span class='ne-header'>St. Louis, MO USA<br> Aug 16-28 2021</span>
+										<p class="xsm fs-ten lh-inherit">The Sinquefield Cup is a 10-player round robin taking place at Saint Louis, Missouri, USA. It is the final event of the 2021 Grand Chess Tour with a prize fund of $325,000.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104467">FIDE World Cup</a>
+										</h4>
+										<span class='ne-header'>Sochi, RUS<br> Jul 10 - Aug 08 2021</span>
+										<p class="xsm fs-ten lh-inherit">The FIDE World Cup is a 206-player elimination event, taking place at Sochi, Russia.</p> &nbsp;
+									</section>
+									<section class="section-events text-start fs-thirteen lh-normal">
+										<h4>
+											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104472">FIDE World Cup (Women)</a>
+										</h4>
+										<span class='ne-header'>Sochi, RUS<br> Jul 10 - Aug 04 2021</span>
+										<p class="xsm fs-ten lh-inherit">The FIDE World Cup (women) is a 103-player elimination event, taking place at Sochi, Russia.</p> &nbsp;<br>
+									</section>
+									<!--endnewgames-->
+								</div>
+								<!-- end of cron-new-events -->
+								<div class="more-events-div">
+								</div>
+								<!-- end of accordion-body -->
+							</div>
+							<!-- end of accordion-body -->
+							<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
+						</div>
+					</div>
 				</div>
-				<!--endbirthday-->
-				<!-- <img src="/chessimages/spacer.gif" alt=" " width=4 height=4><br> -->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+							Happy Birthday
+						</button>
+					</h2>
+					<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+						<div class="accordion-body">
+							<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=113159">C P Hofstede de Groot</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=10594">Heinrich Wolf</a>, <a class="fs-thirteen fw-normal"
+								href="/perl/chessplayer?pid=130909">John Morris Gehl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=150237">Marinus
+								Franciscus Lichtendahl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=72237">Mona May Karff</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=40013">Anatoly Mikhailovich Sadomsky</a>, <a
+								class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=168359">William Harold Cozens</a>, <a href="/perl/chessplayer?pid=21214">Borislav Milic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=93798">Francisco
+								Alves</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=141555">Dan Reynolds</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=101896">Gintautas Petraitis</a>,
+							<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=119560">Drago Bulatovic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=122874">Liliana Sielewicz</a>, <a class="fs-thirteen fw-normal"
+								href="/perl/chessplayer?pid=49705">Alexei Gavrilov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=17703">Konstantin N
+								Aseev</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=50317">Dmitry Bocharov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=125780">Alejandro Moreno Trujillo</a>, <a class="fs-thirteen fw-normal"
+								href="/perl/chessplayer?pid=98394">George Xie Wendi</a>, and <a href="/perl/chessplayer?pid=106746">Tobias Hirneise</a>!
+						</div>
+					</div>
+				</div>
 
-				<section id="cg-chess-news" class="cg-section my-1">
-					<header>
-						<h2>Chess News</h2>
-					</header>
-					<!--beginnews-->
+				<div class="accordion-item">
+					<h2 class="accordion-header" id="panelsStayOpen-headingThree">
+						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+							Chess News
+						</button>
+					</h2>
+					<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+						<div class="accordion-body">
+							<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal" href="https://www.rappler.com/sports/wesley-so-retains-us-chess-championship-october-19-2021" target="news">Wesley So retains US Chess title, bags P2.5M</a>
+								(rappler.com)</p>
 
-					<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal" href="https://www.rappler.com/sports/wesley-so-retains-us-chess-championship-october-19-2021" target="news">Wesley So retains US Chess title, bags P2.5M</a>
-						(rappler.com)</p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.linkedin.com/pulse/you-want-kill-your-career-learn-think-like-chess-master-chowdhury" target="news">If You Want To Kill It In Your
+									Career, Learn To Think Like A
+									Chess Master</a>
+								(linkedin.com)</p>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.linkedin.com/pulse/you-want-kill-your-career-learn-think-like-chess-master-chowdhury" target="news">If You Want To Kill It In Your
-							Career, Learn To Think Like A
-							Chess Master</a>
-						(linkedin.com)</p>
+							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-11-caruana-miss-means-3-way-playoff" target="news">US Chess Champs 11: Caruana miss means 3-way
+									playoff</a>
+								(chess24.com)</p>
 
-					<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-11-caruana-miss-means-3-way-playoff" target="news">US Chess Champs 11: Caruana miss means 3-way playoff</a>
-						(chess24.com)</p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/mattgardner1/2021/10/19/kasparov-masterclasses-target-chess-esports-stars-of-tomorrow/" target="news">Garry
+									Kasparov
+									Unveils Chess Esports
+									Masterclasses For
+									Future
+									Stars</a> (Forbes)</p>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/mattgardner1/2021/10/19/kasparov-masterclasses-target-chess-esports-stars-of-tomorrow/" target="news">Garry Kasparov
-							Unveils Chess Esports
-							Masterclasses For
-							Future
-							Stars</a> (Forbes)</p>
+							<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal"
+									href="https://jg-tc.com/entertainment/local/whats-happening-mhs-chess-team-fundraiser-casey-westfield-drive-thru-fundraiser/article_99191023-1be9-5872-8f75-2075188fb34e.html" target="news">WHAT'S
+									HAPPENING: MHS Chess Team fundraiser Casey-Westfield drive thru fundraiser</a> (jg-tc.com) </p>
 
-					<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal"
-							href="https://jg-tc.com/entertainment/local/whats-happening-mhs-chess-team-fundraiser-casey-westfield-drive-thru-fundraiser/article_99191023-1be9-5872-8f75-2075188fb34e.html" target="news">WHAT'S
-							HAPPENING: MHS Chess Team fundraiser Casey-Westfield drive thru fundraiser</a> (jg-tc.com) </p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.fide.com/news/1388" target="news">Praggnanandhaa wins Julius Baer Challengers Chess Tour Finals</a> (FIDE)</p>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.fide.com/news/1388" target="news">Praggnanandhaa wins Julius Baer Challengers Chess Tour Finals</a> (FIDE)</p>
+							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.audible.com/pd/An-Attacking-Strategy-with-Chess-Grandmaster-Maurice-Ashley-Podcast/B09JN7FVNP" target="news">An Attacking Strategy with Chess
+									Grandmaster Maurice Ashley</a>
+								(audible.com)
+							</p>
 
-					<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.audible.com/pd/An-Attacking-Strategy-with-Chess-Grandmaster-Maurice-Ashley-Podcast/B09JN7FVNP" target="news">An Attacking Strategy with Chess
-							Grandmaster Maurice Ashley</a>
-						(audible.com)
-					</p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.fide.com/news/1387" target="news">FIDE World Amateur Chess Championship kicks-off in Rhodes</a> (FIDE)</p>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.fide.com/news/1387" target="news">FIDE World Amateur Chess Championship kicks-off in Rhodes</a> (FIDE)</p>
+							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-8-9-caruana-back-in-the-hunt" target="news">US Chess Champs 8-9: Caruana back in the hunt</a>
+								(chess24.com)
+							</p>
 
-					<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-8-9-caruana-back-in-the-hunt" target="news">US Chess Champs 8-9: Caruana back in the hunt</a> (chess24.com)
-					</p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.outlookindia.com/website/story/sports-news-viswanathan-anand-to-do-commentary-during-world-chess-championship/397760"
+									target="news">Viswanathan Anand To Do
+									Commentary During World
+									Chess
+									Championship</a> (Outlook India)</p>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.outlookindia.com/website/story/sports-news-viswanathan-anand-to-do-commentary-during-world-chess-championship/397760"
-							target="news">Viswanathan Anand To Do
-							Commentary During World
-							Chess
-							Championship</a> (Outlook India)</p>
+							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.reuters.com/legal/government/latham-plays-3d-chess-bid-scotus-take-up-new-discovery-case-2021-10-15/" target="news">Latham plays 3D chess in
+									bid
+									for SCOTUS to take up new
+									discovery
+									case</a> (Reuters)</p>
 
-					<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.reuters.com/legal/government/latham-plays-3d-chess-bid-scotus-take-up-new-discovery-case-2021-10-15/" target="news">Latham plays 3D chess in bid
-							for SCOTUS to take up new
-							discovery
-							case</a> (Reuters)</p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.news18.com/news/sports/viswanathan-anand-to-do-commentary-during-world-chess-championship-match-4326608.html"
+									target="news">Viswanathan
+									Anand to do Commentary
+									During World Chess
+									Championship Match</a> (news18.com)</p>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.news18.com/news/sports/viswanathan-anand-to-do-commentary-during-world-chess-championship-match-4326608.html" target="news">Viswanathan
-							Anand to do Commentary
-							During World Chess
-							Championship Match</a> (news18.com)</p>
+							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.yahoo.com/entertainment/female-chess-prodigy-story-eerily-130001147.html" target="news">I Was A Female Chess Prodigy. My Story Is Eerily
+									Similar To
+									'The Queen's
+									Gambit.'</a> (Yahoo!)</p>
 
-					<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.yahoo.com/entertainment/female-chess-prodigy-story-eerily-130001147.html" target="news">I Was A Female Chess Prodigy. My Story Is Eerily Similar To
-							'The Queen's
-							Gambit.'</a> (Yahoo!)</p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.philstar.com/sports/2021/10/15/2134374/general-santos-inmates-place-5th-fide-chess-tiff-prisoners" target="news">General Santos
+									inmates
+									place 5th in FIDE chess
+									tiff for
+									prisoners</a>
+								(philstar.com)</p>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.philstar.com/sports/2021/10/15/2134374/general-santos-inmates-place-5th-fide-chess-tiff-prisoners" target="news">General Santos inmates
-							place 5th in FIDE chess
-							tiff for
-							prisoners</a>
-						(philstar.com)</p>
+							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://fide.com/news/1384" target="news">All India Chess Federation signs a historic agreement with MPL</a> (FIDE)</p>
 
-					<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://fide.com/news/1384" target="news">All India Chess Federation signs a historic agreement with MPL</a> (FIDE)</p>
+							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/forbesagencycouncil/2021/10/14/chess-modern-marketing-lessons-from-an-ancient-game/" target="news">Chess: Modern
+									Marketing Lessons From An
+									Ancient Game</a>
+								(Forbes)</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
-					<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/forbesagencycouncil/2021/10/14/chess-modern-marketing-lessons-from-an-ancient-game/" target="news">Chess: Modern
-							Marketing Lessons From An
-							Ancient Game</a>
-						(Forbes)</p>
-				</section>
-			</div><!-- end of col-first -->
+
+
+
+
+			<!--endbirthday-->
+			<!-- <img src="/chessimages/spacer.gif" alt=" " width=4 height=4><br> -->
+			<!-- end of col-first -->
 			<!-- ++++++ END OF COLUMN ONE -->
 
-			<div id="umn-two" class="desktop col-md-8">
+			<div id="umn-two" class="desktop col-sm-8">
 				<div id="col-mid">
 
 					<section id="cg-search" class="cg-section my-1 pb-1">
@@ -400,103 +436,98 @@
 					<!-- ++++++ end of #cg-search -->
 					<!--newusers-->
 					<!--kibcount-->
-					<section id="cg-advanced-search" class="d-none d-md-block cg-section my-1 d-flex flex-column">
+
+					<section id="cg-advanced-search" class="cg-section my-1 d-flex flex-column">
 						<h2 class="text-start p-1">ADVANCED SEARCH</h2>
 						<form method="GET" action="/perl/chess.pl" class="mobile-hide">
-							<div id="as-year" class="as-section d-flex bg-color-change ">
-								<div class="p-div"><span class="span-bold">Year</span>is</div>
-								<!-- //end of year is p-div -->
-								<div id="pick-year" class="p-div">
-									<select name="yearcomp">
+
+							<div id="as-year" class="as-section d-flex bg-color-change">
+								<td class="">
+									<span class="span-bold d-flex align-self-center">Year</span>
+									<span class="d-flex align-self-center">is</span>
+								</td>
+								<td class="position-relative tedee">
+									<select name="yearcomp" class="w-auto h-25 d-flex align-self-center">
 										<option value="exactly"></option>
 										<option value="exactly">= exactly</option>
 										<option value="le">&lt;= no later than</option>
 										<option value="ge">&gt;= at least</option>
 									</select>
-								</div>
-								<!-- end of #pick-year .p-div -->
-								<div class="p-div">
-									<input type="text" name="year" size="6">
-									<p class="example">e.g.1905</p>
-								</div>
-								<!-- end of input .p-div -->
+								</td>
+								<td>
+									<input type="text" name="year" size="6" class="d-flex align-self-center">
+									<p class="example d-flex align-self-center">e.g.1905</p>
+								</td>
 							</div>
+
 							<!-- end of #as-year -->
-							<section id="as-player" class="as-section d-flex">
-								<div class="p-div p-div-stacked">
-									<p class="span-bold">Player</p>
-									<select name="playercomp">
-										<option value="either"></option>
-										<option value="white">White</option>
-										<option value="black">Black</option>
-									</select>
-									<p> is </p>
-								</div>
-								<!-- //end of .p-div -->
-								<div class="stacked-inputs">
-									<div class="as-select-input">
-										<select name="pid" class="pulldown w-100">@PLAYERPULL</select>
-										<input type="checkbox" class="long-list">
-										<label>longer list </label>
-									</div>
-									<!-- end of select longer list -->
-									<div> or <input type="text" name="player" class="w-">
-									</div>
-									<!-- end of input longer list -->
-								</div>
-								<!-- end of .stacked-inputs p-div  -->
-								<div class="directory p-div p-div-stacked">
-									<a href="/directory/" class="example">(Directory)</a>
-								</div>
-								<!-- end of .directory -->
-							</section>
+							<tr>
+								<section id="as-player" class="as-section d-flex">
+									<td>
+										<span class="span-bold d-flex align-self-center">Player</span>
+										<select name="playercomp" class="d-flex align-self-center">
+											<option value="either"></option>
+											<option value="white">White</option>
+											<option value="black">Black</option>
+										</select>
+										<span class="d-flex align-self-center m-1"> is </span>
+									</td>
+									<td>
+										<div class="d-flex flex-column ms-5">
+											<span class="d-flex">
+												<select name="pid" class="pulldown m-1 w-100">@PLAYERPULL</select>
+											</span>
+											<span class="d-flex"> or <input type="text" name="player" class="m-1"></span>
+										</div>
+									<td>
+										<input type="checkbox" class="long-list mt-1">
+										<label class="mt-1">longer list</label>
+									</td>
+									</td>
+									<td>
+										<a href="/directory/" class="example d-flex align-self-center mx-auto">(Directory)</a>
+									</td>
+								</section>
+							</tr>
 							<!-- end of #as-player -->
-							<div id="as-opposing-player" class="as-section bg-color-change d-flex">
-								<div class="p-div p-div-stacked">
-									<span class="span-bold">Opposing player</span> is
-								</div>
-								<!-- end of .p-div-stacked -->
-								<div class="stacked-inputs">
-									<div>
-										<select name="pid2" class="pulldown">@PLAYERPULL</select>
-										<label>
-											<input type="checkbox" class="long-list"> longer list </label>
+							<tr>
+								<div id="as-opposing-player" class="as-section bg-color-change d-flex p-0">
+									<span class="span-bold d-flex align-self-center">Opposing player</span>
+									<span class="d-flex align-self-center">is</span>
+									<div class="d-flex flex-column ms-5">
+										<select name="pid2" class="pulldown m-1 w-100">@PLAYERPULL</select>
+										<span class="d-flex">or <input type="text" name="player2" class="m-1"></span>
 									</div>
-									<!-- <select name="pid2">@PLAYERPULL</select> -->
-									<div> or <input type="text" name="player2">
-									</div>
-									<!-- end of input -->
+									<input type="checkbox" class="long-list mt-2 ms-1">
+									<label class="mt-1"> longer list </label>
 								</div>
-								<!-- end of .stacked-inputs -->
-							</div>
+							</tr>
 							<!-- end of #as-opposing-player -->
-							<div id="as-nom" class="as-section d-flex">
-								<div class="p-div">
-									<span class="span-bold">Number of moves</span> is
+							<tr>
+								<div id="as-nom" class="as-section d-flex">
+									<td>
+										<span class="span-bold d-flex align-self-center">Number of moves</span>
+										<span class="d-flex align-self-center">is</span>
+									</td>
+									<td>
+										<select name="movescomp" class="w-auto h-25 d-flex align-self-center">
+											<option value="exactly"></option>
+											<option value="exactly">= exactly</option>
+											<option value="le">&lt;= no more than</option>
+											<option value="ge">&gt;= at least</option>
+										</select>
+									</td>
+									<td>
+										<input type="text" name="moves" size="6" class="d-flex align-self-center">
+									</td>
 								</div>
-								<!-- end of .p-div -->
-								<div class="p-div">
-									<select name="movescomp">
-										<option value="exactly"></option>
-										<option value="exactly">= exactly</option>
-										<option value="le">&lt;= no more than</option>
-										<option value="ge">&gt;= at least</option>
-									</select>
-								</div>
-								<!-- end of .p-div -->
-								<div class="p-div">
-									<input type="text" name="moves" size="6">
-								</div>
-								<!-- end of .p-div -->
-							</div>
+							</tr>
 							<!-- end of #as-nom -->
-							<div id="as-opening" class="as-section bg-color-change d-flex">
-								<div class="p-div">
-									<span class="span-bold">Opening</span> is
-								</div>
-								<!-- end of .p-div -->
-								<div class="p-div">
-									<select name="opening">
+							<tr>
+								<div id="as-opening" class="as-section bg-color-change d-flex p-0">
+									<span class="span-bold d-flex align-self-center">Opening</span>
+									<span class="d-flex align-self-center">is</span>
+									<select name="opening" class="w-auto mx-auto h-25 d-flex align-self-center m-1">
 										<option value=""></option>
 										<option value="">------- 1 e4</option>
 										<option value=""></option>
@@ -582,31 +613,22 @@
 										<option value="A10-A19">- other</option>
 									</select>
 								</div>
-								<!-- end of .p-div -->
-							</div>
-							<!-- end of #as-opening -->
-							<div id="as-eco" class="as-section d-flex">
-								<div class="p-div">
-									<span class="span-bold">ECO code</span> is
+							</tr>
+							<!-- end of as-opening -->
+							<tr>
+								<div id="as-eco" class="as-section d-flex">
+									<span class="span-bold d-flex align-self-center">ECO code</span>
+									<span class="d-flex align-self-center">is</span>
+									<a href="javascript:OpenWin('/chessecohelp.html')" class="w-auto mx-auto h-25 d-flex align-self-center">(ECO help)</a>
+									<input type="text" name="eco" class="d-flex align-self-center me-5 m-1">
 								</div>
-								<!-- end of .p-div -->
-								<div class="p-div">
-									<a href="javascript:OpenWin('/chessecohelp.html')">(ECO help)</a>
-								</div>
-								<!-- end of .p-div -->
-								<div class="p-div">
-									<input type="text" name="eco">
-								</div>
-								<!-- end of .p-div -->
-							</div>
+							</tr>
 							<!-- end of #as-eco -->
-							<div id="as-result" class="as-section bg-color-change d-flex">
-								<div class="p-div">
-									<span class="span-bold">Result</span> is
-								</div>
-								<!-- end of .p-div -->
-								<div class="p-div">
-									<select name="result">
+							<tr>
+								<div id="as-result" class="as-section bg-color-change d-flex p-0">
+									<span class="span-bold d-flex align-self-center">Result</span>
+									<span class="d-flex align-self-center">is</span>
+									<select name="result" class="w-auto mx-auto h-25 d-flex flex-row-reverse align-self-center m-1">
 										<option value=""></option>
 										<option value="1-0">White wins</option>
 										<option value="0-1">Black wins</option>
@@ -616,14 +638,8 @@
 										<option value="notdraw">not a draw</option>
 									</select>
 								</div>
-								<!-- end of .p-div -->
-							</div>
+							</tr>
 							<!-- end of #as-result -->
-							<table>
-								<tbody>
-									<!--tidpulldown-->
-								</tbody>
-							</table>
 							<div id="as-checkboxes">
 								<div class="p-div-checkboxes">
 									<label>
@@ -653,6 +669,13 @@
 						</form>
 					</section>
 					<!-- +++++END OF #cg-advanced-search -->
+
+					<table>
+						<tbody>
+							<!--tidpulldown-->
+						</tbody>
+					</table>
+
 					<div id="potd" class="cg-section my-1 border border-none">
 						<!-- <img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale"> -->
 						<!--beginpuzzle-->
@@ -703,7 +726,8 @@
 							<section id="cg-getting-started" class="flex">
 								<h2 class="mb-3">NEW USERS: Getting Started</h2>
 								<div class="mobile-hide">
-									<p class="mb-3"> Founded on an extensive database of historical chess games combined with discussion forums, Chessgames.com is the internet's first and foremost chess community, where players of every skill level are encouraged to
+									<p class="mb-3"> Founded on an extensive database of historical chess games combined with discussion forums, Chessgames.com is the internet's first and foremost chess community, where players of every skill level are encouraged
+										to
 										participate. From novices to grandmasters, all members can learn from those who are stronger players, while guiding those who are less experienced. </p>
 									<p class="mb-3">
 										<a href="/perl/chessprofile.pl">Register now</a>. It's quick, free, and anonymous. This will allow you to "kibitz" in our discussion forums, make game collections, and use other powerful features.
@@ -789,7 +813,8 @@
 										famous historical events such as <a href="/perl/chess.pl?tid=79221">Hastings (1895)</a> and <a href="/perl/chess.pl?tid=79229">AVRO (1938)</a>.
 									</li>
 									<li class="middle-li mb-2">
-										By popular vote of Chessgames members, the <i>Thematic Challenge</i> was the Albin Countergambit (1.d4 d5 2.c4 e5). After 40 moves, the game was drawn. You can see the game here: <a href="/perl/chessgame?gid=1665074">Team White
+										By popular vote of Chessgames members, the <i>Thematic Challenge</i> was the Albin Countergambit (1.d4 d5 2.c4 e5). After 40 moves, the game was drawn. You can see the game here: <a href="/perl/chessgame?gid=1665074">Team
+											White
 											vs Team Black (2012)</a>.
 									</li>
 									<li class="middle-li mb-2">
@@ -1004,7 +1029,7 @@
 			</div>
 			<!-- ++++++++++++ END OF #umn-two-->
 
-			<div id="umn-three" class="desktop umn-three col-md-2">
+			<div id="umn-three" class="desktop umn-three col-sm-2">
 				<!--beginnonpremium-->
 				<div id="cg-promote-banner" class="image-div">
 					<a id="promote-banner" href="/perl/tour" target="_blank">
@@ -1516,11 +1541,11 @@
 	<!--endstickyfooterad-->
 
 	<!-- JavaScript ssm -->
-	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+	<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
 	<!--homejsSSM-->
 	<!-- ---------------------------FOR BOOTSTRAP ------------------- -->
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+	<script defer src="app.js"> </script>
 </body>
 
 </html>

@@ -43,36 +43,6 @@ p#tip-more-info a {
   margin-right: .4rem;
 }
 
-.p-div select {
-  width: 5rem;
-  height: 1.5rem;
-}
-
-div.stacked-inputs {
-  flex: none;
-}
-
-div.p-div {
-  display: flex;
-  width: 17rem;
-}
-
-div.p-div-eco {
-  display: flex;
-}
-
-div.p-div-opening {
-  display: flex;
-}
-
-div.p-div-stacked {
-  margin-top: 1rem;
-}
-
-div.as-section {
-  display: flex;
-}
-
 #as-checkboxes {
   display: flex;
   flex-direction: row-reverse;
@@ -81,8 +51,4 @@ div.as-section {
 #as-buttons {
   display: flex;
   justify-content: space-between;
-}
-
-div.directory {
-  margin-left: 7rem;
 }
