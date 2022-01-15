@@ -13,6 +13,16 @@ $(document).ready(function() {
     windowWidth = $(window).width();
     console.log("windowWidth");
     console.log(windowWidth);
+    if (windowWidth >= 576) {
+      console.log("greater thatn 576");
+      $(".middle-bottom-accordion").removeClass('border').addClass('border-none');
+      $(".middle-bottom-accordion").removeClass('border-1');
+      $(".middle-bottom-accordion").removeClass('border-dark');
+    } else {
+      $(".middle-bottom-accordion").addClass('border');
+      $(".middle-bottom-accordion").addClass('border-1');
+      $(".middle-bottom-accordion").addClass('border-dark');
+    }
   });
 
   //Resize window
@@ -31,5 +41,16 @@ $(document).ready(function() {
     $('.desktop-row').removeClass('column').addClass('row');
   }
   // end of resizeMobile()
+
+
+  function borderNone() {
+    if (windowWidth >= 576) {
+      // $(".middle-bottom-accordion").removeClass('border');
+      // $(".middle-bottom-accordion").removeClass('border-1');
+      // $(".middle-bottom-accordion").removeClass('border-dark');
+      console.log("greater than 576");
+    }
+  }
+
 });
 // end of doc ready function

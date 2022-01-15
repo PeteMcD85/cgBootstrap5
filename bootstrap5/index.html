@@ -14,10 +14,6 @@
 	<!-- Bootstrap CSS -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link rel="stylesheet" href="./styles.css/style.css">
-	<link rel="stylesheet" href="./styles.css/body-container.css">
-	<link rel="stylesheet" href="./styles.css/first-col.css">
-	<link rel="stylesheet" href="./styles.css/mid-col.css">
-	<link rel="stylesheet" href="./styles.css/last-col.css">
 	<title>ChessGames</title>
 </head>
 
@@ -45,17 +41,20 @@
 			<area shape="rect" coords="177,21,230,40" href="/chesshelp.html">
 		</map>
 	</header>
-
+	<!-- end of site-header -->
 	<!--beginmenu-->
-	<!-- +++++++ HEADER LINKS.. Under logo -->
 
-	<nav id="site-nav" class="navbar navbar-expand-sm navbar-light m-1 border m-0 p-0">
+	<!-- navbar navbar-expand-sm navbar-light-->
+	<nav id="site-nav" class=" m-1 border border-1 border-dark m-0 p-0">
 		<div class="container-fluid ">
-			<button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#myTogglerNav" aria-controls="#myTogglerNav" aria-label="myTogglerNav">
-				<span class="navbar-toggler-icon"></span>
+			<!-- navbar-toggle  data-bs-toggle="collapse"  -->
+			<!-- <button class="r " type="button" data-bs-target="#myTogglerNav" aria-controls="#myTogglerNav" aria-label="myTogglerNav"> -->
+			<!-- <span class="navbar-toggler-icon"></span> -->
 			</button>
-			<div class="collapse navbar-collapse m-0 p-0" id="myTogglerNav">
-				<ul class="navbar-nav me-auto mb-0 mb-lg-0 ">
+			<!-- collapse navbar-collapse -->
+			<div class=" m-0 p-0" id="myTogglerNav">
+				<!-- navbar-nav  -->
+				<ul class="me-auto mb-0 mb-lg-0 ">
 					<div class=" d-flex flex-wrap justify-content-center">
 						<a class="nav-link active fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/chessmembers">Members</a>
 						<b>&#183;</b>
@@ -97,6 +96,7 @@
 		</div>
 		<!-- end of container-fluid -->
 	</nav>
+	<!-- end of site-nav -->
 	<!--endmenu-->
 	<!--enhancedmenu-->
 	<!-- <div> <h6 style="text-align:\;color:red;width:80%;margin:0 auto;">Chessgames.com will be unavailable Friday, June 18th, 2021 from 12PM through 2PM Eastern Time Zone for maintenance.<br> We apologize for this inconvenience.</h6> </div> -->
@@ -112,31 +112,33 @@
 
 			<div id="umn-one" class="desktop col-sm-2 justify-content-center">
 
-				<section id="cg-gotd" class="cg-section my-1">
-					<header>
-						<h2>
-							<a href=" /perl/gamesoftheday" class="header-link">Game of the Day </a>
-						</h2>
-						<h3>
-							<!--begintoday-->Wednesday, October 20
-							<!--endtoday-->
-						</h3>
-					</header>
+				<section id="cg-gotd" class="cg-section  border border-1 border-dark text-center pt-1">
+
+					<h2 class="m-1">
+						<a href=" /perl/gamesoftheday" class="header-link text-decoration-none">Game of the Day </a>
+					</h2>
+					<h3>
+						<!--begintoday-->Wednesday, October 20
+						<!--endtoday-->
+					</h3>
+
 					<div>
-						<p>
+						<p class="m-1">
 							<!--begingameotd-->
-							<a href="/perl/chessgame?gid=1095991" class="names">Kosten<br> vs<br> Chandler </a>
+							<a href="/perl/chessgame?gid=1095991" class="names ">Kosten
+								<br> vs<br> Chandler
+							</a>
 							<!-- <br> -->
-						<footer class="fw-bolder"> Farewell, My Lovely<br> (by sleepyirv) </footer>
+						<footer class="fw-bolder m-1"> Farewell, My Lovely<br> (by sleepyirv) </footer>
 						<!--endgameotd-->
 						<p>
 					</div>
 				</section>
 
-				<section id="cg-playerotd" class="cg-section my-1">
+				<section id="cg-playerotd" class="cg-section  border border-1 border-dark my-1 text-center p-1">
 					<header>
 						<h2>
-							<a href="/directory/" class="header-link">Player of the Day</a>
+							<a href="/directory/" class="header-link text-decoration-none">Player of the Day</a>
 						</h2>
 					</header>
 					<div>
@@ -148,10 +150,10 @@
 					</div>
 				</section>
 
-				<section id="cg-openingotd" class="cg-section my-1">
+				<section id="cg-openingotd" class="cg-section  border border-1 border-dark my-1 text-center p-1">
 					<header>
 						<h2>
-							<a href="/perl/explorer" class="header-link">Opening of the Day</a>
+							<a href="/perl/explorer" class="header-link text-decoration-none">Opening of the Day</a>
 						</h2>
 					</header>
 					<div>
@@ -169,15 +171,15 @@
 					<a href="/perl/quiz?gid=1139502"><img src="./chessimages/gtm_tal.gif" alt="*** FREE DEMO *** Can you play like Tal?" width="190" height="135"></a>
 				</div>
 
-				<div class="accordion" id="accordionPanelsStayOpenExample">
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="panelsStayOpen-headingOne">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+				<div class="accordion" id="accordionNewEventsHappyBirthdayChessNews">
+					<div class="accordion-item accrdion-section border border-1 border-dark my-1  accrdion-section border border-1 border-dark my-1">
+						<h2 class="accordion-header" id="panelsStayOpen-headingNewEvents">
+							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNewEvents" aria-expanded="true" aria-controls="panelsStayOpen-collapseNewEvents">
 								New Events
 							</button>
 						</h2>
-						<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingOne">
-							<div class="accordion-body">
+						<div id="panelsStayOpen-collapseNewEvents" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNewEvents">
+							<div class="accordion-body p-0">
 								<div id="more-events-link" class="more-events-div m-3">
 									<a href="/perl/newtournaments" class="more-events-link events"> more events... </a>
 								</div>
@@ -291,112 +293,114 @@
 							<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
 						</div>
 					</div>
-				</div>
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="panelsStayOpen-headingTwo">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-							Happy Birthday
-						</button>
-					</h2>
-					<div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
-						<div class="accordion-body">
-							<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=113159">C P Hofstede de Groot</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=10594">Heinrich Wolf</a>, <a class="fs-thirteen fw-normal"
-								href="/perl/chessplayer?pid=130909">John Morris Gehl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=150237">Marinus
-								Franciscus Lichtendahl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=72237">Mona May Karff</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=40013">Anatoly Mikhailovich Sadomsky</a>, <a
-								class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=168359">William Harold Cozens</a>, <a href="/perl/chessplayer?pid=21214">Borislav Milic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=93798">Francisco
-								Alves</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=141555">Dan Reynolds</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=101896">Gintautas Petraitis</a>,
-							<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=119560">Drago Bulatovic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=122874">Liliana Sielewicz</a>, <a class="fs-thirteen fw-normal"
-								href="/perl/chessplayer?pid=49705">Alexei Gavrilov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=17703">Konstantin N
-								Aseev</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=50317">Dmitry Bocharov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=125780">Alejandro Moreno Trujillo</a>, <a class="fs-thirteen fw-normal"
-								href="/perl/chessplayer?pid=98394">George Xie Wendi</a>, and <a href="/perl/chessplayer?pid=106746">Tobias Hirneise</a>!
+
+					<div class="accordion-item accrdion-section border border-1 border-dark my-1  accrdion-section border border-1 border-dark my-1">
+						<h2 class="accordion-header" id="panelsStayOpen-headingHappyBirthday">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHappyBirthday" aria-expanded="false" aria-controls="panelsStayOpen-collapseHappyBirthday">
+								Happy Birthday To:
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseHappyBirthday" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingHappyBirthday">
+							<div class="accordion-body p-0">
+								<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=113159">C P Hofstede de Groot</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=10594">Heinrich Wolf</a>, <a class="fs-thirteen fw-normal"
+									href="/perl/chessplayer?pid=130909">John Morris Gehl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=150237">Marinus
+									Franciscus Lichtendahl</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=72237">Mona May Karff</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=40013">Anatoly Mikhailovich Sadomsky</a>, <a
+									class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=168359">William Harold Cozens</a>, <a href="/perl/chessplayer?pid=21214">Borislav Milic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=93798">Francisco
+									Alves</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=141555">Dan Reynolds</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=101896">Gintautas Petraitis</a>,
+								<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=119560">Drago Bulatovic</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=122874">Liliana Sielewicz</a>, <a class="fs-thirteen fw-normal"
+									href="/perl/chessplayer?pid=49705">Alexei Gavrilov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=17703">Konstantin N
+									Aseev</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=50317">Dmitry Bocharov</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=125780">Alejandro Moreno Trujillo</a>, <a class="fs-thirteen fw-normal"
+									href="/perl/chessplayer?pid=98394">George Xie Wendi</a>, and <a href="/perl/chessplayer?pid=106746">Tobias Hirneise</a>!
+							</div>
 						</div>
 					</div>
-				</div>
 
-				<div class="accordion-item">
-					<h2 class="accordion-header" id="panelsStayOpen-headingThree">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-							Chess News
-						</button>
-					</h2>
-					<div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
-						<div class="accordion-body">
-							<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal" href="https://www.rappler.com/sports/wesley-so-retains-us-chess-championship-october-19-2021" target="news">Wesley So retains US Chess title, bags P2.5M</a>
-								(rappler.com)</p>
+					<div class="accordion-item accrdion-section border border-1 border-dark my-1  accrdion-section border border-1 border-dark my-1 ">
+						<h2 class="accordion-header " id="panelsStayOpen-headingChessNews">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChessNews" aria-expanded="false" aria-controls="panelsStayOpen-collapseChessNews">
+								Chess News
+							</button>
+						</h2>
+						<div id="panelsStayOpen-collapseChessNews" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingChessNews">
+							<div class="accordion-body p-0">
+								<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal" href="https://www.rappler.com/sports/wesley-so-retains-us-chess-championship-october-19-2021" target="news">Wesley So retains US Chess title, bags P2.5M</a>
+									(rappler.com)</p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.linkedin.com/pulse/you-want-kill-your-career-learn-think-like-chess-master-chowdhury" target="news">If You Want To Kill It In Your
-									Career, Learn To Think Like A
-									Chess Master</a>
-								(linkedin.com)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.linkedin.com/pulse/you-want-kill-your-career-learn-think-like-chess-master-chowdhury" target="news">If You Want To Kill It In Your
+										Career, Learn To Think Like A
+										Chess Master</a>
+									(linkedin.com)</p>
 
-							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-11-caruana-miss-means-3-way-playoff" target="news">US Chess Champs 11: Caruana miss means 3-way
-									playoff</a>
-								(chess24.com)</p>
+								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-11-caruana-miss-means-3-way-playoff" target="news">US Chess Champs 11: Caruana miss means 3-way
+										playoff</a>
+									(chess24.com)</p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/mattgardner1/2021/10/19/kasparov-masterclasses-target-chess-esports-stars-of-tomorrow/" target="news">Garry
-									Kasparov
-									Unveils Chess Esports
-									Masterclasses For
-									Future
-									Stars</a> (Forbes)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/mattgardner1/2021/10/19/kasparov-masterclasses-target-chess-esports-stars-of-tomorrow/" target="news">Garry
+										Kasparov
+										Unveils Chess Esports
+										Masterclasses For
+										Future
+										Stars</a> (Forbes)</p>
 
-							<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal"
-									href="https://jg-tc.com/entertainment/local/whats-happening-mhs-chess-team-fundraiser-casey-westfield-drive-thru-fundraiser/article_99191023-1be9-5872-8f75-2075188fb34e.html" target="news">WHAT'S
-									HAPPENING: MHS Chess Team fundraiser Casey-Westfield drive thru fundraiser</a> (jg-tc.com) </p>
+								<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal"
+										href="https://jg-tc.com/entertainment/local/whats-happening-mhs-chess-team-fundraiser-casey-westfield-drive-thru-fundraiser/article_99191023-1be9-5872-8f75-2075188fb34e.html" target="news">WHAT'S
+										HAPPENING: MHS Chess Team fundraiser Casey-Westfield drive thru fundraiser</a> (jg-tc.com) </p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.fide.com/news/1388" target="news">Praggnanandhaa wins Julius Baer Challengers Chess Tour Finals</a> (FIDE)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.fide.com/news/1388" target="news">Praggnanandhaa wins Julius Baer Challengers Chess Tour Finals</a> (FIDE)</p>
 
-							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.audible.com/pd/An-Attacking-Strategy-with-Chess-Grandmaster-Maurice-Ashley-Podcast/B09JN7FVNP" target="news">An Attacking Strategy with Chess
-									Grandmaster Maurice Ashley</a>
-								(audible.com)
-							</p>
+								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.audible.com/pd/An-Attacking-Strategy-with-Chess-Grandmaster-Maurice-Ashley-Podcast/B09JN7FVNP" target="news">An Attacking Strategy with Chess
+										Grandmaster Maurice Ashley</a>
+									(audible.com)
+								</p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.fide.com/news/1387" target="news">FIDE World Amateur Chess Championship kicks-off in Rhodes</a> (FIDE)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.fide.com/news/1387" target="news">FIDE World Amateur Chess Championship kicks-off in Rhodes</a> (FIDE)</p>
 
-							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-8-9-caruana-back-in-the-hunt" target="news">US Chess Champs 8-9: Caruana back in the hunt</a>
-								(chess24.com)
-							</p>
+								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-8-9-caruana-back-in-the-hunt" target="news">US Chess Champs 8-9: Caruana back in the hunt</a>
+									(chess24.com)
+								</p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.outlookindia.com/website/story/sports-news-viswanathan-anand-to-do-commentary-during-world-chess-championship/397760"
-									target="news">Viswanathan Anand To Do
-									Commentary During World
-									Chess
-									Championship</a> (Outlook India)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.outlookindia.com/website/story/sports-news-viswanathan-anand-to-do-commentary-during-world-chess-championship/397760"
+										target="news">Viswanathan Anand To Do
+										Commentary During World
+										Chess
+										Championship</a> (Outlook India)</p>
 
-							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.reuters.com/legal/government/latham-plays-3d-chess-bid-scotus-take-up-new-discovery-case-2021-10-15/" target="news">Latham plays 3D chess in
-									bid
-									for SCOTUS to take up new
-									discovery
-									case</a> (Reuters)</p>
+								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.reuters.com/legal/government/latham-plays-3d-chess-bid-scotus-take-up-new-discovery-case-2021-10-15/" target="news">Latham plays 3D chess in
+										bid
+										for SCOTUS to take up new
+										discovery
+										case</a> (Reuters)</p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.news18.com/news/sports/viswanathan-anand-to-do-commentary-during-world-chess-championship-match-4326608.html"
-									target="news">Viswanathan
-									Anand to do Commentary
-									During World Chess
-									Championship Match</a> (news18.com)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.news18.com/news/sports/viswanathan-anand-to-do-commentary-during-world-chess-championship-match-4326608.html"
+										target="news">Viswanathan
+										Anand to do Commentary
+										During World Chess
+										Championship Match</a> (news18.com)</p>
 
-							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.yahoo.com/entertainment/female-chess-prodigy-story-eerily-130001147.html" target="news">I Was A Female Chess Prodigy. My Story Is Eerily
-									Similar To
-									'The Queen's
-									Gambit.'</a> (Yahoo!)</p>
+								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.yahoo.com/entertainment/female-chess-prodigy-story-eerily-130001147.html" target="news">I Was A Female Chess Prodigy. My Story Is Eerily
+										Similar To
+										'The Queen's
+										Gambit.'</a> (Yahoo!)</p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.philstar.com/sports/2021/10/15/2134374/general-santos-inmates-place-5th-fide-chess-tiff-prisoners" target="news">General Santos
-									inmates
-									place 5th in FIDE chess
-									tiff for
-									prisoners</a>
-								(philstar.com)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.philstar.com/sports/2021/10/15/2134374/general-santos-inmates-place-5th-fide-chess-tiff-prisoners" target="news">General Santos
+										inmates
+										place 5th in FIDE chess
+										tiff for
+										prisoners</a>
+									(philstar.com)</p>
 
-							<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://fide.com/news/1384" target="news">All India Chess Federation signs a historic agreement with MPL</a> (FIDE)</p>
+								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://fide.com/news/1384" target="news">All India Chess Federation signs a historic agreement with MPL</a> (FIDE)</p>
 
-							<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/forbesagencycouncil/2021/10/14/chess-modern-marketing-lessons-from-an-ancient-game/" target="news">Chess: Modern
-									Marketing Lessons From An
-									Ancient Game</a>
-								(Forbes)</p>
+								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/forbesagencycouncil/2021/10/14/chess-modern-marketing-lessons-from-an-ancient-game/" target="news">Chess: Modern
+										Marketing Lessons From An
+										Ancient Game</a>
+									(Forbes)</p>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
+			<!-- end of accordion for NewsEvents HappyBirthday and ChessNews -->
 			<!--endbirthday-->
 			<!-- <img src="/chessimages/spacer.gif" alt=" " width=4 height=4><br> -->
 			<!-- end of col-first -->
@@ -405,42 +409,45 @@
 			<div id="umn-two" class="desktop col-sm-8">
 				<div id="col-mid">
 
-					<section id="cg-search" class="cg-section my-1 pb-1">
-						<header>
-							<h2 id="search-games"> SEARCH OVER
+					<section id="cg-search" class="cg-section border border-1 border-dark my-1 pb-1">
+						<div class="mx-2 mt-2 ">
+							<h2 id="search-games" class="mt-1 ">
+								SEARCH OVER
 								<!--begingamecount-->1,043,000
 								<!--endgamecount--> CHESS GAMES
 							</h2>
-						</header>
-						<div id="search-input-etc" class="d-flex justify-content-between mt-1">
-							<!-- <form class="d-flex">
-								<input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-								<button class="btn btn-outline-success" type="submit">Search</button>
-							</form> -->
-							<form id="search-bar-button" class="d-flex mh-2" method="GET" action="/perl/ezsearch.pl">
-								<input id="search-bar" class="form-control me-2" type="search" placeholder="search" name="search" aria-label="search">
-								<button id="submit-button" class="btn btn-outline-success" type="submit" value="Search"></button>
-							</form>
 
-							<p id="tip-more-info" class="fs-ten"> @TIP<br>
-								<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into
-								the search bar. --> (<a class="fs-ten" href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>)
-							</p>
+							<div id="search-input-etc" class="d-flex justify-content-between mt-1 ">
+								<div class="d-flex">
+									<input class="form-control h-75 border border-dark" type="search" placeholder="Search" aria-label="Search">
+									<button class="btn btn-outline-success h-75 text-dark border-dark ms-1" type="submit">Search</button>
+								</div>
+								<!-- <form id="search-bar-button" class="d-flex mh-2" method="GET" action="/perl/ezsearch.pl">
+									<input id="search-bar" class="form-control me-2" type="search" placeholder="search" name="search" aria-label="search">
+									<button id="submit-button" class="btn btn-outline-success" type="submit" value="Search"></button>
+								</form> -->
+
+								<p id="tip-more-info" class="fs-ten"> @TIP<br>
+									<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into
+									the search bar. --> (<a class="fs-ten" href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>)
+								</p>
+							</div>
 						</div>
+
 					</section>
 					<!-- ++++++ end of #cg-search -->
 					<!--newusers-->
 					<!--kibcount-->
 
 					<div class="accordion accordion-flush" id="accordionAdvanceSearch">
-						<div class="accordion-item">
+						<div class="accordion-item accrdion-section border border-1 border-dark my-1 ">
 							<h2 class="accordion-header text-start p-1" id="flush-headingAdvanceSearch">
 								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAdvanceSearch" aria-expanded="false" aria-controls="flush-collapseAdvanceSearch">
 									ADVANCED SEARCH
 								</button>
 							</h2>
 							<div id="flush-collapseAdvanceSearch" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionAdvanceSearch">
-								<div class="accordion-body">
+								<div class="accordion-body p-0">
 									<section id="cg-advanced-search" class="cg-section my-1 d-flex flex-column">
 										<form method="GET" action="/perl/chess.pl" class="mobile-hide">
 
@@ -449,7 +456,7 @@
 													<span class="span-bold d-flex align-self-center">Year</span>
 													<span class="d-flex align-self-center">is</span>
 												</td>
-												<td class="position-relative tedee">
+												<td class="position-relative">
 													<select name="yearcomp" class="w-auto h-25 d-flex align-self-center">
 														<option value="exactly"></option>
 														<option value="exactly">= exactly</option>
@@ -683,11 +690,10 @@
 						</tbody>
 					</table>
 
-					<div id="potd" class="cg-section my-1 border border-none">
+					<div id="potd" class="cg-section my-1 border border-none text-center">
 						<!-- <img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale"> -->
 						<!--beginpuzzle-->
-
-						<section id="cuntainr" class="">
+						<section id="cuntainr">
 							<!-- potd-inner -->
 
 							<header id="top-cuntainr">
@@ -716,9 +722,8 @@
 						<div>
 							<a href="/aboutpuzzles.html" id="about-our-puzzles" class="eleven">About our puzzles </a>
 						</div>
-
 					</div>
-					<!-- +++++++++++ end of #potd -->
+					<!--end of #potd -->
 					<!--beginbottombanner-->
 
 					<div class="adsbyir 728x90"></div>
@@ -734,15 +739,15 @@
 					<div id="cg-bottom-middle" class="d-flex flex-column flex-md-row fs-thirteen w-2">
 						<div id="cg-middle-left" class="cg-middle border border-top-0 border-bottom-0  border-start-0 border-dark">
 							<div class="accordion accordion-flush" id="accordionFlushGettingStartedWhatsNew">
-								<div class="accordion-item ">
+								<div class="accordion-item">
 									<h2 class="accordion-header" id="flush-headingGettingStarted">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGettingStarted" aria-expanded="false" aria-controls="flush-collapseGettingStarted">
+										<button class="accordion-button middle-bottom-accordion collapsed my-1 border border-1 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseGettingStarted" aria-expanded="false"
+											aria-controls="flush-collapseGettingStarted">
 											NEW USERS: Getting Started
 										</button>
 									</h2>
 									<div id="flush-collapseGettingStarted" class="accordion-collapse collapse" aria-labelledby="flush-headingGettingStarted" data-bs-parent="#accordionFlushExample">
-										<div class="accordion-body">
-
+										<div class="accordion-body p-0">
 											<section id="cg-getting-started" class="flex">
 												<div class="mobile-hide">
 													<p class="mb-3"> Founded on an extensive database of historical chess games combined with discussion forums, Chessgames.com is the internet's first and foremost chess community, where players of every skill level are
@@ -759,16 +764,20 @@
 												</div>
 											</section>
 										</div>
+										<!-- end of accordion body for getting started -->
 									</div>
+									<!-- end of collapse for getting started -->
 								</div>
+								<!-- end of accordion item for getting started -->
 								<div class="accordion-item">
 									<h2 class="accordion-header" id="flush-headingWhatsNew">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseWhatsNew" aria-expanded="false" aria-controls="flush-collapseWhatsNew">
+										<button class="accordion-button middle-bottom-accordion collapsed my-1 border border-1 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseWhatsNew" aria-expanded="false"
+											aria-controls="flush-collapseWhatsNew">
 											What's New
 										</button>
 									</h2>
 									<div id="flush-collapseWhatsNew" class="accordion-collapse collapse" aria-labelledby="flush-headingWhatsNew" data-bs-parent="#accordionFlushExample">
-										<div class="accordion-body">
+										<div class="accordion-body p-0">
 											<section id="cg-whats-new">
 												<ul class="mobile-hide">
 													<li class="mb-2">
@@ -913,21 +922,26 @@
 												</ul>
 											</section>
 										</div>
+										<!-- end of accordion body for whats new -->
 									</div>
+									<!-- end of flush-collapse whats new -->
 								</div>
+								<!-- end of accordion item Whats new -->
 							</div>
+							<!-- end of accordion for whats new -->
 						</div>
 						<!-- end og #cg-middle-left -->
 						<div id="cg-middle-right" class="cg-middle ms-md-2">
 							<div class="accordion accordion-flush" id="accordionFlushRegisterHotgames">
 								<div id="register" class="accordion-item">
 									<h2 class="accordion-header" id="flush-headingRegister">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseRegister" aria-expanded="false" aria-controls="flush-collapseregister">
+										<button class="accordion-button middle-bottom-accordion collapsed my-1 border border-1 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseRegister" aria-expanded="false"
+											aria-controls="flush-collapseregister">
 											Register Today!
 										</button>
 									</h2>
 									<div id="flush-collapseRegister" class="accordion-collapse collapse" aria-labelledby="flush-headingRegister" data-bs-parent="#accordionFlushRegister">
-										<div class="accordion-body">
+										<div class="accordion-body p-0">
 											<section id="cg-register-today">
 												<p class=" twelve mb-2">Go to our <a href="/perl/chessprofile.pl">registration page
 													</a> and get a free account today: you'll be able to make posts ("kibitzing"), start game collections, participate in our regular contests,and so much more! </p>
@@ -936,14 +950,16 @@
 										</div>
 									</div>
 								</div>
+								<!-- end of register accordion item -->
 								<div id="hot-games" class="accordion-item">
 									<h2 class="accordion-header" id="flush-headingHotgames">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseHotgames" aria-expanded="false" aria-controls="flush-collapseHotgames">
+										<button class="accordion-button middle-bottom-accordion collapsed my-1 border border-1 border-dark text-center d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseHotgames"
+											aria-expanded="false" aria-controls="flush-collapseHotgames">
 											Hot Games
 										</button>
 									</h2>
 									<div id="flush-collapseHotgames" class="accordion-collapse collapse" aria-labelledby="flush-headingHotgames" data-bs-parent="#accordionFlushHotGames">
-										<div class="accordion-body">
+										<div class="accordion-body p-0">
 											<section id="cg-hot-games">
 
 												<!--beginhotgames-->
@@ -974,7 +990,9 @@
 										</div>
 									</div>
 								</div>
+								<!-- end of hotgames accordion item -->
 							</div>
+							<!-- end of accordion for register and hotgames -->
 							<!--begintallbanner1-->
 							<div class="adsbyir 120x600"></div>
 							<script>
@@ -985,12 +1003,13 @@
 							<div class="accordion accordion-flush" id="accordionFlushExample">
 								<div class="accordion-item">
 									<h2 class="accordion-header" id="flush-headingExample">
-										<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseExample" aria-expanded="false" aria-controls="flush-collapseExample">
+										<button class="accordion-button middle-bottom-accordion collapsed my-1 border border-1 border-dark" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseExample" aria-expanded="false"
+											aria-controls="flush-collapseExample">
 											Example Searches
 										</button>
 									</h2>
 									<div id="flush-collapseExample" class="accordion-collapse collapse" aria-labelledby="flush-headingExample" data-bs-parent="#accordionFlushExample">
-										<div class="accordion-body">
+										<div class="accordion-body p-0">
 											<section id="cg-example-searches">
 												<div>
 													<!--beginsearches-->
@@ -1091,11 +1110,13 @@
 										</div>
 									</div>
 								</div>
+								<!-- end of Example accordion item -->
 							</div>
-							<!-- end of #cg-middle-right -->
+							<!-- end of Example Accordion -->
 						</div>
 						<!-- end of #fourth-section -->
 					</div>
+					<!-- end of cg-bottom-middle -->
 				</div>
 				<!--+++++++++ END OF #col-mid -->
 			</div>
@@ -1156,14 +1177,14 @@
 
 
 				<div class="accordion accordion-flush" id="accordion-recent-kibitzing">
-					<div class="accordion-item">
+					<div class="accordion-item accrdion-section border border-1 border-dark my-1 ">
 						<h2 class="accordion-header" id="flush-rk-heading">
 							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
 								<a class="header-link" href=" /perl/chessnew"> Recent Kibitzing </a>
 							</button>
 						</h2>
 						<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-rk-heading" data-bs-parent="#accordion-recent-kibitzing">
-							<div class="accordion-body">
+							<div class="accordion-body p-0">
 								<section id="cg-recent-kibitzing" class="cg-section my-1">
 									<!--beginkibitzing-->
 									<p class="text-start mx-1">
@@ -1289,354 +1310,354 @@
 								</section>
 							</div>
 						</div>
+					</div>
+					<!-- end of recent-kibitzing accordion -->
+					<div class="accordion-item accrdion-section border border-1 border-dark my-1 ">
+						<h2 class="accordion-header" id="flush-headin-recent-visitors">
+							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-rv" aria-expanded="false" aria-controls="flush-collapseTwo">
+								Recent Visitors:
+							</button>
+						</h2>
+						<div id="flush-collapse-rv" class="accordion-collapse collapse" aria-labelledby="flush-headin-recent-visitors" data-bs-parent="#accordionFlushExample">
+							<div class="accordion-body p-0">
+								<section id="cg-recent-visitors" class="cg-section my-1">
 
-						<div class="accordion-item">
-							<h2 class="accordion-header" id="flush-headin-recent-visitors">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapse-rv" aria-expanded="false" aria-controls="flush-collapseTwo">
-									Recent Visitors:
+									<p class="recent-v">
+										<!--beginvisitors-->
+
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=MKD" class="text-decoration-underline">
+											MKD,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=superuser171">
+											superuser171,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=beatgiant">
+											beatgiant,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=marc%20eduard">
+											marc&nbsp;eduard,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=SicilianMaster1234">
+											SicilianMaster1234,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=aberman1">
+											aberman1,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=CherrylandCafe">
+											CherrylandCafe,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=SensibleHippy">
+											SensibleHippy,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=watwinc">
+											watwinc,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=paladin%20at%20large">
+											paladin&nbsp;at&nbsp;large,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=K%20Any">
+											K&nbsp;Any,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=ALL">
+											ALL,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=reidsavid">
+											reidsavid,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Parsifal">
+											Parsifal,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=USDreadnought">
+											USDreadnought,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Plaskett">
+											Plaskett,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=sasch2350">
+											sasch2350,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Westendorf">
+											Westendorf,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=billand88">
+											billand88,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=George1955">
+											George1955,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=karik">
+											karik,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Rhodes">
+											Rhodes,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=coldbrew3691">
+											coldbrew3691,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=elwik999">
+											elwik999,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=philpam1">
+											philpam1,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Phony%20Benoni">
+											Phony&nbsp;Benoni,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Ed%20de%20Saegher">
+											<u>Ed&nbsp;de&nbsp;Saegher,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Wild%20Bill">
+											Wild&nbsp;Bill,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=happybunny33">
+											happybunny33,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=saffuna">
+											saffuna,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=WannaBe">
+											WannaBe,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=ViktorV">
+											ViktorV,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Granny%20O%20Doul">
+											Granny&nbsp;O&nbsp;Doul,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=DiscoJew">
+											DiscoJew,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=raymondhow">
+											raymondhow,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Rankled%20File">
+											Rankled&nbsp;File,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=sergedu12">
+											sergedu12,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Williebob">
+											Williebob,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=adsax">
+											adsax,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Troller">
+											Troller,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=jwfarley">
+											jwfarley,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=penarol">
+											penarol,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=amr52">
+											amr52,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=unferth">
+											unferth,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=enog">
+											enog,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Maurizio58">
+											Maurizio58,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Simpo137">
+											Simpo137,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=pean">
+											pean,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Dhamal%20Goda">
+											Dhamal&nbsp;Goda,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=DaltriDiluvi">
+											DaltriDiluvi,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Augusto%20Costa">
+											Augusto&nbsp;Costa,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=TRoosevelt1858">
+											TRoosevelt1858,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Stonehenge">
+											Stonehenge,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=hugoborge">
+											hugoborge,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=GerrySaint">
+											GerrySaint,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=pazzed%20paun">
+											pazzed&nbsp;paun,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Clement%20Fraud">
+											Clement&nbsp;Fraud,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=trekbike">
+											trekbike,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=stevemcd87">
+											stevemcd87,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=DMV%20warrior">
+											DMV&nbsp;warrior,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=eugeniosanchezbravo">
+											eugeniosanchezbravo,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Saide2">
+											Saide2,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=michaelmbast">
+											michaelmbast,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=MJCB">
+											MJCB,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=BwanaVa">
+											BwanaVa,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=rune%20ohlsson">
+											rune&nbsp;ohlsson,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=nbajoghli">
+											nbajoghli,
+										</a>
+										<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=uriel76">
+											uriel76,
+										</a>
+										<br><img src="/spacer.gif" width="5" height="5"><br>
+									<p class="recent-v">
+										<font color="#996633">82 registered members online, plus 318 anonymous users.<br></font>
+									</p>
+									</p>
+									<!--endvisitors-->
+
+								</section>
+							</div>
+						</div>
+					</div>
+					<!-- end of recent visitors accordion -->
+					<!--beginchallenge-->
+					<!--endchallenge-->
+					<div class="image-div">
+						<a href="/bookie.html"><img src="./chessimages/bookiead2.gif" width="190" height="135" border="0" alt="The ChessBookie Game!"></a><br>
+						<!-- <img src="/spacer.gif" width="4" height="4"><br> -->
+					</div>
+					<div class="image-div">
+						<a href="https://store.chessgames.com/"><img src="./chessimages/store_banner2.gif" width="190" height="124" border="0" alt="Chess Products at Slashed Prices!"></a><br>
+						<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
+					</div>
+					<section id="cg-qotd" class="cg-section my-1">
+						<h2 class="text-center"> Quote of the Day </h2>
+
+						<img width="69" height="26" src="./chessimages/flourish.gif"><br>
+						<!--beginquote-->
+						<div id="poem">
+							<img src="/chessimages/quote_open.gif" height="21" width="21" alt="&quot;">
+							<p class="fs-twelve">
+								<img src="/spacer.gif" width="5" height="10"><br> [The queen] sits at the top of the high places above the city. She is restless and determined. She girds her loins with strength. Her feet stay not in her house. She moves in every
+								direction and into every corner. Her evolutions are wonderful, her spirit untiring. How comely are her footsteps as she moves diagonally, one step after another, from square to square! <br>
+							</p>
+							<img src="/chessimages/quote_closed.gif" height="21" width="21" alt="&quot;"></td>
+							<p>&nbsp;&nbsp;&nbsp;---&nbsp;12th Century Spanish Hebrew text</p>
+						</div>
+						<!--endquote-->
+					</section>
+
+
+
+					<div class="accordion accordion-flush" id="accordionSpecialFeatures">
+						<div class="accordion-item accrdion-section border border-1 border-dark my-1 ">
+							<h2 class="accordion-header" id="flush-headingSpecialFeature">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+									Special Features
 								</button>
 							</h2>
-							<div id="flush-collapse-rv" class="accordion-collapse collapse" aria-labelledby="flush-headin-recent-visitors" data-bs-parent="#accordionFlushExample">
-								<div class="accordion-body">
-									<section id="cg-recent-visitors" class="cg-section my-1">
+							<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingSpecialFeature" data-bs-parent="#accordionSpecialFeatures">
+								<div class="accordion-body p-0">
+									<section id="cg-special-features">
 
-										<p class="recent-v">
-											<!--beginvisitors-->
 
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=MKD" class="text-decoration-underline">
-												MKD,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=superuser171">
-												superuser171,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=beatgiant">
-												beatgiant,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=marc%20eduard">
-												marc&nbsp;eduard,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=SicilianMaster1234">
-												SicilianMaster1234,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=aberman1">
-												aberman1,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=CherrylandCafe">
-												CherrylandCafe,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=SensibleHippy">
-												SensibleHippy,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=watwinc">
-												watwinc,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=paladin%20at%20large">
-												paladin&nbsp;at&nbsp;large,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=K%20Any">
-												K&nbsp;Any,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=ALL">
-												ALL,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=reidsavid">
-												reidsavid,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Parsifal">
-												Parsifal,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=USDreadnought">
-												USDreadnought,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Plaskett">
-												Plaskett,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=sasch2350">
-												sasch2350,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Westendorf">
-												Westendorf,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=billand88">
-												billand88,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=George1955">
-												George1955,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=karik">
-												karik,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Rhodes">
-												Rhodes,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=coldbrew3691">
-												coldbrew3691,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=elwik999">
-												elwik999,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=philpam1">
-												philpam1,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Phony%20Benoni">
-												Phony&nbsp;Benoni,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Ed%20de%20Saegher">
-												<u>Ed&nbsp;de&nbsp;Saegher,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Wild%20Bill">
-												Wild&nbsp;Bill,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=happybunny33">
-												happybunny33,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=saffuna">
-												saffuna,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=WannaBe">
-												WannaBe,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=ViktorV">
-												ViktorV,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Granny%20O%20Doul">
-												Granny&nbsp;O&nbsp;Doul,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=DiscoJew">
-												DiscoJew,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=raymondhow">
-												raymondhow,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Rankled%20File">
-												Rankled&nbsp;File,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=sergedu12">
-												sergedu12,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Williebob">
-												Williebob,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=adsax">
-												adsax,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Troller">
-												Troller,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=jwfarley">
-												jwfarley,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=penarol">
-												penarol,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=amr52">
-												amr52,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=unferth">
-												unferth,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=enog">
-												enog,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Maurizio58">
-												Maurizio58,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Simpo137">
-												Simpo137,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=pean">
-												pean,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Dhamal%20Goda">
-												Dhamal&nbsp;Goda,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=DaltriDiluvi">
-												DaltriDiluvi,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Augusto%20Costa">
-												Augusto&nbsp;Costa,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=TRoosevelt1858">
-												TRoosevelt1858,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Stonehenge">
-												Stonehenge,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=hugoborge">
-												hugoborge,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=GerrySaint">
-												GerrySaint,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=pazzed%20paun">
-												pazzed&nbsp;paun,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Clement%20Fraud">
-												Clement&nbsp;Fraud,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=trekbike">
-												trekbike,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=stevemcd87">
-												stevemcd87,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=DMV%20warrior">
-												DMV&nbsp;warrior,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=eugeniosanchezbravo">
-												eugeniosanchezbravo,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=Saide2">
-												Saide2,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=michaelmbast">
-												michaelmbast,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=MJCB">
-												MJCB,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=BwanaVa">
-												BwanaVa,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=rune%20ohlsson">
-												rune&nbsp;ohlsson,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=nbajoghli">
-												nbajoghli,
-											</a>
-											<a class="text-decoration-underline px-1" href="/perl/chessuser?uname=uriel76">
-												uriel76,
-											</a>
-											<br><img src="/spacer.gif" width="5" height="5"><br>
-										<p class="recent-v">
-											<font color="#996633">82 registered members online, plus 318 anonymous users.<br></font>
+										<p class="fs-thirteen text-start"> The <a href="/perl/chessnew">Recent Kibitzing</a> page shows you who's talking about what. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
 										</p>
+										<p class="fs-thirteen text-start"> The <a href="/perl/explorer">Opening Explorer</a> is the perfect way to study complicated openings, move by move. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
 										</p>
-										<!--endvisitors-->
+										<p class="fs-thirteen text-start"> The <a href="/perl/chessforum.pl">Kibitzer's Cafe</a> offers chess discussion and camaraderie. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> The <a href="/perl/bistro.pl">Biographer's Bistro</a> serves up chess history 24 hours a day! <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> The <a href="/perl/tournaments">Tournament Index</a> is a chronological catalog of major chess tournaments from the 1800s to present day. <img width="180" height="18"
+												src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> Our <a href="/wcc.html">History of the World Chess Championship</a> is a guide to the most coveted title in chess. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> The <a href="/bookie.html">ChessBookie</a> game lets you wager play-money on real world chess events, and win cool prizes. <img width="180" height="18" src="./chessimages/divider4.gif"
+												alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> The <a href="/directory/">Players' Directory</a> indexes thousands of eminent chessplayers. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> The <a href="/perl/tour">Chessgames Tour</a> is a slideshow demonstrating the many features available to Chessgames Premium Members for only pennies a day. <img width="180" height="18"
+												src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start">
+											<a href="/perl/gamesoftheday">Game of the Day Archive</a> stores the last year of featured games. (Have an idea for Game of the Day? See our <a href="/perl/submitpun">Pun Submission Page</a>!) <img width="180" height="18"
+												src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> See a <a href="/perl/chessrandom">Random&nbsp;Game</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> Our <a href="/perl/chessgift">Chess Gift Page</a> allows you to give the gift of chess, by purchasing an account for another Chessgames member. <img width="180" height="18"
+												src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start">
+											<a href="/perl/fischerandom">Fischerandom (Chess960)</a> generator. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> Run your own chess site? See our <a href="/webmasters.html">Webmaster Resources</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> Our page of <a href="/chessstats.html">Database Statistics</a> is filled with many fun facts. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> Browse other users' favorite games on our <a href="/perl/collections">Game Collections Page</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
+										</p>
+										<p class="fs-thirteen text-start"> Do you have an important chess game that we are missing? See our <a href="/perl/chessupload">PGN Upload Utility</a>.
 
 									</section>
 								</div>
 							</div>
 						</div>
 
-						<!--beginchallenge-->
-						<!--endchallenge-->
-						<div class="image-div">
-							<a href="/bookie.html"><img src="./chessimages/bookiead2.gif" width="190" height="135" border="0" alt="The ChessBookie Game!"></a><br>
-							<!-- <img src="/spacer.gif" width="4" height="4"><br> -->
-						</div>
-						<div class="image-div">
-							<a href="https://store.chessgames.com/"><img src="./chessimages/store_banner2.gif" width="190" height="124" border="0" alt="Chess Products at Slashed Prices!"></a><br>
-							<!-- <img src="./chessimages/spacer.gif" alt=" " width="4" height="4"><br> -->
-						</div>
-						<section id="cg-qotd" class="cg-section my-1">
-							<header>
-								<h2> Quote of the Day </h2>
-							</header>
-							<img width="69" height="26" src="./chessimages/flourish.gif"><br>
-							<!--beginquote-->
-							<div id="poem">
-								<img src="/chessimages/quote_open.gif" height="21" width="21" alt="&quot;">
-								<p class="fs-twelve">
-									<img src="/spacer.gif" width="5" height="10"><br> [The queen] sits at the top of the high places above the city. She is restless and determined. She girds her loins with strength. Her feet stay not in her house. She moves in every
-									direction and into every corner. Her evolutions are wonderful, her spirit untiring. How comely are her footsteps as she moves diagonally, one step after another, from square to square! <br>
-								</p>
-								<img src="/chessimages/quote_closed.gif" height="21" width="21" alt="&quot;"></td>
-								<p>&nbsp;&nbsp;&nbsp;---&nbsp;12th Century Spanish Hebrew text</p>
-							</div>
-							<!--endquote-->
-						</section>
-
-
-
-						<div class="accordion accordion-flush" id="accordionSpecialFeatures">
-							<div class="accordion-item">
-								<h2 class="accordion-header" id="flush-headingSpecialFeature">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-										Special Features
-									</button>
-								</h2>
-								<div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingSpecialFeature" data-bs-parent="#accordionSpecialFeatures">
-									<div class="accordion-body">
-										<section id="cg-special-features">
-
-
-											<p class="fs-thirteen text-start"> The <a href="/perl/chessnew">Recent Kibitzing</a> page shows you who's talking about what. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> The <a href="/perl/explorer">Opening Explorer</a> is the perfect way to study complicated openings, move by move. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> The <a href="/perl/chessforum.pl">Kibitzer's Cafe</a> offers chess discussion and camaraderie. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> The <a href="/perl/bistro.pl">Biographer's Bistro</a> serves up chess history 24 hours a day! <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> The <a href="/perl/tournaments">Tournament Index</a> is a chronological catalog of major chess tournaments from the 1800s to present day. <img width="180" height="18"
-													src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> Our <a href="/wcc.html">History of the World Chess Championship</a> is a guide to the most coveted title in chess. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> The <a href="/bookie.html">ChessBookie</a> game lets you wager play-money on real world chess events, and win cool prizes. <img width="180" height="18" src="./chessimages/divider4.gif"
-													alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> The <a href="/directory/">Players' Directory</a> indexes thousands of eminent chessplayers. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> The <a href="/perl/tour">Chessgames Tour</a> is a slideshow demonstrating the many features available to Chessgames Premium Members for only pennies a day. <img width="180" height="18"
-													src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start">
-												<a href="/perl/gamesoftheday">Game of the Day Archive</a> stores the last year of featured games. (Have an idea for Game of the Day? See our <a href="/perl/submitpun">Pun Submission Page</a>!) <img width="180" height="18"
-													src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> See a <a href="/perl/chessrandom">Random&nbsp;Game</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> Our <a href="/perl/chessgift">Chess Gift Page</a> allows you to give the gift of chess, by purchasing an account for another Chessgames member. <img width="180" height="18"
-													src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start">
-												<a href="/perl/fischerandom">Fischerandom (Chess960)</a> generator. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> Run your own chess site? See our <a href="/webmasters.html">Webmaster Resources</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> Our page of <a href="/chessstats.html">Database Statistics</a> is filled with many fun facts. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> Browse other users' favorite games on our <a href="/perl/collections">Game Collections Page</a>. <img width="180" height="18" src="./chessimages/divider4.gif" alt="Divider">
-											</p>
-											<p class="fs-thirteen text-start"> Do you have an important chess game that we are missing? See our <a href="/perl/chessupload">PGN Upload Utility</a>.
-
-										</section>
-									</div>
-								</div>
-							</div>
 
 
 
 
-
-							<!-- </div></div> -->
-						</div>
-						<!-- +++++++++++ END OF .umn-three -->
+						<!-- </div></div> -->
 					</div>
-					<!--+++++++ end of .row -->
-
-					<footer id="copyright-footer" class="row d-flex justify-content-center text-align-center m-5">
-						<div class="col-12">
-							<p class="text-center cgc-ns1 center tcenter xxsm tbm0">Copyright 2001-2021, Chessgames Services LLC<br> Web design &amp; database development by 20/20 Technologies</p>
-						</div>
-					</footer>
-					<!--++++++ end of footer row -->
+					<!-- +++++++++++ END OF .umn-three -->
 				</div>
-				<!--++++++ end of #body-container -->
+				<!-- end of recent kibitzing accordion -->
 
-				<!-- <b>&#183;</b> Follow us on Facebook, Twitter, and Google+ by clicking the links below!<br><br> <iframe
+				<footer id="copyright-footer" class="row d-flex justify-content-center text-align-center m-5">
+					<div class="col-12">
+						<p class="text-center cgc-ns1 center tcenter xxsm tbm0">Copyright 2001-2021, Chessgames Services LLC<br> Web design &amp; database development by 20/20 Technologies</p>
+					</div>
+				</footer>
+				<!--++++++ end of footer row -->
+			</div>
+			<!--++++++ end of #body-container -->
+
+			<!-- <b>&#183;</b> Follow us on Facebook, Twitter, and Google+ by clicking the links below!<br><br> <iframe
 												src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fpages%2FChessgamescom%2F255848461282053&amp;width&amp;layout=standard&amp;action=like&amp;show_faces=false&amp;share=true&amp;height=35&amp;appId=788344631197929"
 												scrolling="no" frameborder="0" style="border:none; overflow:hidden; height:35px;" allowTransparency="true"></iframe> <br> <iframe allowtransparency="true" frameborder="0" scrolling="no"
 												src="//platform.twitter.com/widgets/follow_button.html?screen_name=chessgamescom" style="width:240px; height:20px;"></iframe> <br> -->
-				<!-- </div> -->
-				<!-- 4px spacer column before far right 200px column -->
-				<!-- <div id="cg-right-column"> -->
-				<!-- far right 200px column -->
-				<!-- ++++++++++++++ END OF TABLE +++++++++++++++++++ -->
-				<!-- </center> -->
-				<!-- <div class="cgc-ns1 xsm w-100pct b1s000000 bc-FFFFEE tc-000000 center tcenter" style="margin-bottom:4px; margin-top:4px; padding:2px;"> <a href="/index.html">Home</a> | <a href="/chessabout.html">About</a> | <a
+			<!-- </div> -->
+			<!-- 4px spacer column before far right 200px column -->
+			<!-- <div id="cg-right-column"> -->
+			<!-- far right 200px column -->
+			<!-- ++++++++++++++ END OF TABLE +++++++++++++++++++ -->
+			<!-- </center> -->
+			<!-- <div class="cgc-ns1 xsm w-100pct b1s000000 bc-FFFFEE tc-000000 center tcenter" style="margin-bottom:4px; margin-top:4px; padding:2px;"> <a href="/index.html">Home</a> | <a href="/chessabout.html">About</a> | <a
 											href="/perl/chesslogin.pl">Login</a> | <a href="/perl/chesslogout.pl">Logout</a> | <a href="/chesshelp.html">F.A.Q.</a> | <a href="/perl/chessuser">Profile</a> | <a href="/perl/chessprofile.pl">Preferences</a> | <a
 											href="/perl/chessmembers">Premium&nbsp;Membership</a> | <a href="/perl/chessforum.pl">Kibitzer's&nbsp;Caf&eacute;</a> | <a href="/perl/bistro.pl">Biographer's&nbsp;Bistro</a> | <a href="/perl/chessnew">New&nbsp;Kibitzing</a> | <a
 											href="/perl/chessnew?chessforums=1">Chessforums</a> | <a href="/perl/tournaments">Tournament Index</a> | <a href="/directory/">Player&nbsp;Directory</a> | <a href="/perl/goat.pl">Notable&nbsp;Games</a> | <a
@@ -1644,15 +1665,15 @@
 											href="/bookie.html">ChessBookie&nbsp;Game</a> | <a href="/perl/challenge">Chessgames Challenge</a> | <a href="https://store.chessgames.com">Store</a> | <a href="/chessprivacy.html">Privacy&nbsp;Notice</a> | <a
 											href="mailto:chess@chessgames.com">Contact&nbsp;Us</a> </div> -->
 
-				<!--beginstickyfooterad-->
-				<!--endstickyfooterad-->
+			<!--beginstickyfooterad-->
+			<!--endstickyfooterad-->
 
-				<!-- JavaScript ssm -->
-				<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-				<!--homejsSSM-->
-				<!-- ---------------------------FOR BOOTSTRAP ------------------- -->
-				<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-				<script defer src="app.js"> </script>
+			<!-- JavaScript ssm -->
+			<script defer src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+			<!--homejsSSM-->
+			<!-- ---------------------------FOR BOOTSTRAP ------------------- -->
+			<script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+			<script defer src="app.js"> </script>
 </body>
 
 </html>
