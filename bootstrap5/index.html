@@ -43,10 +43,11 @@
 	</header>
 	<!-- end of site-header -->
 	<!--beginmenu-->
-
+	<button id="desktopVersion" class="d-sm-none">Desktop Version</button>
+	<div class="adsbyir 970x250"></div>
 	<!-- navbar navbar-expand-sm navbar-light-->
 	<nav id="site-nav" class=" m-1 border border-1 border-dark m-0 p-0">
-		<div class="container-fluid ">
+		<div class="container-fluid p-0">
 			<!-- navbar-toggle  data-bs-toggle="collapse"  -->
 			<!-- <button class="r " type="button" data-bs-target="#myTogglerNav" aria-controls="#myTogglerNav" aria-label="myTogglerNav"> -->
 			<!-- <span class="navbar-toggler-icon"></span> -->
@@ -54,7 +55,7 @@
 			<!-- collapse navbar-collapse -->
 			<div class=" m-0 p-0" id="myTogglerNav">
 				<!-- navbar-nav  -->
-				<ul class="me-auto mb-0 mb-lg-0 ">
+				<ul class="me-auto mb-0 mb-lg-0 p-0">
 					<div class=" d-flex flex-wrap justify-content-center">
 						<a class="nav-link active fs-ten text-decoration-none py-0 d-flex align-self-center" href="/perl/chessmembers">Members</a>
 						<b>&#183;</b>
@@ -90,8 +91,7 @@
 			</div>
 			<!-- end of #myTogglerNav -->
 
-			<button id="desktopVersion" class="d-sm-none">Desktop Version</button>
-			<div class="adsbyir 970x250"></div>
+
 
 		</div>
 		<!-- end of container-fluid -->
@@ -107,10 +107,355 @@
 	</script>
 	<!--endtopirbanner-->
 
-	<div id="three-columns" class="mx-2">
+	<div id="three-columns" class="mx-1">
 		<div class="desktop-row row d-flex justify-content-center g-1">
 
-			<div id="umn-one" class="desktop col-sm-2 justify-content-center">
+			<div id="umn-one" class="desktop columns-one-order col-sm-2 justify-content-center">
+
+				<div id="get-search-advance-potd-cotent" class="d-block d-sm-none">
+					<div id="search-advance-potd ">
+						<section id="cg-search" class="cg-section border border-1 border-dark my-1 pb-1">
+							<div class="mx-2 mt-2 ">
+								<h2 id="search-games" class="mt-1 ">
+									SEARCH OVER
+									<!--begingamecount-->1,043,000
+									<!--endgamecount--> CHESS GAMES
+								</h2>
+
+								<div id="search-input-etc" class="d-flex justify-content-between mt-1 ">
+									<div class="d-flex">
+										<input class="form-control h-75 border border-dark" type="search" placeholder="Search" aria-label="Search">
+										<button id="search-cg-games" class="btn btn-outline-success h-75 text-dark border-dark ms-1" type="submit">Search</button>
+									</div>
+									<!-- <form id="search-bar-button" class="d-flex mh-2" method="GET" action="/perl/ezsearch.pl">
+										<input id="search-bar" class="form-control me-2" type="search" placeholder="search" name="search" aria-label="search">
+										<button id="submit-button" class="btn btn-outline-success" type="submit" value="Search"></button>
+									</form> -->
+
+									<p id="tip-more-info" class="fs-ten"> @TIP<br>
+										<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into
+										the search bar. --> (<a class="fs-ten" href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>)
+									</p>
+								</div>
+							</div>
+
+						</section>
+						<!-- ++++++ end of #cg-search -->
+						<!--newusers-->
+						<!--kibcount-->
+						<div class="accordion accordion-flush" id="accordionAdvanceSearch">
+							<div class="accordion-item accrdion-section border border-1 border-dark my-1 ">
+								<h2 class="accordion-header text-start p-1" id="flush-headingAdvanceSearch">
+									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAdvanceSearch" aria-expanded="false" aria-controls="flush-collapseAdvanceSearch">
+										ADVANCED SEARCH
+									</button>
+								</h2>
+								<div id="flush-collapseAdvanceSearch" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionAdvanceSearch">
+									<div class="accordion-body p-0">
+										<section id="cg-advanced-search" class="cg-section d-flex flex-column">
+											<form method="GET" action="/perl/chess.pl" class="mobile-hide">
+
+												<div id="as-year" class="as-section d-flex d-grid row bg-color-change m-0 p-0">
+
+													<div class="col-12 d-flex flex-nowrap p-0 mt-2 ms-2">
+														<span class="span-bold d-flex align-self-center">Year</span>
+														<span class="d-flex align-self-center ms-1">is</span>
+													</div>
+
+													<div class="col-12 d-flex justify-content-center p-0">
+														<select name="yearcomp" class="w-auto d-flex align-self-center">
+															<option value="exactly"></option>
+															<option value="exactly">= exactly</option>
+															<option value="le">&lt;= no later than</option>
+															<option value="ge">&gt;= at least</option>
+														</select>
+													</div>
+
+													<div class="col-12 d-flex flex-nowrap justify-content-end p-0 ">
+														<input type="text" name="year" size="6" class="d-flex align-self-center">
+														<p class="example d-flex align-self-center me-3">e.g.1905</p>
+													</div>
+												</div>
+												<!-- end of #as-year -->
+
+												<section id="as-player" class="as-section d-flex d-grid row p-0">
+
+													<div class="col-12 d-flex flex-nowrap ">
+														<span class="span-bold d-flex align-self-center">Player</span>
+														<select name="playercomp" class="">
+															<option value="either"></option>
+															<option value="white">White</option>
+															<option value="black">Black</option>
+														</select>
+														<span class="m-1"> is </span>
+													</div>
+
+													<div class="col-12 d-flex align-content-center">
+														<div class="d-flex flex-column ms-5 flex-nowrap">
+															<span class="d-flex">
+																<select name="pid" class="pulldown m-1 w-100">@PLAYERPULL</select>
+															</span>
+															<span class="d-flex"> or <input type="text" name="player" class="m-1"></span>
+														</div>
+														<input type="checkbox" class="long-list mt-1">
+														<label class="mt-1">longer list</label>
+													</div>
+
+
+													<div class="col-12  d-flex flex-nowrap">
+														<a href="/directory/" class="example d-flex align-self-center mx-auto">(Directory)</a>
+													</div>
+
+												</section>
+												<!-- end of #as-player -->
+
+												<div id="as-opposing-player" class="as-section bg-color-change d-flex d-grid row m-0 p-0">
+													<div class="col-12 d-flex flex-nowrap">
+														<span class="span-bold d-flex align-self-center">Opposing player</span>
+														<span class="d-flex align-self-center ms-1">is</span>
+													</div>
+
+													<div class="col-12 d-flex">
+														<div class="d-flex flex-column flex-nowrap ms-5">
+															<select name="pid2" class="pulldown m-1 w-100">@PLAYERPULL</select>
+															<span class="d-flex">or <input type="text" name="player2" class="m-1"></span>
+														</div>
+														<input type="checkbox" class="long-list mt-2 ms-1">
+														<label class="mt-1"> longer list </label>
+													</div>
+												</div>
+												<!-- end of #as-opposing-player -->
+
+												<div id="as-nom" class="as-section d-flex d-grid row p-0">
+													<div class="col-12 d-flex flex-nowrap">
+														<span class="span-bold d-flex align-self-center">Number of moves</span>
+														<span class="d-flex align-self-center ms-1">is</span>
+													</div>
+													<div class="col-12 d-flex justify-content-center">
+														<select name="movescomp" class="w-auto d-flex align-self-center">
+															<option value="exactly"></option>
+															<option value="exactly">= exactly</option>
+															<option value="le">&lt;= no more than</option>
+															<option value="ge">&gt;= at least</option>
+														</select>
+													</div>
+													<div class="col-12 d-flex justify-content-end">
+														<input type="text" name="moves" size="6" class="d-flex align-self-center me-3">
+													</div>
+												</div>
+												<!-- end of #as-nom -->
+
+												<div id="as-opening" class="as-section bg-color-change d-flex d-grid row m-0 p-0">
+													<div class="d-flex flex-nowrap">
+														<span class="span-bold d-flex align-self-center">Opening</span>
+														<span class="d-flex align-self-center ms-1">is</span>
+													</div>
+													<select name="opening" class="w-auto mx-auto h-25 d-flex align-self-center m-1">
+														<option value=""></option>
+														<option value="">------- 1 e4</option>
+														<option value=""></option>
+														<option value="C20 C40 C44">King's Pawn Game</option>
+														<option value="C23-C24">Bishop's Opening</option>
+														<option value="C41">Philidor</option>
+														<option value="C25-C29">Vienna</option>
+														<option value="C45">Scotch</option>
+														<option value="C55-C59">Two Knights</option>
+														<option value="C46">Three Knights</option>
+														<option value="C47-C49">Four Knights</option>
+														<option value="B01">Scandinavian</option>
+														<option value="C21-C22">Center Game</option>
+														<option value="C50-C54">Giuoco Piano</option>
+														<option value="C51-C52">- Evans Gambit</option>
+														<option value="A07-A08">King's Indian Attack</option>
+														<option value="B02-B05">Alekhine</option>
+														<option value="B06">Robatsch</option>
+														<option value="B07-B09">Pirc</option>
+														<option value="A42">Modern</option>
+														<option value="C42-C43">Petrov</option>
+														<option value="C30-C39">King's Gambit</option>
+														<option value="C30-C32">- Declined</option>
+														<option value="C33-C39">- Accepted</option>
+														<option value="B10-B19">Caro-Kann</option>
+														<option value="C00-C19">French</option>
+														<option value="C14">- Classical</option>
+														<option value="C02">- Advance</option>
+														<option value="C01">- Exchange</option>
+														<option value="C03-C09">- Tarrasch</option>
+														<option value="C15-C19">- Winawer</option>
+														<option value="C60-C99">Ruy Lopez</option>
+														<option value="C84-C99">- Closed</option>
+														<option value="C80-C83">- Open</option>
+														<option value="C68-C69 C85">- Exchange</option>
+														<option value="B20-B99">Sicilian</option>
+														<option value="B34-B39 B70-B79">- Dragon</option>
+														<option value="B41-B43">- Kan</option>
+														<option value="B45-B49">- Taimanov</option>
+														<option value="B60-B69">- Richter-Rauser</option>
+														<option value="B80-B85">- Scheveningen</option>
+														<option value="B90-B99">- Najdorf</option>
+														<option value="B23-B26">- Closed</option>
+														<option value="B22">- Alapin</option>
+														<option value=""></option>
+														<option value="">------- 1 d4</option>
+														<option value=""></option>
+														<option value="D00 D01 D02 D04-05 A40 A41 A45-46 A50 E00 E10">Queen's Pawn Game</option>
+														<option value="D03">Torre Attack</option>
+														<option value="E01-E09">Catalan</option>
+														<option value="A80-A99">Dutch Defense</option>
+														<option value="A82-A83">- Staunton Gambit</option>
+														<option value="E11">Bogo Indian</option>
+														<option value="A51-A52">Budapest Gambit</option>
+														<option value="A43-A44">Old Benoni</option>
+														<option value="A56-A79">Modern Benoni</option>
+														<option value="A57-A59">- Benko Gambit</option>
+														<option value="D70-D99">Grunfeld</option>
+														<option value="E12-E19">Queen's Indian</option>
+														<option value="E20-E59">Nimzo Indian</option>
+														<option value="E60-E99">King's Indian</option>
+														<option value="E80-E89">- Saemisch Attack</option>
+														<option value="A53-A55">- Old Indian</option>
+														<option value="D20-D29">Queen's Gambit Accepted</option>
+														<option value="D06-D69">Queen's Gambit Declined</option>
+														<option value="D08-D09">- Albin Counter</option>
+														<option value="D07">- Chigorin</option>
+														<option value="D32-D34">- Tarrasch</option>
+														<option value="D40-D42">- Semi-Tarrasch</option>
+														<option value="D10-D19">- Slav</option>
+														<option value="D43-D49">- Semi-Slav</option>
+														<option value="D50-D69">- Orthodox</option>
+														<option value=""></option>
+														<option value="">------- 1 c4 and others</option>
+														<option value=""></option>
+														<option value="A00 B00">Uncommon Opening</option>
+														<option value="A01">Nimzo-Larsen Attack</option>
+														<option value="A02-A03">Bird's Opening</option>
+														<option value="A04-A06">Reti System</option>
+														<option value="A10-A39">English Opening</option>
+														<option value="A20-A29">- 1 c4 e5</option>
+														<option value="A30-A39">- 1 c4 c5</option>
+														<option value="A10-A19">- other</option>
+													</select>
+												</div>
+												<!-- end of as-opening -->
+
+												<div id="as-eco" class="as-section d-flex d-grid row p-0">
+													<div class="col-12 d-flex flex-nowrap">
+														<span class="span-bold d-flex align-self-center">ECO code</span>
+														<span class="d-flex align-self-center ms-1">is</span>
+													</div>
+													<div class="col-12 d-flex flex-nowrap">
+														<a href="javascript:OpenWin('/chessecohelp.html')" class="w-auto mx-auto h-25 d-flex align-self-center">(ECO help)</a>
+													</div>
+													<div class="col-12">
+														<input type="text" name="eco" class="d-flex align-self-center me-5 m-1">
+													</div>
+												</div>
+												<!-- end of #as-eco -->
+
+												<div id="as-result" class="as-section bg-color-change d-flex justify-content-between p-0">
+													<div class="d-flex flex-nowrap">
+														<span class="span-bold d-flex align-self-center">Result</span>
+														<span class="d-flex align-self-center ms-1">is</span>
+													</div>
+													<div class="">
+														<select name="result" class="w-auto mx-auto d-flex flex-row-reverse align-self-center m-1">
+															<option value=""></option>
+															<option value="1-0">White wins</option>
+															<option value="0-1">Black wins</option>
+															<option value="1st">1st player wins</option>
+															<option value="2nd">1st player loses</option>
+															<option value="1/2-1/2">draw</option>
+															<option value="notdraw">not a draw</option>
+														</select>
+													</div>
+													<!-- end of #as-result -->
+												</div>
+
+
+												<div id="as-kibitzing-annotation">
+													<div class="d-flex justify-content-end">
+														<div class="m-1 kibitzing">
+															<label>
+																<input type="CHECKBOX" name="kibitzing" value="1"> with <a href="/chesshelp.html#kibitzing">kibitzing</a>
+															</label>
+														</div>
+
+														<div class="m-1 annotation">
+															<label>
+																<input type="CHECKBOX" name="annotated" value="1"> with <a href="/chesshelp.html#annotation">annotation</a>
+															</label>
+														</div>
+													</div>
+
+
+												</div>
+												<!-- end of #as-checkboxes -->
+
+												<div id="as-buttons-clearform-findchessgames">
+													<div class="d-flex justify-content-between">
+														<div class="m-1 clear-form">
+															<input type="RESET" value=" Clear Form ">
+														</div>
+
+														<div class="m-1 find-chess-games">
+															<input type="submit" value=" Find Chess Games! ">
+														</div>
+													</div>
+
+
+												</div>
+												<!-- end of #as-buttons -->
+
+											</form>
+										</section>
+										<!-- +++++END OF #cg-advanced-search -->
+									</div>
+								</div>
+							</div>
+						</div>
+						<table>
+							<tbody>
+								<!--tidpulldown-->
+							</tbody>
+						</table>
+						<div id="potd" class="cg-section my-1 border border-none text-center">
+							<!-- <img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale"> -->
+							<!--beginpuzzle-->
+							<section id="cuntainr">
+								<!-- potd-inner -->
+
+								<header id="top-cuntainr">
+									<!-- potd-header -->
+									<h2 class="w-100 m-0 p-2">White to play</h2>
+
+									<p class="p-3">
+										<a class="fw-400" href="/perl/chessgame?gid=1401603&m=22">Adianto vs R E Espinosa Flores</a>
+									</p>
+								</header>
+								<div id="mid-cuntainr">
+									<!-- potd-body -->
+									<a href="/perl/chessgame?gid=1401603&m=22">
+										<img src="/puzzles/1401603.gif" border="0" width="284" height="284">
+									</a>
+								</div>
+								<footer id="bottom-cuntainr">
+									<!-- potd-footer -->
+									<p class="p-3">22.&nbsp;?</p>
+									<p class="p-3"> See game for solution.</p>
+								</footer>
+								<!--+++++ end of .bottom-cuntainr -->
+							</section>
+							<!--+++++ end of .cuntainr -->
+							<!--endpuzzle-->
+							<div>
+								<a href="/aboutpuzzles.html" id="about-our-puzzles" class="eleven">About our puzzles </a>
+							</div>
+						</div>
+						<!--end of #potd -->
+					</div>
+				</div>
+
+				<!-- end of #search-advance-potd -->
 
 				<section id="cg-gotd" class="cg-section  border border-1 border-dark text-center pt-1">
 
@@ -406,324 +751,9 @@
 			<!-- end of col-first -->
 			<!-- ++++++ END OF COLUMN ONE -->
 
-			<div id="umn-two" class="desktop col-sm-8">
-				<div id="col-mid">
-
-					<section id="cg-search" class="cg-section border border-1 border-dark my-1 pb-1">
-						<div class="mx-2 mt-2 ">
-							<h2 id="search-games" class="mt-1 ">
-								SEARCH OVER
-								<!--begingamecount-->1,043,000
-								<!--endgamecount--> CHESS GAMES
-							</h2>
-
-							<div id="search-input-etc" class="d-flex justify-content-between mt-1 ">
-								<div class="d-flex">
-									<input class="form-control h-75 border border-dark" type="search" placeholder="Search" aria-label="Search">
-									<button class="btn btn-outline-success h-75 text-dark border-dark ms-1" type="submit">Search</button>
-								</div>
-								<!-- <form id="search-bar-button" class="d-flex mh-2" method="GET" action="/perl/ezsearch.pl">
-									<input id="search-bar" class="form-control me-2" type="search" placeholder="search" name="search" aria-label="search">
-									<button id="submit-button" class="btn btn-outline-success" type="submit" value="Search"></button>
-								</form> -->
-
-								<p id="tip-more-info" class="fs-ten"> @TIP<br>
-									<!-- Looking for a certain opening? Say the King's Gambit: just type "1 e4 e5 2 f4" into
-									the search bar. --> (<a class="fs-ten" href="javascript:OpenWin('/ezsearch.html')">more&nbsp;info</a>)
-								</p>
-							</div>
-						</div>
-
-					</section>
-					<!-- ++++++ end of #cg-search -->
-					<!--newusers-->
-					<!--kibcount-->
-
-					<div class="accordion accordion-flush" id="accordionAdvanceSearch">
-						<div class="accordion-item accrdion-section border border-1 border-dark my-1 ">
-							<h2 class="accordion-header text-start p-1" id="flush-headingAdvanceSearch">
-								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAdvanceSearch" aria-expanded="false" aria-controls="flush-collapseAdvanceSearch">
-									ADVANCED SEARCH
-								</button>
-							</h2>
-							<div id="flush-collapseAdvanceSearch" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionAdvanceSearch">
-								<div class="accordion-body p-0">
-									<section id="cg-advanced-search" class="cg-section my-1 d-flex flex-column">
-										<form method="GET" action="/perl/chess.pl" class="mobile-hide">
-
-											<div id="as-year" class="as-section d-flex bg-color-change">
-												<td class="">
-													<span class="span-bold d-flex align-self-center">Year</span>
-													<span class="d-flex align-self-center">is</span>
-												</td>
-												<td class="position-relative">
-													<select name="yearcomp" class="w-auto h-25 d-flex align-self-center">
-														<option value="exactly"></option>
-														<option value="exactly">= exactly</option>
-														<option value="le">&lt;= no later than</option>
-														<option value="ge">&gt;= at least</option>
-													</select>
-												</td>
-												<td>
-													<input type="text" name="year" size="6" class="d-flex align-self-center">
-													<p class="example d-flex align-self-center">e.g.1905</p>
-												</td>
-											</div>
-
-											<!-- end of #as-year -->
-											<tr>
-												<section id="as-player" class="as-section d-flex">
-													<td>
-														<span class="span-bold d-flex align-self-center">Player</span>
-														<select name="playercomp" class="d-flex align-self-center">
-															<option value="either"></option>
-															<option value="white">White</option>
-															<option value="black">Black</option>
-														</select>
-														<span class="d-flex align-self-center m-1"> is </span>
-													</td>
-													<td>
-														<div class="d-flex flex-column ms-5">
-															<span class="d-flex">
-																<select name="pid" class="pulldown m-1 w-100">@PLAYERPULL</select>
-															</span>
-															<span class="d-flex"> or <input type="text" name="player" class="m-1"></span>
-														</div>
-													<td>
-														<input type="checkbox" class="long-list mt-1">
-														<label class="mt-1">longer list</label>
-													</td>
-													</td>
-													<td>
-														<a href="/directory/" class="example d-flex align-self-center mx-auto">(Directory)</a>
-													</td>
-												</section>
-											</tr>
-											<!-- end of #as-player -->
-											<tr>
-												<div id="as-opposing-player" class="as-section bg-color-change d-flex p-0">
-													<span class="span-bold d-flex align-self-center">Opposing player</span>
-													<span class="d-flex align-self-center">is</span>
-													<div class="d-flex flex-column ms-5">
-														<select name="pid2" class="pulldown m-1 w-100">@PLAYERPULL</select>
-														<span class="d-flex">or <input type="text" name="player2" class="m-1"></span>
-													</div>
-													<input type="checkbox" class="long-list mt-2 ms-1">
-													<label class="mt-1"> longer list </label>
-												</div>
-											</tr>
-											<!-- end of #as-opposing-player -->
-											<tr>
-												<div id="as-nom" class="as-section d-flex">
-													<td>
-														<span class="span-bold d-flex align-self-center">Number of moves</span>
-														<span class="d-flex align-self-center">is</span>
-													</td>
-													<td>
-														<select name="movescomp" class="w-auto h-25 d-flex align-self-center">
-															<option value="exactly"></option>
-															<option value="exactly">= exactly</option>
-															<option value="le">&lt;= no more than</option>
-															<option value="ge">&gt;= at least</option>
-														</select>
-													</td>
-													<td>
-														<input type="text" name="moves" size="6" class="d-flex align-self-center">
-													</td>
-												</div>
-											</tr>
-											<!-- end of #as-nom -->
-											<tr>
-												<div id="as-opening" class="as-section bg-color-change d-flex p-0">
-													<span class="span-bold d-flex align-self-center">Opening</span>
-													<span class="d-flex align-self-center">is</span>
-													<select name="opening" class="w-auto mx-auto h-25 d-flex align-self-center m-1">
-														<option value=""></option>
-														<option value="">------- 1 e4</option>
-														<option value=""></option>
-														<option value="C20 C40 C44">King's Pawn Game</option>
-														<option value="C23-C24">Bishop's Opening</option>
-														<option value="C41">Philidor</option>
-														<option value="C25-C29">Vienna</option>
-														<option value="C45">Scotch</option>
-														<option value="C55-C59">Two Knights</option>
-														<option value="C46">Three Knights</option>
-														<option value="C47-C49">Four Knights</option>
-														<option value="B01">Scandinavian</option>
-														<option value="C21-C22">Center Game</option>
-														<option value="C50-C54">Giuoco Piano</option>
-														<option value="C51-C52">- Evans Gambit</option>
-														<option value="A07-A08">King's Indian Attack</option>
-														<option value="B02-B05">Alekhine</option>
-														<option value="B06">Robatsch</option>
-														<option value="B07-B09">Pirc</option>
-														<option value="A42">Modern</option>
-														<option value="C42-C43">Petrov</option>
-														<option value="C30-C39">King's Gambit</option>
-														<option value="C30-C32">- Declined</option>
-														<option value="C33-C39">- Accepted</option>
-														<option value="B10-B19">Caro-Kann</option>
-														<option value="C00-C19">French</option>
-														<option value="C14">- Classical</option>
-														<option value="C02">- Advance</option>
-														<option value="C01">- Exchange</option>
-														<option value="C03-C09">- Tarrasch</option>
-														<option value="C15-C19">- Winawer</option>
-														<option value="C60-C99">Ruy Lopez</option>
-														<option value="C84-C99">- Closed</option>
-														<option value="C80-C83">- Open</option>
-														<option value="C68-C69 C85">- Exchange</option>
-														<option value="B20-B99">Sicilian</option>
-														<option value="B34-B39 B70-B79">- Dragon</option>
-														<option value="B41-B43">- Kan</option>
-														<option value="B45-B49">- Taimanov</option>
-														<option value="B60-B69">- Richter-Rauser</option>
-														<option value="B80-B85">- Scheveningen</option>
-														<option value="B90-B99">- Najdorf</option>
-														<option value="B23-B26">- Closed</option>
-														<option value="B22">- Alapin</option>
-														<option value=""></option>
-														<option value="">------- 1 d4</option>
-														<option value=""></option>
-														<option value="D00 D01 D02 D04-05 A40 A41 A45-46 A50 E00 E10">Queen's Pawn Game</option>
-														<option value="D03">Torre Attack</option>
-														<option value="E01-E09">Catalan</option>
-														<option value="A80-A99">Dutch Defense</option>
-														<option value="A82-A83">- Staunton Gambit</option>
-														<option value="E11">Bogo Indian</option>
-														<option value="A51-A52">Budapest Gambit</option>
-														<option value="A43-A44">Old Benoni</option>
-														<option value="A56-A79">Modern Benoni</option>
-														<option value="A57-A59">- Benko Gambit</option>
-														<option value="D70-D99">Grunfeld</option>
-														<option value="E12-E19">Queen's Indian</option>
-														<option value="E20-E59">Nimzo Indian</option>
-														<option value="E60-E99">King's Indian</option>
-														<option value="E80-E89">- Saemisch Attack</option>
-														<option value="A53-A55">- Old Indian</option>
-														<option value="D20-D29">Queen's Gambit Accepted</option>
-														<option value="D06-D69">Queen's Gambit Declined</option>
-														<option value="D08-D09">- Albin Counter</option>
-														<option value="D07">- Chigorin</option>
-														<option value="D32-D34">- Tarrasch</option>
-														<option value="D40-D42">- Semi-Tarrasch</option>
-														<option value="D10-D19">- Slav</option>
-														<option value="D43-D49">- Semi-Slav</option>
-														<option value="D50-D69">- Orthodox</option>
-														<option value=""></option>
-														<option value="">------- 1 c4 and others</option>
-														<option value=""></option>
-														<option value="A00 B00">Uncommon Opening</option>
-														<option value="A01">Nimzo-Larsen Attack</option>
-														<option value="A02-A03">Bird's Opening</option>
-														<option value="A04-A06">Reti System</option>
-														<option value="A10-A39">English Opening</option>
-														<option value="A20-A29">- 1 c4 e5</option>
-														<option value="A30-A39">- 1 c4 c5</option>
-														<option value="A10-A19">- other</option>
-													</select>
-												</div>
-											</tr>
-											<!-- end of as-opening -->
-											<tr>
-												<div id="as-eco" class="as-section d-flex">
-													<span class="span-bold d-flex align-self-center">ECO code</span>
-													<span class="d-flex align-self-center">is</span>
-													<a href="javascript:OpenWin('/chessecohelp.html')" class="w-auto mx-auto h-25 d-flex align-self-center">(ECO help)</a>
-													<input type="text" name="eco" class="d-flex align-self-center me-5 m-1">
-												</div>
-											</tr>
-											<!-- end of #as-eco -->
-											<tr>
-												<div id="as-result" class="as-section bg-color-change d-flex p-0">
-													<span class="span-bold d-flex align-self-center">Result</span>
-													<span class="d-flex align-self-center">is</span>
-													<select name="result" class="w-auto mx-auto h-25 d-flex flex-row-reverse align-self-center m-1">
-														<option value=""></option>
-														<option value="1-0">White wins</option>
-														<option value="0-1">Black wins</option>
-														<option value="1st">1st player wins</option>
-														<option value="2nd">1st player loses</option>
-														<option value="1/2-1/2">draw</option>
-														<option value="notdraw">not a draw</option>
-													</select>
-												</div>
-											</tr>
-											<!-- end of #as-result -->
-											<div id="as-checkboxes">
-												<div class="p-div-checkboxes">
-													<label>
-														<input type="CHECKBOX" name="kibitzing" value="1"> with <a href="/chesshelp.html#kibitzing">kibitzing</a>
-													</label>
-												</div>
-												<!-- end of .p-div -->
-												<div class="p-divA">
-													<label>
-														<input type="CHECKBOX" name="annotated" value="1"> with <a href="/chesshelp.html#annotation">annotation</a>
-													</label>
-												</div>
-												<!-- end of .p-div -->
-											</div>
-											<!-- end of #as-checkboxes -->
-											<div id="as-buttons">
-												<div class="p-div-buttons">
-													<input type="RESET" value=" Clear Form ">
-												</div>
-												<!-- end of p-div-buttons -->
-												<div class="p-div-buttons">
-													<input type="submit" value=" Find Chess Games! ">
-												</div>
-												<!-- end of .p-div-buttons -->
-											</div>
-											<!-- end of #as-buttons -->
-										</form>
-									</section>
-									<!-- +++++END OF #cg-advanced-search -->
-								</div>
-							</div>
-						</div>
-					</div>
-
-					<table>
-						<tbody>
-							<!--tidpulldown-->
-						</tbody>
-					</table>
-
-					<div id="potd" class="cg-section my-1 border border-none text-center">
-						<!-- <img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale"> -->
-						<!--beginpuzzle-->
-						<section id="cuntainr">
-							<!-- potd-inner -->
-
-							<header id="top-cuntainr">
-								<!-- potd-header -->
-								<h2 class="w-100 m-0 p-2">White to play</h2>
-
-								<p class="p-3">
-									<a class="fw-400" href="/perl/chessgame?gid=1401603&m=22">Adianto vs R E Espinosa Flores</a>
-								</p>
-							</header>
-							<div id="mid-cuntainr">
-								<!-- potd-body -->
-								<a href="/perl/chessgame?gid=1401603&m=22">
-									<img src="/puzzles/1401603.gif" border="0" width="284" height="284">
-								</a>
-							</div>
-							<footer id="bottom-cuntainr">
-								<!-- potd-footer -->
-								<p class="p-3">22.&nbsp;?</p>
-								<p class="p-3"> See game for solution.</p>
-							</footer>
-							<!--+++++ end of .bottom-cuntainr -->
-						</section>
-						<!--+++++ end of .cuntainr -->
-						<!--endpuzzle-->
-						<div>
-							<a href="/aboutpuzzles.html" id="about-our-puzzles" class="eleven">About our puzzles </a>
-						</div>
-					</div>
-					<!--end of #potd -->
+			<div id="umn-two" class="desktop  col-sm-8">
+				<div id="col-mid d-flex">
+					<div id="desktop-search-advance-potd"></div>
 					<!--beginbottombanner-->
 
 					<div class="adsbyir 728x90"></div>
@@ -1122,7 +1152,7 @@
 			</div>
 			<!-- ++++++++++++ END OF #umn-two-->
 
-			<div id="umn-three" class="desktop umn-three col-sm-2">
+			<div id="umn-three" class="desktop columns-three-order col-sm-2 ">
 				<!--beginnonpremium-->
 				<div id="cg-promote-banner" class="image-div">
 					<a id="promote-banner" href="/perl/tour" target="_blank">

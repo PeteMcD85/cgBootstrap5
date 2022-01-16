@@ -4,16 +4,10 @@ footer {
 
 p {
   line-height: 18px;
-  /* margin: 0; */
 }
 
 h4 {
   line-height: .6;
-  /* margin: 0; */
-}
-
-label {
-  /* padding-left: 5px; */
 }
 
 .darker-bg {
@@ -40,9 +34,6 @@ a.fs-ten {
   font-size: 12px;
 }
 
-/* .tedee {
-  margin-right: 2rem;
-} */
 /* variable colors */
 :root {
   --main-bg-color: #FFFFDE;
@@ -50,15 +41,6 @@ a.fs-ten {
   --blue-link-color: #0000FF;
 }
 
-/* CONTAINER TWO */
-/* whole body width */
-/* .g-5, .gy-5 {
-  --bs-gutter-y: 1rem;
-}
-
-.g-5, .gx-5 {
-  --bs-gutter-x: 16rem;
-} */
 /* .accordion-button:not(.collapsed)::after {
   background-image: url("data:image/svg+xml,...");
 }
@@ -71,23 +53,17 @@ a.fs-ten {
 .accordion-button::after {
   background-color: #FDCD99;
 } */
+/* .accordion-button.collapse a:link.active */
+/* .accordion-button-active-collapse ::after */
+/* button.accordion-button-active::after.active  */
 #search-cg-games {
   background-color: gainsboro;
 }
 
 .accordion-button {
   background-color: #FFFFDE;
-  /* display: flex;
-  justify-content: center;
-  text-align: center; */
 }
 
-/* .accordion-button.collapse a:link.active */
-/* .accordion-button-active-collapse ::after */
-/* button.accordion-button-active::after.active  */
-/* { */
-/* background-color: #FDCD99; */
-/* } */
 #site-nav {
   background-color: #FFFFDE;
 }
@@ -101,21 +77,13 @@ div#three-columns {}
 
 .cg-section {
   background-color: var(--main-bg-color);
-  /* margin: 3px; */
-  /* text-align: center; */
-  /* border: solid;
-  border-width: thin; */
   line-height: 15px;
 }
 
 .cg-section a, h2 {
   font-size: 13px;
   color: black;
-  /* font-weight: bolder; */
-  /* text-decoration: none; */
   line-height: revert;
-  /* margin: 0;
-  padding: 0; */
 }
 
 .cg-section h3 {
@@ -130,15 +98,9 @@ a.names {
   color: var(--blue-link-color);
 }
 
-p.names {
-  /* display: flex; */
-  /* justify-content: center; */
-}
-
 a.events {
   font-size: 13px;
   color: var(--blue-link-color);
-  /* font-weight: bolder; */
 }
 
 /* CONTAINER ONE */
@@ -152,8 +114,6 @@ div#umn-one {
 
 #more-events-link {
   border-color: brown;
-  /* border: solid;
-  border-width: thin; */
 }
 
 h2#hb-header {
@@ -176,22 +136,10 @@ p.chess-news {
 /* second section 2 _ Advanced search */
 .bg-color-change {
   background-color: var(--main-header-color);
-  /* padding: 3px; */
 }
 
 .span-bold {
-  /* font-weight: bolder;
-  margin-right: .4rem; */
-}
-
-#as-checkboxes {
-  /* display: flex;
-  flex-direction: row-reverse; */
-}
-
-#as-buttons {
-  /* display: flex;
-  justify-content: space-between; */
+  font-weight: bolder;
 }
 
 p#tip-more-info {
@@ -220,17 +168,12 @@ p#tip-more-info a {
 
 /* LASTCOLUMN #3 */
 /* CONTAINER THREE */
-#umn-three {
-  /* max-width: 190px; */
-}
-
 a.p-kibitzing {
   font-size: 10px;
 }
 
 .recent-v a {
   font-size: 10px;
-  /* font-weight: normal; */
 }
 
 p.recent-v {
