@@ -106,14 +106,24 @@
 		ir_ads_push();
 	</script>
 	<!--endtopirbanner-->
-
+	<!-- &nbsp; -->
 	<div id="three-columns" class="mx-1">
 		<div class="desktop-row row d-flex justify-content-center g-1">
 
-			<div id="umn-one" class="desktop columns-one-order col-sm-2 justify-content-center">
+			<div id="left-start-column" class="desktop columns-one-order col-sm-2 justify-content-center">
 
-				<div id="get-search-advance-potd-cotent" class="d-block d-sm-none">
-					<div id="search-advance-potd ">
+
+
+				<div id="welcome" class="border border-dark text-center d-block d-sm-none">
+					<div id="welcom-login" class="">
+						<p class="border border-dark"> @WELCOME </p>
+						<p class="border border-dark"> @LOGINLINE </p>
+					</div>
+				</div>
+				<!-- end of #welcome -->
+
+				<div id="search-advance-potd-content" class="d-block d-sm-none">
+					<div id="search-advance-potd">
 						<section id="cg-search" class="cg-section border border-1 border-dark my-1 pb-1">
 							<div class="mx-2 mt-2 ">
 								<h2 id="search-games" class="mt-1 ">
@@ -140,16 +150,19 @@
 							</div>
 
 						</section>
-						<!-- ++++++ end of #cg-search -->
+						<!-- end of #cg-search -->
 						<!--newusers-->
 						<!--kibcount-->
-						<div class="accordion accordion-flush" id="accordionAdvanceSearch">
+						<div class="accordion accordion-flush accordion-aSearch" id="accordionAdvanceSearch">
 							<div class="accordion-item accrdion-section border border-1 border-dark my-1 ">
-								<h2 class="accordion-header text-start p-1" id="flush-headingAdvanceSearch">
-									<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAdvanceSearch" aria-expanded="false" aria-controls="flush-collapseAdvanceSearch">
+
+								<h2 class="accordion-header text-start p-1 d-flex justify-content-center" id="flush-headingAdvanceSearch">
+									<button class="accordion-button collapsed d-flex justify-content-center" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseAdvanceSearch" aria-expanded="false" aria-controls="flush-collapseAdvanceSearch">
 										ADVANCED SEARCH
 									</button>
 								</h2>
+
+
 								<div id="flush-collapseAdvanceSearch" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionAdvanceSearch">
 									<div class="accordion-body p-0">
 										<section id="cg-advanced-search" class="cg-section d-flex flex-column">
@@ -412,12 +425,16 @@
 									</div>
 								</div>
 							</div>
+							<!-- end of .advance-search accordion-item -->
 						</div>
+						<!-- end of .advance-search accordion -->
+
 						<table>
 							<tbody>
 								<!--tidpulldown-->
 							</tbody>
 						</table>
+
 						<div id="potd" class="cg-section my-1 border border-none text-center">
 							<!-- <img src="/chessimages/difficulty3.gif" width="284" height="25" border="0" alt="Difficulty Scale"> -->
 							<!--beginpuzzle-->
@@ -453,9 +470,11 @@
 						</div>
 						<!--end of #potd -->
 					</div>
+					<!-- end of #search-advance-potd -->
 				</div>
+				<!-- end of #search-advance-potd-content -->
 
-				<!-- end of #search-advance-potd -->
+
 
 				<section id="cg-gotd" class="cg-section  border border-1 border-dark text-center pt-1">
 
@@ -517,134 +536,145 @@
 				</div>
 
 				<div class="accordion" id="accordionNewEventsHappyBirthdayChessNews">
+
 					<div class="accordion-item accrdion-section border border-1 border-dark my-1  accrdion-section border border-1 border-dark my-1">
-						<h2 class="accordion-header" id="panelsStayOpen-headingNewEvents">
-							<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNewEvents" aria-expanded="true" aria-controls="panelsStayOpen-collapseNewEvents">
-								New Events
-							</button>
-						</h2>
+
+						<div class="d-flex justify-content-center">
+							<h2 class="accordion-header" id="panelsStayOpen-headingNewEvents">
+								<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNewEvents" aria-expanded="true" aria-controls="panelsStayOpen-collapseNewEvents">
+									New Events
+								</button>
+							</h2>
+						</div>
+
 						<div id="panelsStayOpen-collapseNewEvents" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNewEvents">
 							<div class="accordion-body p-0">
-								<div id="more-events-link" class="more-events-div m-3">
+
+								<div id="more-events-link" class="more-events-div m-2 d-flex justify-content-center">
 									<a href="/perl/newtournaments" class="more-events-link events"> more events... </a>
 								</div>
+
 								<!--beginchesslive-->
 								<!--endchesslive-->
 								<div id="cron-new-events">
 									<!--beginnewgames-->
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105124">US Championship</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=105124">US Championship</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Saint Louis, MO USA<br> Oct 5 - 19 2021</span>
-										<p class="xsm fs-ten lh-inherit">The U.S. Championship features 12 players competing for $194,000 in prize money and qualification into the World Championship cycle.</p> &nbsp;
+										<p class="xsm fs-ten lh-normal m-0">The U.S. Championship features 12 players competing for $194,000 in prize money and qualification into the World Championship cycle.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105126">US Championship (Women)</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=105126">US Championship (Women)</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Saint Louis, MO USA<br> Oct 5 - 19 2021</span>
-										<p class="xsm fs-ten lh-inherit"> The U.S. Women Championship features 12 players competing for $100,000 in prize money and qualification into the Women's World Championship cycle.</p> &nbsp;
+										<p class="xsm fs-ten lh-normal m-0"> The U.S. Women Championship features 12 players competing for $100,000 in prize money and qualification into the Women's World Championship cycle.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=105014">Meltwater Tour Final</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=105014">Meltwater Tour Final</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>chess24.com INT<br> Sept 25 - Oct 4 2021</span>
-										<p class="xsm fs-ten lh-inherit">The Meltwater Champions Chess Tour Final is the 10th and last event of the $1.5 million Meltwater Champions Chess Tour 2020-2021. A 10-player round-robin tournament over 10 days, the games
+										<p class="xsm fs-ten lh-inherit m-0">The Meltwater Champions Chess Tour Final is the 10th and last event of the $1.5 million Meltwater Champions Chess Tour 2020-2021. A 10-player round-robin tournament over 10 days, the games
 											are
 											played
 											online from 25
-											September to 4 October on the chess24 Playzone.</p> &nbsp;
+											September to 4 October on the chess24 Playzone.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104974">European Club Cup (Women)</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104974">European Club Cup (Women)</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Struga, North Macedonia<br> Sept 19-24 2021</span>
-										<p class="xsm fs-ten lh-inherit">The 25th European Club Cup for Women was held from 18-24 September 2019 at Hotel Drim in Struga, North Macedonia. The tournament was a 7-round Swiss team event played with the standard time
+										<p class="xsm fs-ten lh-inherit m-0">The 25th European Club Cup for Women was held from 18-24 September 2019 at Hotel Drim in Struga, North Macedonia. The tournament was a 7-round Swiss team event played with the standard time
 											control of 90
 											minutes for the
-											first 40 moves followed by 30 more minutes till the end of the game, with 30 seconds added per move from move 1.</p> &nbsp;
+											first 40 moves followed by 30 more minutes till the end of the game, with 30 seconds added per move from move 1.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104973">36th ECC Open</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104973">36th ECC Open</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Struga, North Macedonia<br> Sept 19-24 2021</span>
-										<p class="xsm fs-ten lh-inherit">The 36th European Club Cup was held from 18-24 September 2019 at Hotel Izgrev in Struga, North Macedonia. It was a 7-round Swiss team event, with the time control of 90 minutes for the first
+										<p class="xsm fs-ten lh-inherit m-0">The 36th European Club Cup was held from 18-24 September 2019 at Hotel Izgrev in Struga, North Macedonia. It was a 7-round Swiss team event, with the time control of 90 minutes for the first
 											40
 											moves
 											followed by 30
-											more minutes till the end of the game, with 30 seconds added per move from move 1.</p> &nbsp;
+											more minutes till the end of the game, with 30 seconds added per move from move 1.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104921">Tolstoy Memorial</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104921">Tolstoy Memorial</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Yasnaya Polyana RUS<br> Sep 11-12 2021</span>
-										<p class="xsm fs-ten lh-inherit">The Tolstoy Memorial consists of 9 rounds with a time control of 15 minutes and 10 second increments starting from move 1.</p> &nbsp;
+										<p class="xsm fs-ten lh-inherit m-0">The Tolstoy Memorial consists of 9 rounds with a time control of 15 minutes and 10 second increments starting from move 1.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104876">Norway Chess</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104876">Norway Chess</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Stavanger NOR<br> Sep 07-17 2021</span>
-										<p class="xsm fs-ten lh-inherit">The Norway Chess Tournament is a double round-robin that consists of 10 rounds. Time control is 120 minutes with 10 second increments after move 40.</p> &nbsp;
+										<p class="xsm fs-ten lh-inherit m-0">The Norway Chess Tournament is a double round-robin that consists of 10 rounds. Time control is 120 minutes with 10 second increments after move 40.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104826">Aimchess US Rapid</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104826">Aimchess US Rapid</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>chess24.com INT Aug 26- Sep 05 2021</span>
-										<p class="xsm fs-ten lh-inherit">Aimchess US Rapid starts with a 16-player round robin, with the top 8 advancing to the finals. The time control is 15 minutes plus a 10-second increment.<br> &nbsp;</p>
+										<p class="xsm fs-ten lh-inherit m-0">Aimchess US Rapid starts with a 16-player round robin, with the top 8 advancing to the finals. The time control is 15 minutes plus a 10-second increment.<br></p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104811">European Championship</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104811">European Championship</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Reykjavik, ISL Aug 26- Sep 05 2021</span>
-										<p class="xsm fs-ten lh-inherit">The European Individual Chess Championship 2021 is an 11-round swiss tournament with a prize fund of 100,000EUR.</p> &nbsp;
+										<p class="xsm fs-ten lh-inherit m-0">The European Individual Chess Championship 2021 is an 11-round swiss tournament with a prize fund of 100,000EUR.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104726">Sinquefield Cup</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104726">Sinquefield Cup</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>St. Louis, MO USA<br> Aug 16-28 2021</span>
-										<p class="xsm fs-ten lh-inherit">The Sinquefield Cup is a 10-player round robin taking place at Saint Louis, Missouri, USA. It is the final event of the 2021 Grand Chess Tour with a prize fund of $325,000.</p> &nbsp;
+										<p class="xsm fs-ten lh-inherit m-0">The Sinquefield Cup is a 10-player round robin taking place at Saint Louis, Missouri, USA. It is the final event of the 2021 Grand Chess Tour with a prize fund of $325,000.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104467">FIDE World Cup</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104467">FIDE World Cup</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Sochi, RUS<br> Jul 10 - Aug 08 2021</span>
-										<p class="xsm fs-ten lh-inherit">The FIDE World Cup is a 206-player elimination event, taking place at Sochi, Russia.</p> &nbsp;
+										<p class="xsm fs-ten lh-inherit m-0">The FIDE World Cup is a 206-player elimination event, taking place at Sochi, Russia.</p>
 									</section>
 									<section class="section-events text-start fs-thirteen lh-normal">
-										<h4>
-											<a class="ne-header events fw-bold" href="/perl/chess.pl?tid=104472">FIDE World Cup (Women)</a>
-										</h4>
+										<h4 class="lh-normal">
+											<a class="ne-header events fw-bold text-decoration-none" href="/perl/chess.pl?tid=104472">FIDE World Cup (Women)</a>
+										</h4 class="lh-normal">
 										<span class='ne-header'>Sochi, RUS<br> Jul 10 - Aug 04 2021</span>
-										<p class="xsm fs-ten lh-inherit">The FIDE World Cup (women) is a 103-player elimination event, taking place at Sochi, Russia.</p> &nbsp;<br>
+										<p class="xsm fs-ten lh-inherit m-0">The FIDE World Cup (women) is a 103-player elimination event, taking place at Sochi, Russia.</p><br>
 									</section>
 									<!--endnewgames-->
 								</div>
 								<!-- end of cron-new-events -->
-								<div class="more-events-div">
-								</div>
+								<div class="more-events-div"></div>
 								<!-- end of accordion-body -->
 							</div>
 							<!-- end of accordion-body -->
 							<a href="/perl/newtournaments" class="more-events-link"> more events... </a>
 						</div>
+						<!-- end of #panelsStayOpen-collapseNewEvents -->
 					</div>
+					<!-- end of accordion-item NewEvent -->
 
 					<div class="accordion-item accrdion-section border border-1 border-dark my-1  accrdion-section border border-1 border-dark my-1">
-						<h2 class="accordion-header" id="panelsStayOpen-headingHappyBirthday">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHappyBirthday" aria-expanded="false" aria-controls="panelsStayOpen-collapseHappyBirthday">
-								Happy Birthday To:
-							</button>
-						</h2>
+						<div class="d-flex justify-content-center">
+							<h2 class="accordion-header" id="panelsStayOpen-headingHappyBirthday">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHappyBirthday" aria-expanded="false" aria-controls="panelsStayOpen-collapseHappyBirthday">
+									<span class="d-flex flex-nowrap">Happy Birthday To:</span>
+
+								</button>
+							</h2>
+						</div>
 						<div id="panelsStayOpen-collapseHappyBirthday" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingHappyBirthday">
 							<div class="accordion-body p-0">
 								<a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=113159">C P Hofstede de Groot</a>, <a class="fs-thirteen fw-normal" href="/perl/chessplayer?pid=10594">Heinrich Wolf</a>, <a class="fs-thirteen fw-normal"
@@ -659,99 +689,110 @@
 							</div>
 						</div>
 					</div>
+					<!-- end of accordion-item HappyBirthday -->
 
 					<div class="accordion-item accrdion-section border border-1 border-dark my-1  accrdion-section border border-1 border-dark my-1 ">
-						<h2 class="accordion-header " id="panelsStayOpen-headingChessNews">
-							<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChessNews" aria-expanded="false" aria-controls="panelsStayOpen-collapseChessNews">
-								Chess News
-							</button>
-						</h2>
+						<div class="d-flex justify-content-center">
+							<h2 class="accordion-header " id="panelsStayOpen-headingChessNews">
+								<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseChessNews" aria-expanded="false" aria-controls="panelsStayOpen-collapseChessNews">
+									Chess News
+								</button>
+							</h2>
+						</div>
 						<div id="panelsStayOpen-collapseChessNews" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingChessNews">
 							<div class="accordion-body p-0">
-								<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal" href="https://www.rappler.com/sports/wesley-so-retains-us-chess-championship-october-19-2021" target="news">Wesley So retains US Chess title, bags P2.5M</a>
+								<p class="chess-news text-start fs-ten m-0">&#8226; <a class="fs-ten fw-normal" href="https://www.rappler.com/sports/wesley-so-retains-us-chess-championship-october-19-2021" target="news">Wesley So retains US Chess title, bags
+										P2.5M</a>
 									(rappler.com)</p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.linkedin.com/pulse/you-want-kill-your-career-learn-think-like-chess-master-chowdhury" target="news">If You Want To Kill It In Your
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.linkedin.com/pulse/you-want-kill-your-career-learn-think-like-chess-master-chowdhury" target="news">If You Want To Kill It In
+										Your
 										Career, Learn To Think Like A
 										Chess Master</a>
 									(linkedin.com)</p>
 
-								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-11-caruana-miss-means-3-way-playoff" target="news">US Chess Champs 11: Caruana miss means 3-way
+								<p class="chess-news text-start fs-ten m-0">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-11-caruana-miss-means-3-way-playoff" target="news">US Chess Champs 11: Caruana miss means 3-way
 										playoff</a>
 									(chess24.com)</p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/mattgardner1/2021/10/19/kasparov-masterclasses-target-chess-esports-stars-of-tomorrow/" target="news">Garry
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/mattgardner1/2021/10/19/kasparov-masterclasses-target-chess-esports-stars-of-tomorrow/" target="news">Garry
 										Kasparov
 										Unveils Chess Esports
 										Masterclasses For
 										Future
 										Stars</a> (Forbes)</p>
 
-								<p class="chess-news text-start fs-ten">&#8226; <a class="fs-ten fw-normal"
+								<p class="chess-news text-start fs-ten m-0">&#8226; <a class="fs-ten fw-normal"
 										href="https://jg-tc.com/entertainment/local/whats-happening-mhs-chess-team-fundraiser-casey-westfield-drive-thru-fundraiser/article_99191023-1be9-5872-8f75-2075188fb34e.html" target="news">WHAT'S
 										HAPPENING: MHS Chess Team fundraiser Casey-Westfield drive thru fundraiser</a> (jg-tc.com) </p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.fide.com/news/1388" target="news">Praggnanandhaa wins Julius Baer Challengers Chess Tour Finals</a> (FIDE)</p>
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.fide.com/news/1388" target="news">Praggnanandhaa wins Julius Baer Challengers Chess Tour Finals</a> (FIDE)</p>
 
-								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.audible.com/pd/An-Attacking-Strategy-with-Chess-Grandmaster-Maurice-Ashley-Podcast/B09JN7FVNP" target="news">An Attacking Strategy with Chess
+								<p class="chess-news text-start fs-ten m-0">&#8226;<a class="fs-ten fw-normal" href="https://www.audible.com/pd/An-Attacking-Strategy-with-Chess-Grandmaster-Maurice-Ashley-Podcast/B09JN7FVNP" target="news">An Attacking Strategy with
+										Chess
 										Grandmaster Maurice Ashley</a>
 									(audible.com)
 								</p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.fide.com/news/1387" target="news">FIDE World Amateur Chess Championship kicks-off in Rhodes</a> (FIDE)</p>
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.fide.com/news/1387" target="news">FIDE World Amateur Chess Championship kicks-off in Rhodes</a> (FIDE)</p>
 
-								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-8-9-caruana-back-in-the-hunt" target="news">US Chess Champs 8-9: Caruana back in the hunt</a>
+								<p class="chess-news text-start fs-ten m-0">&#8226;<a class="fs-ten fw-normal" href="https://chess24.com/en/read/news/us-chess-champs-8-9-caruana-back-in-the-hunt" target="news">US Chess Champs 8-9: Caruana back in the hunt</a>
 									(chess24.com)
 								</p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.outlookindia.com/website/story/sports-news-viswanathan-anand-to-do-commentary-during-world-chess-championship/397760"
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.outlookindia.com/website/story/sports-news-viswanathan-anand-to-do-commentary-during-world-chess-championship/397760"
 										target="news">Viswanathan Anand To Do
 										Commentary During World
 										Chess
 										Championship</a> (Outlook India)</p>
 
-								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.reuters.com/legal/government/latham-plays-3d-chess-bid-scotus-take-up-new-discovery-case-2021-10-15/" target="news">Latham plays 3D chess in
+								<p class="chess-news text-start fs-ten m-0">&#8226;<a class="fs-ten fw-normal" href="https://www.reuters.com/legal/government/latham-plays-3d-chess-bid-scotus-take-up-new-discovery-case-2021-10-15/" target="news">Latham plays 3D chess
+										in
 										bid
 										for SCOTUS to take up new
 										discovery
 										case</a> (Reuters)</p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.news18.com/news/sports/viswanathan-anand-to-do-commentary-during-world-chess-championship-match-4326608.html"
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226;<a class="fs-ten fw-normal" href="https://www.news18.com/news/sports/viswanathan-anand-to-do-commentary-during-world-chess-championship-match-4326608.html"
 										target="news">Viswanathan
 										Anand to do Commentary
 										During World Chess
 										Championship Match</a> (news18.com)</p>
 
-								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://www.yahoo.com/entertainment/female-chess-prodigy-story-eerily-130001147.html" target="news">I Was A Female Chess Prodigy. My Story Is Eerily
+								<p class="chess-news text-start fs-ten m-0">&#8226;<a class="fs-ten fw-normal" href="https://www.yahoo.com/entertainment/female-chess-prodigy-story-eerily-130001147.html" target="news">I Was A Female Chess Prodigy. My Story Is Eerily
 										Similar To
 										'The Queen's
 										Gambit.'</a> (Yahoo!)</p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.philstar.com/sports/2021/10/15/2134374/general-santos-inmates-place-5th-fide-chess-tiff-prisoners" target="news">General Santos
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.philstar.com/sports/2021/10/15/2134374/general-santos-inmates-place-5th-fide-chess-tiff-prisoners" target="news">General
+										Santos
 										inmates
 										place 5th in FIDE chess
 										tiff for
 										prisoners</a>
 									(philstar.com)</p>
 
-								<p class="chess-news text-start fs-ten">&#8226;<a class="fs-ten fw-normal" href="https://fide.com/news/1384" target="news">All India Chess Federation signs a historic agreement with MPL</a> (FIDE)</p>
+								<p class="chess-news text-start fs-ten m-0">&#8226;<a class="fs-ten fw-normal" href="https://fide.com/news/1384" target="news">All India Chess Federation signs a historic agreement with MPL</a> (FIDE)</p>
 
-								<p class="chess-news text-start fs-ten darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/forbesagencycouncil/2021/10/14/chess-modern-marketing-lessons-from-an-ancient-game/" target="news">Chess: Modern
+								<p class="chess-news text-start fs-ten m-0 darker-bg">&#8226; <a class="fs-ten fw-normal" href="https://www.forbes.com/sites/forbesagencycouncil/2021/10/14/chess-modern-marketing-lessons-from-an-ancient-game/" target="news">Chess:
+										Modern
 										Marketing Lessons From An
 										Ancient Game</a>
 									(Forbes)</p>
 							</div>
 						</div>
 					</div>
+					<!-- end of accordion-item ChessNews -->
 				</div>
+				<!-- end of #accordionNewEventsHappyBirthdayChessNews -->
 			</div>
-			<!-- end of accordion for NewsEvents HappyBirthday and ChessNews -->
+			<!-- end of #left-start-column -->
 			<!--endbirthday-->
 			<!-- <img src="/chessimages/spacer.gif" alt=" " width=4 height=4><br> -->
 			<!-- end of col-first -->
 			<!-- ++++++ END OF COLUMN ONE -->
 
-			<div id="umn-two" class="desktop  col-sm-8">
+			<div id="mid-middle-column" class="desktop  col-sm-8">
 				<div id="col-mid d-flex">
 					<div id="desktop-search-advance-potd"></div>
 					<!--beginbottombanner-->
@@ -1150,9 +1191,9 @@
 				</div>
 				<!--+++++++++ END OF #col-mid -->
 			</div>
-			<!-- ++++++++++++ END OF #umn-two-->
+			<!-- ++++++++++++ END OF #mid-middle-column-->
 
-			<div id="umn-three" class="desktop columns-three-order col-sm-2 ">
+			<div id="right-end-column" class="desktop columns-three-order col-sm-2 ">
 				<!--beginnonpremium-->
 				<div id="cg-promote-banner" class="image-div">
 					<a id="promote-banner" href="/perl/tour" target="_blank">
@@ -1184,10 +1225,8 @@
 					</tr>
 				</table> -->
 				<!-- +++++++++++++++++++++++++++++++++ -->
-				<div id="welcom-login" class="border border-dark text-center">
-					<p class="border border-dark"> @WELCOME </p>
-					<p class="border border-dark"> @LOGINLINE </p>
-				</div>
+				<div id="desktop-version-welcome-login"></div>
+
 
 				<!-- <img src="/spacer.gif" alt=" " width="4" height="4"><br> -->
 				<!--beginrightbanner-->
@@ -1217,120 +1256,120 @@
 							<div class="accordion-body p-0">
 								<section id="cg-recent-kibitzing" class="cg-section my-1">
 									<!--beginkibitzing-->
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2033649">A Villeneuve vs Spassky,&nbsp;1990</a>
 									</p>
 
 
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1072089">Lokvenc vs Keres,&nbsp;1943</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1401603">Adianto vs R E Espinosa Flores,&nbsp;2000</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=99673">Scott Thomson</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1553743">A Aleksandrov vs V Zhelnin,&nbsp;1994</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessforum.pl">Kibitzer's Caf&eacute;</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=49796">Teimour Radjabov</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1434096">Ermenkov vs Gheorghiu,&nbsp;1980</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=10084">Hikaru Nakamura</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2090471">So vs Sevian,&nbsp;2021</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1044651">Kraidman vs Fischer,&nbsp;1968</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1043802">Fine vs Stahlberg,&nbsp;1937</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=169729">Peter Pint</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=19233">Robert James Fischer</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=10454">Max Harmonist</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1103308">Gheorghiu vs Nunn,&nbsp;1984</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chess.pl?tid=105124">United States Championship (2021)</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chess.pl?tid=54487">Karpov - Fischer World Championship Match (1975)</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1095991">Kosten vs Chandler,&nbsp;1991</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=95915">Wesley So</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2090074">Burke vs Xiong,&nbsp;2021</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2072189">S Gu vs Scott Humphreys,&nbsp;2013</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2072230">P Parr vs C Laird,&nbsp;1980</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2080676">Paul Russell vs Eric Shi,&nbsp;2018</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1292708">Serper vs L Christiansen,&nbsp;2000</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=11207">Mikhail Botvinnik</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1115076">V Eingorn vs Psakhis,&nbsp;1986</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1020174">Andersson vs Sznapik,&nbsp;1982</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1418422">M Maeckelbergh vs P Delai,&nbsp;2006</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1418480">V Goi vs N Umudova,&nbsp;2006</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1418233">L Williams vs E Dervishi,&nbsp;2006</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessplayer?pid=117989">Yuliya Shvayger</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1327063">Pelletier vs A Kveinys,&nbsp;2004</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1258090">R S Jones vs Baburin,&nbsp;2002</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2087444">Robson vs Xiong,&nbsp;2021</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chess.pl?tid=105132">Russian Championship Superfinal (Women) (2021)</a>
 									</p>
-									<p class="text-start mx-1">
+									<p class="text-start mx-1 mb-0">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=2090801">J E Crewe vs T I Ryan,&nbsp;1895</a>
 									</p>
-									<p class="text-start mx-1 darker-bg">
+									<p class="text-start mx-1 mb-0 darker-bg">
 										<a class="p-kibitzing fw-normal text-primary " href="/perl/chessgame?gid=1734852">D Menikos vs M Wiedenkeller,&nbsp;2013</a>
 									</p>
 									<p class="more-events-div">
@@ -1664,7 +1703,7 @@
 
 						<!-- </div></div> -->
 					</div>
-					<!-- +++++++++++ END OF .umn-three -->
+					<!-- +++++++++++ END OF .right-end-column -->
 				</div>
 				<!-- end of recent kibitzing accordion -->
 

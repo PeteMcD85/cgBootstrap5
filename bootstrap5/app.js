@@ -1,11 +1,11 @@
 $(document).ready(function() {
   var viewport = $('meta[name="viewport"]'),
-    windowWidth = $(window).width(),
-    currentHTMLinsertAfter = $("#get-search-advance-potd-content").insertAfter($("#desktop-search-advance-potd")),
-    currentHTMLcontents = $("#get-search-advance-potd-content").contents($("#search-advance-potd")),
-    htmlFunction = $("#search-advance-potd").html(),
-    innerHtmlFunction = $("#search-advance-potd").innerHTML,
-    textFunction = $("#search-advance-potd").text();
+    windowWidth = $(window).width();
+    // currentHTMLinsertAfter = $("#search-advance-potd").insertAfter($("#desktop-search-advance-potd")),
+    // currentHTMLcontents = $("#search-advance-potd-content").contents($("#search-advance-potd")),
+    // htmlFunction = $("#search-advance-potd").html(),
+    // innerHtmlFunction = $("#search-advance-potd").innerHTML,
+    // textFunction = $("#search-advance-potd").text();
      // var one = $('.a').innerHTML
 
   console.log("viewport");
