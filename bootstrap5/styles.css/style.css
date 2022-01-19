@@ -1,30 +1,17 @@
+html {
+  width: fit-content;
+}
+
 footer {
   font-size: 10px;
 }
 
 p {
-  /* line-height: 18px; */
-  margin: 0;
+  line-height: 18px;
 }
 
 h4 {
   line-height: .6;
-  margin: 0;
-}
-
-input {
-  width: 10vw;
-  height: 1.5rem;
-  margin: 3px;
-  vertical-align: middle;
-}
-
-select {
-  height: 1.5rem;
-}
-
-label {
-  padding-left: 5px;
 }
 
 .darker-bg {
@@ -56,4 +43,177 @@ a.fs-ten {
   --main-bg-color: #FFFFDE;
   --main-header-color: #FDCD99;
   --blue-link-color: #0000FF;
+}
+
+/* .accordion-button:not(.collapsed)::after {
+  background-image: url("data:image/svg+xml,...");
+}
+.accordion-button::after {
+  background-image: url("data:image/svg+xml,...");
+} */
+/* .accordion-button:not(.collapsed)::after {
+  background-color: #FFFFDE;
+}
+.accordion-button::after {
+  background-color: #FDCD99;
+} */
+/* .accordion-button.collapse a:link.active */
+/* .accordion-button-active-collapse ::after */
+/* button.accordion-button-active::after.active  */
+#site-header img{
+/* height: auto; */
+background-size: cover;
+margin: 0
+ }
+
+/* img {
+  display: block;
+  margin: 0 auto;
+} */
+
+#left-start-column{
+  min-width: 192px;
+  max-width: 192px;
+}
+
+#right-end-column{
+  min-width: 192px;
+  max-width: 192px;
+}
+
+.accordion-button:not(.collapsed) {
+    color: black;
+    background-color: #FFFFDE;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0,0,0,.125);}
+
+#search-cg-games {
+  background-color: gainsboro;
+}
+
+.accordion-button {
+  background-color: #FFFFDE;
+}
+
+#search-cg-games {
+  background-color: gainsboro;
+}
+
+#site-nav {
+  background-color: #FFFFDE;
+}
+
+/* ALL 3 middle CONTAINERS */
+div#three-columns {}
+
+.accrdion-section {
+  background-color: #FFFFDE;
+}
+
+.cg-section {
+  background-color: var(--main-bg-color);
+  line-height: 15px;
+}
+
+.cg-section a, h2 {
+  font-size: 13px;
+  color: black;
+  line-height: revert;
+}
+
+.cg-section h3 {
+  font-size: 10px;
+  color: black;
+  /* text-decoration: none; */
+  /* margin: 0 0 5px; */
+  /* padding: 0; */
+}
+
+a.names {
+  color: var(--blue-link-color);
+}
+
+a.events {
+  font-size: 13px;
+  color: var(--blue-link-color);
+}
+
+/* CONTAINER ONE */
+div#umn-one {
+  /* max-width: 190px; */
+  /* position: absolute; */
+  /* left: 0; */
+  /* margin: 4px;
+  padding: 2px; */
+}
+
+#more-events-link {
+  border-color: brown;
+}
+
+h2#hb-header {
+  background-color: #FDCD99;
+}
+
+#happy-birthdays a {
+  color: #0000FF;
+}
+
+p.chess-news {
+  line-height: revert;
+}
+
+.chess-news a {
+  font-size: 10px;
+  color: #0000FF;
+}
+
+/* second section 2 _ Advanced search */
+.bg-color-change {
+  background-color: var(--main-header-color);
+}
+
+.span-bold {
+  font-weight: bolder;
+}
+
+p#tip-more-info {
+  line-height: initial;
+}
+
+p#tip-more-info a {
+  color: #0000FF;
+}
+
+#cuntainr {
+  border: black;
+  border-style: solid;
+  border-width: thin;
+  width: 18.5rem;
+  display: inline-grid;
+}
+
+#top-cuntainr h2 {
+  background-color: #FDCD99;
+}
+
+#top-cuntainr a {
+  color: #0000FF;
+}
+
+/* LASTCOLUMN #3 */
+/* CONTAINER THREE */
+a.p-kibitzing {
+  font-size: 10px;
+}
+
+.recent-v a {
+  font-size: 10px;
+}
+
+p.recent-v {
+  font-size: 10px;
 }
