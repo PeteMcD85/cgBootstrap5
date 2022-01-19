@@ -1,20 +1,6 @@
-/* <p class="fw-bold">Bold text.</p>
-<p class="fw-bolder">Bolder weight text (relative to the parent element).</p>
-<p class="fw-normal">Normal weight text.</p>
-<p class="fw-light">Light weight text.</p>
-<p class="fw-lighter">Lighter weight text (relative to the parent element).</p>
-<p class="fst-italic">Italic text.</p>
-<p class="fst-normal"> */
-
-
-/* <p class="lh-1">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
-<p class="lh-sm">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
-<p class="lh-base">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p>
-<p class="lh-lg">This is a long paragraph written to show how the line-height of an element is affected by our utilities. Classes are applied to the element itself or sometimes the parent element. These classes can be customized as needed with our utility API.</p> */
-
-/* <p class="text-decoration-underline">This text has a line underneath it.</p>
-<p class="text-decoration-line-through">This text has a line going through it.</p>
-<a href="#" class="text-decoration-none">This link has its text decoration removed</a> */
+html {
+  width: fit-content;
+}
 
 footer {
   font-size: 10px;
@@ -74,6 +60,27 @@ a.fs-ten {
 /* .accordion-button.collapse a:link.active */
 /* .accordion-button-active-collapse ::after */
 /* button.accordion-button-active::after.active  */
+#site-header img{
+/* height: auto; */
+background-size: cover;
+margin: 0
+ }
+
+/* img {
+  display: block;
+  margin: 0 auto;
+} */
+
+#left-start-column{
+  min-width: 192px;
+  max-width: 192px;
+}
+
+#right-end-column{
+  min-width: 192px;
+  max-width: 192px;
+}
+
 .accordion-button:not(.collapsed) {
     color: black;
     background-color: #FFFFDE;
@@ -81,8 +88,7 @@ a.fs-ten {
 
 .accordion-button:focus {
     box-shadow: none;
-    border-color: rgba(0,0,0,.125);
-}
+    border-color: rgba(0,0,0,.125);}
 
 #search-cg-games {
   background-color: gainsboro;
@@ -90,6 +96,10 @@ a.fs-ten {
 
 .accordion-button {
   background-color: #FFFFDE;
+}
+
+#search-cg-games {
+  background-color: gainsboro;
 }
 
 #site-nav {
@@ -132,6 +142,14 @@ a.events {
 }
 
 /* CONTAINER ONE */
+div#umn-one {
+  /* max-width: 190px; */
+  /* position: absolute; */
+  /* left: 0; */
+  /* margin: 4px;
+  padding: 2px; */
+}
+
 #more-events-link {
   border-color: brown;
 }

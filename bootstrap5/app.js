@@ -1,12 +1,19 @@
 $(document).ready(function() {
   var viewport = $('meta[name="viewport"]'),
     windowWidth = $(window).width();
-    // currentHTMLinsertAfter = $("#search-advance-potd").insertAfter($("#desktop-search-advance-potd")),
-    // currentHTMLcontents = $("#search-advance-potd-content").contents($("#search-advance-potd")),
-    // htmlFunction = $("#search-advance-potd").html(),
-    // innerHtmlFunction = $("#search-advance-potd").innerHTML,
-    // textFunction = $("#search-advance-potd").text();
-     // var one = $('.a').innerHTML
+  // currentHTMLinsertAfter = $("#search-advance-potd").insertAfter($("#desktop-search-advance-potd")),
+  // currentHTMLcontents = $("#search-advance-potd-content").contents($("#search-advance-potd")),
+  // htmlFunction = $("#search-advance-potd").html(),
+  // innerHtmlFunction = $("#search-advance-potd").innerHTML,
+  // textFunction = $("#search-advance-potd").text();
+  // var one = $('.a').innerHTML
+
+  windowWidth = $(window).width(),
+    currentHTMLinsertAfter = $("#get-search-advance-potd-content").insertAfter($("#desktop-search-advance-potd")),
+    currentHTMLcontents = $("#get-search-advance-potd-content").contents($("#search-advance-potd")),
+    htmlFunction = $("#search-advance-potd").html(),
+    innerHtmlFunction = $("#search-advance-potd").innerHTML,
+    textFunction = $("#search-advance-potd").text();
 
   console.log("viewport");
   console.log(viewport);
@@ -35,10 +42,16 @@ $(document).ready(function() {
       $(".middle-bottom-accordion").removeClass('border').addClass('border-none');
       $(".middle-bottom-accordion").removeClass('border-1');
       $(".middle-bottom-accordion").removeClass('border-dark');
+
+      // $('#left-start-column').css('max-width', '190px');
+      // $('#left-start-column').css('min-width', '190px');
+      // // $('#mid-middle-column').css('width', '');
+      // $('#right-end-column').css('width', '190px');
+
       // var currentHTML = $("#search-advance-potd").html();
       // console.log('currentHTML');
       // console.log(currentHTML);
-      $("#desktop-search-advance-potd").html(currentHTMLinsertAfter);
+      // $("#desktop-search-advance-potd").html(currentHTMLinsertAfter);
       // $("#search-advance-potd").html(currentHTML);
       // $(".columns-one-order").removeClass('order-2').addClass('order-1');
       // $(".columns-two-order").removeClass('order-1').addClass('order-2');
@@ -59,6 +72,7 @@ $(document).ready(function() {
       // viewport.setAttribute("content", content = "width = 1060px, maximum - scale = 1.0, User-scalable=yes");
       viewport.attr("content", "width = 1060px, maximum - scale = 1.0, User-scalable=yes")
       $('.desktop-row').removeClass('row').addClass('column');
+      $('.desktop').removeClass('row').addClass('column');
 
     }
     // end of ifStatement
@@ -68,6 +82,7 @@ $(document).ready(function() {
   function resizeMobile() {
     viewport.attr("content", content = "width=device-width, initial-scale=1");
     $('.desktop-row').removeClass('column').addClass('row');
+    $('.desktop').removeClass('column').addClass('row');
   }
   // end of resizeMobile()
 
