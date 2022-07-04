@@ -2,5 +2,4 @@
 
 Description
 
-Welcome aboard fellow developer, this is where you will find Python scripts which you are free to contribute to.
-You can contribute by submitting your own scripts, also written in Python, which you think would be amazing for other people to see.
+Welcome aboard fellow developers, this project was outdated with HTML1 and css scripts. I updated most of the css styling to Bootstrap5 and rewrote any features and functionality that were deprecated.  
